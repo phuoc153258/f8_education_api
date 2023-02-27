@@ -9,4 +9,6 @@ export function configFilePath(fileExt) {
     return FILE_PATH.DOCUMENT_PATH;
   if (FILE_EXNTESION.VIDEO_EXTENSION.includes(fileExt))
     return FILE_PATH.VIDEO_PATH;
+  if (FILE_EXNTESION.ICON_EXTENSION.includes(fileExt))
+    return FILE_PATH.ICON_PATH;
 }

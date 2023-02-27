@@ -74,14 +74,7 @@ const userController = {
       next(err);
     }
   },
-  removeDataTest: async (req, res, next) => {
-    try {
-      const result = await userService.removeDataTest();
-      return res.success(BaseSuccesMessage.SUCCESS, null);
-    } catch (err) {
-      next(err);
-    }
-  },
+
   importListUser: async (req, res, next) => {
     try {
       const { listUser } = req.body;
