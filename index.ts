@@ -3,8 +3,11 @@ import cors from "cors";
 import app from "./config/app";
 import env from "./config/env";
 import Debug = require("debug");
+import express from "express";
+import path from "path";
 
 const debug = Debug("api:index");
+
 const errorHandler = (err, req, res, next) => {
   res.status(err.status || httpStatus.INTERNAL_SERVER_ERROR);
   res.json({
@@ -23,7 +26,9 @@ const notFoundHandler = (req, res, next) => {
 
   next(err);
 };
+
 app.use(cors());
+
 // listen on port config.port
 app.listen(process.env.PORT || env.port || 3000, () => {
   debug(`server started on port ${env.port} (${env.env})`);
@@ -33,6 +38,8 @@ app.use(notFoundHandler);
 app.use(errorHandler);
 
 require("./config/connection/mongodb");
+
+// app.use(express.static(path.join(__dirname, "src", "public")));
 
 module.exports = app;
 export default app;

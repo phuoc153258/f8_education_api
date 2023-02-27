@@ -15,13 +15,7 @@ router
     authorMiddleWare.checkUserRole(ROLE.ROOT),
     userController.importListUser
   );
-router
-  .route("/remove-test-data")
-  .delete(
-    authMiddleWare.requireLogin,
-    authorMiddleWare.checkUserRole(),
-    userController.removeDataTest
-  );
+
 router
   .route("/deactive")
   .delete(
