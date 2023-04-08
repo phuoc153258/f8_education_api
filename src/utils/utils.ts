@@ -69,6 +69,11 @@ export function isEmailValid(email): boolean {
   return /\S+@\S+\.\S+/.test(email);
 }
 
+export function isEmailValid1(email) {
+  var re = /\S+@\S+\.\S+/;
+  return re.test(email);
+}
+
 export function checkURL(url) {
   if (typeof url !== "string") return false;
   return url.match(/\.(jpg|jpeg|gif|png)$/) != null;

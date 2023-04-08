@@ -6,9 +6,10 @@ class AuthValidation {
   public loginValidation = (params: LoginRequestDTO): any[] => {
     const errors = [];
 
-    if (validationUtils.isBlank(params.username)) {
-      errors.push(AuthErrorMessage.USERNAME_IS_REQUIRED);
+    if (!validationUtils.isEmailValid1(params.email)) {
+      errors.push(AuthErrorMessage.EMAIL_IS_REQUIRED);
     }
+
     if (validationUtils.isBlank(params.password)) {
       errors.push(AuthErrorMessage.PASSWORD_IS_REQUIRED);
     }

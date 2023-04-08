@@ -19,12 +19,10 @@ const authService: IAuthService = {
     try {
       // Check user is in DB
       const user = await User.findOne({
-        username: loginRequestDTO.username,
+        email: loginRequestDTO.email,
       });
       if (!user)
-        return Promise.reject(
-          new Error(AuthErrorMessage.USERNAME_IS_NOT_EXIST)
-        );
+        return Promise.reject(new Error(AuthErrorMessage.EMAIL_IS_NOT_EXIST));
       // Check user is active ( block or not block )
       if (!user.is_active)
         return Promise.reject(new Error(AuthErrorMessage.ACCOUNT_IS_LOCK));
