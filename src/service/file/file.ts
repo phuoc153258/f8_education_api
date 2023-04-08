@@ -32,7 +32,6 @@ const fileService: IFileService = {
   },
   get: async (fileName, res, next) => {
     const savePath = configFilePath(path.extname(fileName));
-    console.log(savePath);
 
     res.sendFile(
       path.join(__dirname, "../..", savePath + "/" + fileName),

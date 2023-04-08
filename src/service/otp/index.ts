@@ -40,7 +40,6 @@ const otpService: IOTPSerivce = {
       };
 
       const tokenData = new TokenDataResponseDTO(payload);
-      console.log(tokenData);
       const OTPToken: any = await tokenService.generateToken(tokenData);
       await OTP.create({
         email: userEmail,
