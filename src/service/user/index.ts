@@ -52,12 +52,12 @@ const userService: IUserService = {
       if (!user)
         return Promise.reject(new Error(UserErrorMessage.USER_NOT_FOUND));
 
-      if (request.first_name) {
-        user.first_name = request.first_name;
-      }
-      if (request.last_name) {
-        user.last_name = request.last_name;
-      }
+      // if (request.first_name) {
+      //   user.first_name = request.first_name;
+      // }
+      // if (request.last_name) {
+      //   user.last_name = request.last_name;
+      // }
       if (request.avatarUpload) {
         const file = request.avatarUpload;
         const response = await fileService.upload(file);
