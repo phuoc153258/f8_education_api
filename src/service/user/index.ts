@@ -116,38 +116,38 @@ const userService: IUserService = {
     }
   },
   importListUser: async (listUser) => {
-    try {
-      let canImport = true;
-      await Promise.all(
-        listUser.map(async (user) => {
-          const userFound = await User.findOne({ username: user.username });
-          if (userFound) {
-            canImport = false;
-            return Promise.reject(
-              new Error(AuthErrorMessage.USERNAME_IS_EXIST)
-            );
-          }
-        })
-      );
-      if (canImport) {
-        await Promise.all(
-          listUser.map(async (user, index) => {
-            await userService.create(user, index);
-          })
-        );
-        return Promise.resolve(UserSuccessMessage.IMPORT_LIST_USER_SUCCESS);
-      }
-    } catch (err) {
-      return Promise.reject(err);
-    }
+    // try {
+    //   let canImport = true;
+    //   await Promise.all(
+    //     listUser.map(async (user) => {
+    //       const userFound = await User.findOne({ username: user.username });
+    //       if (userFound) {
+    //         canImport = false;
+    //         return Promise.reject(
+    //           new Error(AuthErrorMessage.USERNAME_IS_EXIST)
+    //         );
+    //       }
+    //     })
+    //   );
+    //   if (canImport) {
+    //     await Promise.all(
+    //       listUser.map(async (user, index) => {
+    //         await userService.create(user, index);
+    //       })
+    //     );
+    //     return Promise.resolve(UserSuccessMessage.IMPORT_LIST_USER_SUCCESS);
+    //   }
+    // } catch (err) {
+    //   return Promise.reject(err);
+    // }
   },
   create: async (request, userCount) => {
     try {
       const userFound = await User.findOne({
-        username: request._username,
+        email: request._email,
       });
       if (userFound) {
-        throw new Error(AuthErrorMessage.USERNAME_IS_EXIST);
+        throw new Error(AuthErrorMessage.EMAIL_IS_EXIST);
       }
       const userCountCurrent = userCount
         ? (await User.countDocuments()) + 1 + userCount
@@ -156,8 +156,6 @@ const userService: IUserService = {
       const newUserDTO = new CreateUserResponseDTO().toJSON(request);
       const newUser = {
         ...newUserDTO,
-        first_name: NAME_DEFAULT + userCountCurrent,
-        last_name: "",
       };
       const user = new User(newUser);
       const userSave = await user.saveAsync();

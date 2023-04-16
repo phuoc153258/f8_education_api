@@ -23,6 +23,14 @@ const authMiddleWare = {
       next(error);
     }
   },
+  isLogin: async (req, res, next) => {
+    try {
+      const token = req.headers.authorization.split(" ")[1].trim();
+      const info = tokenService.verifyToken(token, env.jwt.secret);
+      req.user = info;
+    } catch (error) {}
+    next();
+  },
 };
 
 export default authMiddleWare;
