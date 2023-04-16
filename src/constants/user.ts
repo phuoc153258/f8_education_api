@@ -4,7 +4,7 @@ export enum GENDER {
   OTHER = "Other",
 }
 export enum AVATAR {
-  DEFAULT = "avatar_default.png",
+  DEFAULT = "user_avatar_default.jpg",
 }
 
 export const GENDERS: string[] = [GENDER.FEMALE, GENDER.MALE, GENDER.OTHER];
