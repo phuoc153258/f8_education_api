@@ -15,6 +15,17 @@ const courseService: ICourseService = {
     );
     return newCourses;
   },
+  analytics: async () => {
+    const courses = await Course.find({}).select("studentCount").exec();
+    let studentCount = 0;
+    courses.forEach((item) => {
+      studentCount += item.studentCount;
+    });
+    return {
+      courseCount: courses.length,
+      studentCount,
+    };
+  },
 };
 
 export default courseService;

@@ -8,4 +8,6 @@ router
   .route("/combined")
   .get(authMiddleWare.isLogin, courseController.combined);
 
+router.route("/analytics").get(courseController.analytics);
+
 export default router;
