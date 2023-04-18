@@ -10,4 +10,8 @@ router
 
 router.route("/analytics").get(courseController.analytics);
 
+router
+  .route("/:slug")
+  .get(authMiddleWare.requireLogin, courseController.courseDetail);
+
 export default router;
