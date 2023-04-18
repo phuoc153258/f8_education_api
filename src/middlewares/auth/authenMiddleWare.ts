@@ -15,6 +15,7 @@ const authMiddleWare = {
 
       if (!info) return res.errors("Mã token không đúng.");
 
+      req.user = info;
       next();
     } catch (error) {
       if (error.message == "jwt expired") {

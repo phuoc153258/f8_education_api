@@ -19,6 +19,16 @@ const courseController = {
       next(error);
     }
   },
+  courseDetail: async (req, res, next) => {
+    try {
+      const { user } = req;
+      const { slug } = req.params;
+      const courseResponse = await courseService.courseDetail(user, slug);
+      return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
+    } catch (error) {
+      next(error);
+    }
+  },
 };
 
 export default courseController;
