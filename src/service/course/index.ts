@@ -12,9 +12,12 @@ const courseService: ICourseService = {
   combined: async (user: any) => {
     try {
       const courses = await Course.find().exec();
-      const userCourses = await User_Course.findOne({
-        userId: new mongoose.Types.ObjectId(user._id),
-      }).exec();
+      const userCourses =
+        user != undefined
+          ? await User_Course.findOne({
+              userId: new mongoose.Types.ObjectId(user._id),
+            }).exec()
+          : undefined;
       const newCourses = courses.map((course) =>
         new CombinedCourseResponseDTO().responseDTO(course, userCourses)
       );

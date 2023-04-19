@@ -26,9 +26,17 @@ const authMiddleWare = {
   },
   isLogin: async (req, res, next) => {
     try {
-      const token = req.headers.authorization.split(" ")[1].trim();
-      const info = tokenService.verifyToken(token, env.jwt.secret);
-      req.user = info;
+      if (req.headers.authorization != undefined) {
+        console.log("DSA");
+        const header = req.headers.authorization.split(" ")[0].trim();
+        if (header == "Bearer") {
+          const token = req.headers.authorization.split(" ")[1].trim();
+          const info = tokenService.verifyToken(token, env.jwt.secret);
+          if (info) {
+            req.user = info;
+          }
+        }
+      }
     } catch (error) {}
     next();
   },
