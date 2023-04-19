@@ -42,6 +42,8 @@ const courseService: ICourseService = {
     try {
       const course = await Course.findOne({ slug: slug });
       if (!course) return Promise.reject(new Error("Course is not exits !!!"));
+
+      const level = await Course_Level.findOne({ _id: course.levelId }).exec();
       const willLearns = await Course_Will_Learn.find({
         courseId: course._id,
       });
@@ -55,7 +57,8 @@ const courseService: ICourseService = {
         course,
         userCourses,
         willLearns,
-        requirements
+        requirements,
+        level
       );
       return Promise.resolve(newCourse);
     } catch (error) {
