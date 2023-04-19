@@ -162,11 +162,14 @@ export default class CombinedCourseResponseDTO {
   }
   setIsRegister(id: any, user_course: any) {
     this._isRegister = false;
-    user_course.detailCourses.forEach((x) => {
-      if (x.courseId.toString() == id.toString()) {
-        this._isRegister = true;
-      }
-    });
+    if (user_course != undefined) {
+      user_course.detailCourses.forEach((x) => {
+        if (x.courseId.toString() == id.toString()) {
+          this._isRegister = true;
+        }
+      });
+    }
+
     return this;
   }
 
