@@ -20,6 +20,7 @@ export interface ICourseDetailResponseDTO {
   isRegister?: Boolean;
   willLearns?: Array<any>;
   requirements?: Array<any>;
+  level?: any;
 }
 export default class CourseDetailResponseDTO {
   public _id?: Types.ObjectId;
@@ -40,6 +41,7 @@ export default class CourseDetailResponseDTO {
   public _isRegister?: Boolean;
   public _willLearns?: Array<any>;
   public _requirements?: Array<any>;
+  public _level?: any;
 
   get id() {
     return this._id;
@@ -152,6 +154,13 @@ export default class CourseDetailResponseDTO {
     this._levelId = levelId;
     return this;
   }
+  get level() {
+    return this._level;
+  }
+  setLevel(level: any) {
+    this._level = level;
+    return this;
+  }
 
   get tracks() {
     return this._tracks;
@@ -210,6 +219,7 @@ export default class CourseDetailResponseDTO {
       isRegister: this._isRegister,
       willLearns: this._willLearns,
       requirements: this._requirements,
+      level: this._level,
     };
 
     return request;
@@ -219,7 +229,8 @@ export default class CourseDetailResponseDTO {
     model: any,
     user_course: any,
     willLearns: any,
-    requirements: any
+    requirements: any,
+    level: any
   ) {
     if (!model) {
       return null;
@@ -242,6 +253,7 @@ export default class CourseDetailResponseDTO {
       .setIsRegister(model._id, user_course)
       .setWillLearns(willLearns)
       .setRequirements(requirements)
+      .setLevel(level)
       .get();
   }
 }
