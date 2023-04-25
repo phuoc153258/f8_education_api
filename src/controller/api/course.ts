@@ -29,6 +29,36 @@ const courseController = {
       next(error);
     }
   },
+  tracks: async (req, res, next) => {
+    try {
+      const { user } = req;
+      const { slug } = req.params;
+      const courseResponse = await courseService.tracks(user, slug);
+      return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
+    } catch (error) {
+      next(error);
+    }
+  },
+  steps: async (req, res, next) => {
+    try {
+      const { user } = req;
+      const { slug } = req.params;
+      const courseResponse = await courseService.tracks(user, slug);
+      return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
+    } catch (error) {
+      next(error);
+    }
+  },
+  stepDetail: async (req, res, next) => {
+    try {
+      const { user } = req;
+      const { slug } = req.params;
+      const courseResponse = await courseService.tracks(user, slug);
+      return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
+    } catch (error) {
+      next(error);
+    }
+  },
 };
 
 export default courseController;
