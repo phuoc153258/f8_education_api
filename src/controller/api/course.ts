@@ -43,7 +43,8 @@ const courseController = {
     try {
       const { user } = req;
       const { slug } = req.params;
-      const courseResponse = await courseService.tracks(user, slug);
+
+      const courseResponse = await courseService.steps(user, slug);
       return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
     } catch (error) {
       next(error);
