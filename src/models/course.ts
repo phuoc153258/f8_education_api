@@ -57,20 +57,12 @@ const CourseSchema = new Schema(
     },
     tracks: [
       {
-        id: {
-          type: mongoose.Types.ObjectId,
-          default: new mongoose.Types.ObjectId(),
-        },
         title: String,
         position: Number,
         isPublished: { type: Boolean, default: true },
         publishedAt: { type: Date, default: new Date() },
         steps: [
           {
-            id: {
-              type: mongoose.Types.ObjectId,
-              default: new mongoose.Types.ObjectId(),
-            },
             title: String,
             duration: Number,
             imageUrl: String,
@@ -103,27 +95,7 @@ export interface ICourse extends mongoose.Document {
   createdAt: Date;
   updatedAt: Date;
   levelId: Types.ObjectId;
-  tracks: [
-    {
-      id: mongoose.Types.ObjectId;
-      title: string;
-      position: number;
-      isPublished: boolean;
-      publishedAt: Date;
-      steps: [
-        {
-          id: mongoose.Types.ObjectId;
-          title: string;
-          duration: number;
-          imageUrl: string;
-          videoUrl: string;
-          position: number;
-          isPublished: boolean;
-          publishedAt: Date;
-        }
-      ];
-    }
-  ];
+  tracks: any;
   saveAsync(): any;
   removeAsync(): any;
 }

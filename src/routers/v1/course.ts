@@ -11,10 +11,12 @@ router
 router.route("/analytics").get(courseController.analytics);
 
 router
-  .route("/steps/:slug")
+  .route("/:slug/steps/:id")
   .get(authMiddleWare.requireLogin, courseController.stepDetail);
 
-router.route("/steps").get(authMiddleWare.requireLogin, courseController.steps);
+router
+  .route("/:slug/steps")
+  .get(authMiddleWare.requireLogin, courseController.steps);
 
 router
   .route("/tracks/:slug")

@@ -100,6 +100,73 @@ const courseService: ICourseService = {
       return Promise.reject(error);
     }
   },
+  steps: async (user, slug) => {
+    try {
+      const course = await Course.findOne({ slug: slug });
+      if (!course) return Promise.reject(new Error("Course is not exits !!!"));
+
+      const userCourseTemp = await User_Course.findOne({
+        userId: new mongoose.Types.ObjectId(user._id),
+      }).exec();
+      if (
+        !userCourseTemp.detailCourses.find((x) =>
+          new mongoose.Types.ObjectId(course._id).equals(
+            new mongoose.Types.ObjectId(x.courseId)
+          )
+        )
+      ) {
+        const registCourse = {
+          courseId: course._id,
+          indexVideo: 1,
+        };
+
+        await User_Course.findOneAndUpdate(
+          { userId: user._id },
+          { $push: { detailCourses: registCourse } }
+        );
+      }
+
+      const userCourse = await User_Course.findOne(
+        {
+          userId: new mongoose.Types.ObjectId(user._id),
+          "detailCourses.courseId": new mongoose.Types.ObjectId(course._id),
+        },
+        { "detailCourses.$": 1 }
+      );
+      let continue_id = "";
+      let next_id = "";
+      let previous_id = "";
+      let index = 0;
+      let step = {};
+      course.tracks.forEach((x) => {
+        x.steps.forEach((y) => {
+          if (userCourse.detailCourses[0].indexVideo == index - 1) {
+            previous_id = y._id;
+          }
+          if (userCourse.detailCourses[0].indexVideo == index) {
+            continue_id = y._id;
+            step = y;
+          }
+          if (userCourse.detailCourses[0].indexVideo == index + 1) {
+            next_id = y._id;
+          }
+          index++;
+        });
+      });
+      course.tracks = null;
+      return Promise.resolve({
+        isRegister: true,
+        course,
+        continue_id,
+        next_id,
+        previous_id,
+        userCourse,
+        step,
+      });
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  },
 };
 
 export default courseService;
