@@ -68,6 +68,38 @@ const courseService: ICourseService = {
       return Promise.reject(error);
     }
   },
+  tracks: async (user, slug) => {
+    try {
+      const course = await Course.findOne({ slug: slug }).select("_id, tracks");
+      if (!course) return Promise.reject(new Error("Course is not exits !!!"));
+
+      const userCourse = await User_Course.findOne({
+        userId: new mongoose.Types.ObjectId(user._id),
+      }).exec();
+      if (
+        !userCourse.detailCourses.find((x) =>
+          new mongoose.Types.ObjectId(course._id).equals(
+            new mongoose.Types.ObjectId(x.courseId)
+          )
+        )
+      ) {
+        const registCourse = {
+          courseId: course._id,
+          indexVideo: 1,
+        };
+        userCourse.detailCourses.push(registCourse);
+
+        await User_Course.findOneAndUpdate(
+          { userId: user._id },
+          { $push: { detailCourses: registCourse } }
+        );
+      }
+
+      return Promise.resolve({ isRegister: true, course, userCourse });
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  },
 };
 
 export default courseService;

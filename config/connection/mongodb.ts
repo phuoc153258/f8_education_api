@@ -5,9 +5,11 @@ const DB_URL = env.db;
 Promise.promisifyAll(mongoose);
 mongoose
   .connect(DB_URL, {
+    keepAlive: true,
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true,
+    useFindAndModify: false,
   })
   .then(() => {
     const dbStatus = `*    DB Connection: OK\n****************************\n`;

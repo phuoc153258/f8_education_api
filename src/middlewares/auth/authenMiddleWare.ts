@@ -27,7 +27,6 @@ const authMiddleWare = {
   isLogin: async (req, res, next) => {
     try {
       if (req.headers.authorization != undefined) {
-        console.log("DSA");
         const header = req.headers.authorization.split(" ")[0].trim();
         if (header == "Bearer") {
           const token = req.headers.authorization.split(" ")[1].trim();

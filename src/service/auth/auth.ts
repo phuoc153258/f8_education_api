@@ -13,6 +13,7 @@ import { OTP } from "../../models/index";
 import { Error } from "mongoose";
 import { AuthSuccessMessage } from "../../messages/success/auth";
 import { BaseErrorMessage } from "../../messages/error/base/index";
+import { User_Course } from "../../models/user_course";
 
 const authService: IAuthService = {
   login: async (loginRequestDTO: LoginRequestDTO) => {
@@ -47,6 +48,7 @@ const authService: IAuthService = {
   register: async (registerRequestDTO: RegisterRequestDTO) => {
     //Check username is exist in DB
     const response = await userService.create(registerRequestDTO);
+    await new User_Course({ userId: response._id }).save();
     return response;
   },
 
