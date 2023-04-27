@@ -6,42 +6,36 @@ const aggregatePaginate = require("./plugins/aggregatePaginate");
 
 const Schema = mongoose.Schema;
 
-const CourseSchema = new Schema(
+const StepSchema = new Schema(
   {
     title: {
       type: String,
       require: true,
-      unique: true,
+    },
+    duration: {
+      type: Number,
+      default: 0,
+    },
+    imageUrl: {
+      type: String,
+      require: true,
+    },
+    videoUrl: {
+      type: String,
+      require: true,
+    },
+    trackId: {
+      type: mongoose.Types.ObjectId,
+      require: true,
+      ref: "Track",
+    },
+    position: {
+      type: Number,
+      require: true,
     },
     description: {
       type: String,
       require: true,
-    },
-    slug: {
-      type: String,
-      slug: "title",
-      slug_padding_size: 4,
-      unique: true,
-    },
-    image: {
-      type: String,
-      default: "course_image_1.png",
-    },
-    icon: {
-      type: String,
-      default: "course_icon_1.png",
-    },
-    studentCount: {
-      type: Number,
-      default: 0,
-    },
-    isDeleted: {
-      type: Boolean,
-      default: false,
-    },
-    deletedAt: {
-      type: Date,
-      default: new Date(),
     },
     isPublished: {
       type: Boolean,
@@ -51,37 +45,33 @@ const CourseSchema = new Schema(
       type: Date,
       default: new Date(),
     },
-    levelId: {
-      type: mongoose.Types.ObjectId,
-      default: "6368c48e06944445dfaf62c4",
-    },
   },
   {
     timestamps: true,
   }
 );
 
-export interface ICourse extends mongoose.Document {
+export interface IStep extends mongoose.Document {
   _id: mongoose.Types.ObjectId;
   title: string;
+  duration: number;
+  trackId: Types.ObjectId;
+  imageUrl: string;
+  videoUrl: string;
+  position: number;
   description: string;
-  slug: string;
-  image: string;
-  icon: string;
-  studentCount: number;
   isDeleted: boolean;
   deletedAt: Date;
   isPublished: boolean;
   publishedAt: Date;
   createdAt: Date;
   updatedAt: Date;
-  levelId: Types.ObjectId;
 
   saveAsync(): any;
   removeAsync(): any;
 }
 
-export interface ICourseModel extends mongoose.Model<ICourse> {
+export interface IStepModel extends mongoose.Model<IStep> {
   aggregatePaginateCustom(
     aggregates: mongoose.Aggregate<any[]>,
     arg1: { page: number; limit: number }
@@ -101,13 +91,13 @@ export interface ICourseModel extends mongoose.Model<ICourse> {
   execAsync(): Promise<any>;
 }
 
-CourseSchema.plugin(slug);
-CourseSchema.plugin(paginate);
-CourseSchema.plugin(aggregatePaginate);
+StepSchema.plugin(slug);
+StepSchema.plugin(paginate);
+StepSchema.plugin(aggregatePaginate);
 
-CourseSchema.index({
+StepSchema.index({
   title: "text",
 });
 
-const model = mongoose.model<ICourse, ICourseModel>("Course", CourseSchema);
-export { model as Course };
+const model = mongoose.model<IStep, IStepModel>("Step", StepSchema);
+export { model as Step };
