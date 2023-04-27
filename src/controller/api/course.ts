@@ -53,8 +53,8 @@ const courseController = {
   stepDetail: async (req, res, next) => {
     try {
       const { user } = req;
-      const { slug } = req.params;
-      const courseResponse = await courseService.tracks(user, slug);
+      const { slug, id } = req.params;
+      const courseResponse = await courseService.stepsDetail(user, slug, id);
       return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
     } catch (error) {
       next(error);

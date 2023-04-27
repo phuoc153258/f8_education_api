@@ -276,68 +276,90 @@ const courseService: ICourseService = {
     }
   },
   stepsDetail: async (user, slug, id) => {
-    // try {
-    //   const course = await Course.findOne({ slug: slug });
-    //   if (!course) return Promise.reject(new Error("Course is not exits !!!"));
-    //   const userCourseTemp = await User_Course.findOne({
-    //     userId: new mongoose.Types.ObjectId(user._id),
-    //   }).exec();
-    //   if (
-    //     !userCourseTemp.detailCourses.find((x) =>
-    //       new mongoose.Types.ObjectId(course._id).equals(
-    //         new mongoose.Types.ObjectId(x.courseId)
-    //       )
-    //     )
-    //   ) {
-    //     const registCourse = {
-    //       courseId: course._id,
-    //       indexVideo: 1,
-    //     };
-    //     await User_Course.findOneAndUpdate(
-    //       { userId: user._id },
-    //       { $push: { detailCourses: registCourse } }
-    //     );
-    //   }
-    //   const userCourse = await User_Course.findOne(
-    //     {
-    //       userId: new mongoose.Types.ObjectId(user._id),
-    //       "detailCourses.courseId": new mongoose.Types.ObjectId(course._id),
-    //     },
-    //     { "detailCourses.$": 1 }
-    //   );
-    //   let continue_id = "";
-    //   let next_id = "";
-    //   let previous_id = "";
-    //   let index = 0;
-    //   let step = {};
-    //   course.tracks.forEach((x) => {
-    //     x.steps.forEach((y) => {
-    //       if (userCourse.detailCourses[0].indexVideo == index - 1) {
-    //         previous_id = y._id;
-    //       }
-    //       if (userCourse.detailCourses[0].indexVideo == index) {
-    //         continue_id = y._id;
-    //         step = y;
-    //       }
-    //       if (userCourse.detailCourses[0].indexVideo == index + 1) {
-    //         next_id = y._id;
-    //       }
-    //       index++;
-    //     });
-    //   });
-    //   course.tracks = null;
-    //   return Promise.resolve({
-    //     isRegister: true,
-    //     course,
-    //     continue_id,
-    //     next_id,
-    //     previous_id,
-    //     userCourse,
-    //     step,
-    //   });
-    // } catch (error) {
-    //   return Promise.reject(error);
-    // }
+    try {
+      const course = await Course.findOne({ slug: slug });
+      if (!course) return Promise.reject(new Error("Course is not exits !!!"));
+
+      const tracks = await Track.aggregate([
+        {
+          $match: {
+            courseId: course._id,
+          },
+        },
+        {
+          $lookup: {
+            from: "steps",
+            localField: "_id",
+            foreignField: "trackId",
+            as: "steps",
+          },
+        },
+      ]);
+
+      let continue_id = "";
+      let next_id = "";
+      let previous_id = "";
+      let index = 0;
+      let indexTemp = 0;
+      let step = {};
+      let track = {};
+
+      const userCourse = await User_Course.findOne({
+        userId: new mongoose.Types.ObjectId(user._id),
+        courseId: course._id,
+      }).exec();
+      if (!userCourse || userCourse === null) {
+        const user_course = new User_Course({
+          userId: mongoose.Types.ObjectId(user._id),
+          courseId: course._id,
+          indexVideo: 0,
+          lessonCompleted: [],
+        });
+        await user_course.save();
+        continue_id = tracks[0].steps[0]._id;
+        next_id = tracks[0].steps[1]._id;
+        step = tracks[0].steps[0];
+      } else {
+        tracks.forEach((x) => {
+          x.steps.forEach((y) => {
+            if (y._id.toString() == id) {
+              userCourse.indexVideo = indexTemp;
+            }
+            indexTemp++;
+          });
+        });
+
+        tracks.forEach((x) => {
+          x.steps.forEach((y) => {
+            if (userCourse.indexVideo == index + 1) {
+              previous_id = y._id;
+            }
+            if (userCourse.indexVideo == index) {
+              continue_id = y._id;
+              step = y;
+              track = x;
+            }
+            if (userCourse.indexVideo == index - 1) {
+              next_id = y._id;
+            }
+            index++;
+          });
+        });
+      }
+      await userCourse.save();
+      return Promise.resolve({
+        isRegister: true,
+        course,
+        continue_id,
+        next_id,
+        previous_id,
+        userCourse,
+        step,
+        track,
+      });
+    } catch (error) {
+      return Promise.reject(error);
+    }
   },
   registerCourse: async (user, slug) => {
     try {
