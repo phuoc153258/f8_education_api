@@ -9,6 +9,7 @@ import { Course_Will_Learn } from "../../models/course_will_learn";
 import CourseDetailResponseDTO from "../../dtos/response/course/CourseDetailResponseDTO";
 import { Track } from "../../models/track";
 import { Step } from "../../models/step";
+import { User } from "../../models";
 
 const courseService: ICourseService = {
   combined: async (user: any) => {
@@ -143,36 +144,33 @@ const courseService: ICourseService = {
     }
   },
   tracks: async (user, slug) => {
-    try {
-      const course = await Course.findOne({ slug: slug }).select("_id, tracks");
-      if (!course) return Promise.reject(new Error("Course is not exits !!!"));
-
-      const userCourse = await User_Course.findOne({
-        userId: new mongoose.Types.ObjectId(user._id),
-      }).exec();
-      if (
-        !userCourse.detailCourses.find((x) =>
-          new mongoose.Types.ObjectId(course._id).equals(
-            new mongoose.Types.ObjectId(x.courseId)
-          )
-        )
-      ) {
-        const registCourse = {
-          courseId: course._id,
-          indexVideo: 1,
-        };
-        userCourse.detailCourses.push(registCourse);
-
-        await User_Course.findOneAndUpdate(
-          { userId: user._id },
-          { $push: { detailCourses: registCourse } }
-        );
-      }
-
-      return Promise.resolve({ isRegister: true, course, userCourse });
-    } catch (error) {
-      return Promise.reject(error);
-    }
+    // try {
+    //   const course = await Course.findOne({ slug: slug }).select("_id, tracks");
+    //   if (!course) return Promise.reject(new Error("Course is not exits !!!"));
+    //   const userCourse = await User_Course.findOne({
+    //     userId: new mongoose.Types.ObjectId(user._id),
+    //   }).exec();
+    //   if (
+    //     !userCourse.detailCourses.find((x) =>
+    //       new mongoose.Types.ObjectId(course._id).equals(
+    //         new mongoose.Types.ObjectId(x.courseId)
+    //       )
+    //     )
+    //   ) {
+    //     const registCourse = {
+    //       courseId: course._id,
+    //       indexVideo: 1,
+    //     };
+    //     userCourse.detailCourses.push(registCourse);
+    //     await User_Course.findOneAndUpdate(
+    //       { userId: user._id },
+    //       { $push: { detailCourses: registCourse } }
+    //     );
+    //   }
+    //   return Promise.resolve({ isRegister: true, course, userCourse });
+    // } catch (error) {
+    //   return Promise.reject(error);
+    // }
   },
   steps: async (user, slug) => {
     // try {
@@ -312,6 +310,29 @@ const courseService: ICourseService = {
     // } catch (error) {
     //   return Promise.reject(error);
     // }
+  },
+  registerCourse: async (user, slug) => {
+    try {
+      const course = await Course.findOne({ slug: slug }).exec();
+      if (!course) return Promise.reject(new Error("Course is not exits !!!"));
+
+      const userCourse = await User_Course.findOne({
+        userId: new mongoose.Types.ObjectId(user._id),
+        courseId: course._id,
+      });
+      if (!userCourse || userCourse === null) {
+        const user_course = new User_Course({
+          userId: mongoose.Types.ObjectId(user._id),
+          courseId: course._id,
+          indexVideo: 1,
+          lessonCompleted: [],
+        });
+        await user_course.save();
+        return Promise.resolve(user_course);
+      } else return Promise.resolve(userCourse);
+    } catch (error) {
+      return Promise.reject(error);
+    }
   },
 };
 

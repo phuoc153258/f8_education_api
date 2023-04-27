@@ -10,31 +10,29 @@ const User_CourseSchema = new Schema({
   userId: {
     type: mongoose.Types.ObjectId,
     require: true,
-    unique: true,
   },
-  detailCourses: {
-    type: [
-      {
-        id: mongoose.Types.ObjectId,
-        courseId: mongoose.Types.ObjectId,
-        indexVideo: { type: Number, default: 1 },
-        lessonCompleted: [
-          {
-            trackId: mongoose.Types.ObjectId,
-            lessonId: mongoose.Types.ObjectId,
-          },
-        ],
-      },
-    ],
-    default: [],
-    require: false,
+  courseId: {
+    type: mongoose.Types.ObjectId,
+    require: true,
   },
+  indexVideo: {
+    type: Number,
+    require: true,
+  },
+  lessonCompleted: [
+    {
+      _id: mongoose.Types.ObjectId,
+      stepId: mongoose.Types.ObjectId,
+    },
+  ],
 });
 
 export interface IUser_Course extends mongoose.Document {
   _id: mongoose.Types.ObjectId;
   userId: mongoose.Types.ObjectId;
-  detailCourses: any;
+  courseId: mongoose.Types.ObjectId;
+  indexVideo: number;
+  lessonCompleted: Array<any>;
   saveAsync(): any;
   removeAsync(): any;
 }

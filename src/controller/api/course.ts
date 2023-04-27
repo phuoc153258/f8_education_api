@@ -60,6 +60,16 @@ const courseController = {
       next(error);
     }
   },
+  registerCourse: async (req, res, next) => {
+    try {
+      const { user } = req;
+      const { slug } = req.params;
+      const courseResponse = await courseService.registerCourse(user, slug);
+      return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
+    } catch (error) {
+      next(error);
+    }
+  },
 };
 
 export default courseController;

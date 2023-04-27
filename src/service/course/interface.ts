@@ -5,4 +5,5 @@ export interface ICourseService {
   tracks: (user: any, slug: any) => any;
   steps: (user: any, slug: any) => any;
   stepsDetail: (user: any, slug: any, id: any) => any;
+  registerCourse: (user: any, slug: any) => any;
 }
