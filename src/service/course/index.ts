@@ -65,19 +65,16 @@ const courseService: ICourseService = {
     }
   },
   analytics: async () => {
-    // try {
-    //   const courses = await Course.find({}).select("studentCount").exec();
-    //   let studentCount = 0;
-    //   courses.forEach((item) => {
-    //     studentCount += item.studentCount;
-    //   });
-    //   Promise.resolve({
-    //     courseCount: courses.length,
-    //     studentCount,
-    //   });
-    // } catch (error) {
-    //   return Promise.reject(error);
-    // }
+    try {
+      const courses = await Course.find({}).select("studentCount").exec();
+      let studentCount = 0;
+      courses.forEach((item) => {
+        studentCount += item.studentCount;
+      });
+      return { courseCount: courses.length, studentCount };
+    } catch (error) {
+      return Promise.reject(error);
+    }
   },
   courseDetail: async (user, slug) => {
     // try {
