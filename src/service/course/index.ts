@@ -144,33 +144,60 @@ const courseService: ICourseService = {
     }
   },
   tracks: async (user, slug) => {
-    // try {
-    //   const course = await Course.findOne({ slug: slug }).select("_id, tracks");
-    //   if (!course) return Promise.reject(new Error("Course is not exits !!!"));
-    //   const userCourse = await User_Course.findOne({
-    //     userId: new mongoose.Types.ObjectId(user._id),
-    //   }).exec();
-    //   if (
-    //     !userCourse.detailCourses.find((x) =>
-    //       new mongoose.Types.ObjectId(course._id).equals(
-    //         new mongoose.Types.ObjectId(x.courseId)
-    //       )
-    //     )
-    //   ) {
-    //     const registCourse = {
-    //       courseId: course._id,
-    //       indexVideo: 1,
-    //     };
-    //     userCourse.detailCourses.push(registCourse);
-    //     await User_Course.findOneAndUpdate(
-    //       { userId: user._id },
-    //       { $push: { detailCourses: registCourse } }
-    //     );
-    //   }
-    //   return Promise.resolve({ isRegister: true, course, userCourse });
-    // } catch (error) {
-    //   return Promise.reject(error);
-    // }
+    try {
+      const course = await Course.findOne({ slug: slug });
+      if (!course) return Promise.reject(new Error("Course is not exits !!!"));
+
+      let trackTemp = {
+        tracks: [],
+        isRegister: true,
+        userProgress: [],
+        trackStepCount: 0,
+      };
+      const tracks = await Track.aggregate([
+        {
+          $match: {
+            courseId: course._id,
+          },
+        },
+        {
+          $lookup: {
+            from: "steps",
+            localField: "_id",
+            foreignField: "trackId",
+            as: "steps",
+          },
+        },
+      ]);
+      trackTemp.tracks = tracks;
+
+      const userCourses = await User_Course.findOne({
+        userId: new mongoose.Types.ObjectId(user._id),
+        courseId: course._id,
+      }).exec();
+      if (!userCourses || userCourses === null) {
+        const user_course = new User_Course({
+          userId: mongoose.Types.ObjectId(user._id),
+          courseId: course._id,
+          indexVideo: 1,
+          lessonCompleted: [],
+        });
+        await user_course.save();
+        trackTemp.userProgress = [];
+      } else {
+        trackTemp.userProgress = userCourses.lessonCompleted;
+      }
+
+      tracks.forEach((track) => {
+        track.steps.forEach((step) => {
+          trackTemp.trackStepCount += 1;
+        });
+      });
+
+      return Promise.resolve(trackTemp);
+    } catch (error) {
+      return Promise.reject(error);
+    }
   },
   steps: async (user, slug) => {
     // try {
