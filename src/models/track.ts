@@ -1,39 +1,26 @@
 import mongoose, { Types } from "mongoose";
 import slug from "mongoose-slug-generator";
+import { type } from "os";
 
 const paginate = require("./plugins/paginate");
 const aggregatePaginate = require("./plugins/aggregatePaginate");
 
 const Schema = mongoose.Schema;
 
-const CourseSchema = new Schema(
+const TrackSchema = new Schema(
   {
     title: {
       type: String,
       require: true,
-      unique: true,
     },
-    description: {
-      type: String,
+    position: {
+      type: Number,
       require: true,
     },
-    slug: {
-      type: String,
-      slug: "title",
-      slug_padding_size: 4,
-      unique: true,
-    },
-    image: {
-      type: String,
-      default: "course_image_1.png",
-    },
-    icon: {
-      type: String,
-      default: "course_icon_1.png",
-    },
-    studentCount: {
-      type: Number,
-      default: 0,
+    courseId: {
+      type: mongoose.Types.ObjectId,
+      require: true,
+      ref: "Course",
     },
     isDeleted: {
       type: Boolean,
@@ -51,37 +38,29 @@ const CourseSchema = new Schema(
       type: Date,
       default: new Date(),
     },
-    levelId: {
-      type: mongoose.Types.ObjectId,
-      default: "6368c48e06944445dfaf62c4",
-    },
   },
   {
     timestamps: true,
   }
 );
 
-export interface ICourse extends mongoose.Document {
+export interface ITrack extends mongoose.Document {
   _id: mongoose.Types.ObjectId;
   title: string;
-  description: string;
-  slug: string;
-  image: string;
-  icon: string;
-  studentCount: number;
+  position: number;
+  courseId: Types.ObjectId;
   isDeleted: boolean;
   deletedAt: Date;
   isPublished: boolean;
   publishedAt: Date;
   createdAt: Date;
   updatedAt: Date;
-  levelId: Types.ObjectId;
 
   saveAsync(): any;
   removeAsync(): any;
 }
 
-export interface ICourseModel extends mongoose.Model<ICourse> {
+export interface ITrackModel extends mongoose.Model<ITrack> {
   aggregatePaginateCustom(
     aggregates: mongoose.Aggregate<any[]>,
     arg1: { page: number; limit: number }
@@ -101,13 +80,13 @@ export interface ICourseModel extends mongoose.Model<ICourse> {
   execAsync(): Promise<any>;
 }
 
-CourseSchema.plugin(slug);
-CourseSchema.plugin(paginate);
-CourseSchema.plugin(aggregatePaginate);
+TrackSchema.plugin(slug);
+TrackSchema.plugin(paginate);
+TrackSchema.plugin(aggregatePaginate);
 
-CourseSchema.index({
+TrackSchema.index({
   title: "text",
 });
 
-const model = mongoose.model<ICourse, ICourseModel>("Course", CourseSchema);
-export { model as Course };
+const model = mongoose.model<ITrack, ITrackModel>("Track", TrackSchema);
+export { model as Track };

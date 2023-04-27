@@ -48,7 +48,6 @@ const authService: IAuthService = {
   register: async (registerRequestDTO: RegisterRequestDTO) => {
     //Check username is exist in DB
     const response = await userService.create(registerRequestDTO);
-    await new User_Course({ userId: response._id }).save();
     return response;
   },
 
