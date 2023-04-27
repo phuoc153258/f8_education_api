@@ -14,6 +14,8 @@ const courseService: ICourseService = {
   combined: async (user: any) => {
     try {
       const courses = await Course.find({}).exec();
+      if (!courses) return Promise.reject(new Error("Course is not exits !!!"));
+
       const newCoursesPromises = courses.map(async (item) => {
         let course = {
           image: item.image,
@@ -77,30 +79,68 @@ const courseService: ICourseService = {
     }
   },
   courseDetail: async (user, slug) => {
-    // try {
-    //   const course = await Course.findOne({ slug: slug });
-    //   if (!course) return Promise.reject(new Error("Course is not exits !!!"));
-    //   const level = await Course_Level.findOne({ _id: course.levelId }).exec();
-    //   const willLearns = await Course_Will_Learn.find({
-    //     courseId: course._id,
-    //   });
-    //   const requirements = await Course_Requirement.find({
-    //     courseId: course._id,
-    //   });
-    //   const userCourses = await User_Course.findOne({
-    //     userId: new mongoose.Types.ObjectId(user._id),
-    //   }).exec();
-    //   const newCourse = new CourseDetailResponseDTO().responseDTO(
-    //     course,
-    //     userCourses,
-    //     willLearns,
-    //     requirements,
-    //     level
-    //   );
-    //   return Promise.resolve(newCourse);
-    // } catch (error) {
-    //   return Promise.reject(error);
-    // }
+    try {
+      const course = await Course.findOne({ slug: slug });
+      if (!course) return Promise.reject(new Error("Course is not exits !!!"));
+
+      let courseTemp = {
+        image: course.image,
+        icon: course.icon,
+        studentCount: course.studentCount,
+        isDeleted: course.isDeleted,
+        deletedAt: course.deletedAt,
+        isPublished: course.isPublished,
+        publishedAt: course.publishedAt,
+        levelId: course.levelId,
+        _id: course._id,
+        title: course.title,
+        description: course.description,
+        slug: course.slug,
+        createdAt: course.createdAt,
+        updatedAt: course.updatedAt,
+        tracks: [],
+        isRegister: false,
+        level: null,
+        willLearns: [],
+        requirements: [],
+      };
+      const tracks = await Track.aggregate([
+        {
+          $match: {
+            courseId: course._id,
+          },
+        },
+        {
+          $lookup: {
+            from: "steps",
+            localField: "_id",
+            foreignField: "trackId",
+            as: "steps",
+          },
+        },
+      ]);
+      courseTemp.tracks = tracks;
+
+      const userCoursesTemp = await User_Course.findOne({
+        userId: new mongoose.Types.ObjectId(user._id),
+        courseId: course._id,
+      }).exec();
+      if (userCoursesTemp !== null) courseTemp.isRegister = true;
+
+      courseTemp.level = await Course_Level.findOne({
+        _id: course.levelId,
+      }).exec();
+
+      courseTemp.willLearns = await Course_Will_Learn.find({
+        courseId: course._id,
+      });
+      courseTemp.requirements = await Course_Requirement.find({
+        courseId: course._id,
+      });
+      return courseTemp;
+    } catch (error) {
+      return Promise.reject(error);
+    }
   },
   tracks: async (user, slug) => {
     try {

@@ -14,7 +14,6 @@ const courseController = {
   analytics: async (req, res, next) => {
     try {
       const courseResponse = await courseService.analytics();
-      console.log(courseResponse);
       return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
     } catch (error) {
       next(error);
