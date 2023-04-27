@@ -24,6 +24,7 @@ router
 
 router
   .route("/:slug")
+  .post(authMiddleWare.requireLogin, courseController.registerCourse)
   .get(authMiddleWare.requireLogin, courseController.courseDetail);
 
 export default router;
