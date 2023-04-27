@@ -384,6 +384,41 @@ const courseService: ICourseService = {
       return Promise.reject(error);
     }
   },
+  completedLesson: async (user, slug, id) => {
+    try {
+      const course = await Course.findOne({ slug: slug }).exec();
+      if (!course) return Promise.reject(new Error("Course is not exits !!!"));
+
+      const isExistUserCourse = await User_Course.findOne({
+        userId: new mongoose.Types.ObjectId(user._id),
+        courseId: course._id,
+        lessonCompleted: {
+          $elemMatch: { stepId: new mongoose.Types.ObjectId(id) },
+        },
+      });
+      if (isExistUserCourse) return Promise.resolve(isExistUserCourse);
+
+      const userCourse = await User_Course.updateOne(
+        { userId: new mongoose.Types.ObjectId(user._id), courseId: course._id },
+        {
+          $push: {
+            lessonCompleted: {
+              _id: new mongoose.Types.ObjectId(),
+              stepId: new mongoose.Types.ObjectId(id),
+            },
+          },
+        }
+      );
+      return Promise.resolve(
+        await User_Course.findOne({
+          userId: new mongoose.Types.ObjectId(user._id),
+          courseId: course._id,
+        })
+      );
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  },
 };
 
 export default courseService;

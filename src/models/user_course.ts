@@ -21,8 +21,16 @@ const User_CourseSchema = new Schema({
   },
   lessonCompleted: [
     {
-      _id: mongoose.Types.ObjectId,
-      stepId: mongoose.Types.ObjectId,
+      _id: {
+        type: mongoose.Types.ObjectId,
+        require: true,
+        unique: true,
+      },
+      stepId: {
+        type: mongoose.Types.ObjectId,
+        require: true,
+        unique: true,
+      },
     },
   ],
 });

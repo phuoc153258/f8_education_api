@@ -6,4 +6,5 @@ export interface ICourseService {
   steps: (user: any, slug: any) => any;
   stepsDetail: (user: any, slug: any, id: any) => any;
   registerCourse: (user: any, slug: any) => any;
+  completedLesson: (user: any, slug: any, id) => any;
 }

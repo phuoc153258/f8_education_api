@@ -70,6 +70,21 @@ const courseController = {
       next(error);
     }
   },
+  completedLesson: async (req, res, next) => {
+    try {
+      const { user } = req;
+      const { slug } = req.params;
+      const { stepId } = req.body;
+      const courseResponse = await courseService.completedLesson(
+        user,
+        slug,
+        stepId
+      );
+      return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
+    } catch (error) {
+      next(error);
+    }
+  },
 };
 
 export default courseController;

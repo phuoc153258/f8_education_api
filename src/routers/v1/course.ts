@@ -13,6 +13,10 @@ router
   .get(authMiddleWare.requireLogin, courseController.steps);
 
 router
+  .route("/:slug/completed-lesson")
+  .post(authMiddleWare.requireLogin, courseController.completedLesson);
+
+router
   .route("/tracks/:slug")
   .get(authMiddleWare.requireLogin, courseController.tracks);
 
