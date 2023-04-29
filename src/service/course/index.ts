@@ -52,12 +52,13 @@ const courseService: ICourseService = {
           },
         ]);
         course.tracks = tracks;
-
-        const userCourses = await User_Course.findOne({
-          userId: new mongoose.Types.ObjectId(user._id),
-          courseId: item._id,
-        }).exec();
-        if (userCourses !== null) course.isRegister = true;
+        if (user) {
+          const userCourses = await User_Course.findOne({
+            userId: new mongoose.Types.ObjectId(user._id),
+            courseId: item._id,
+          }).exec();
+          if (userCourses !== null) course.isRegister = true;
+        }
         return course;
       });
       const newCourses = await Promise.all(newCoursesPromises);
@@ -119,7 +120,14 @@ const courseService: ICourseService = {
             as: "steps",
           },
         },
+        {
+          $sort: {
+            "track.position": 1,
+            "steps.position": 1,
+          },
+        },
       ]);
+
       courseTemp.tracks = tracks;
 
       const userCoursesTemp = await User_Course.findOne({
@@ -153,6 +161,7 @@ const courseService: ICourseService = {
         isRegister: true,
         userProgress: [],
         trackStepCount: 0,
+        passPercent: 0,
       };
       const tracks = await Track.aggregate([
         {
@@ -168,7 +177,14 @@ const courseService: ICourseService = {
             as: "steps",
           },
         },
+        {
+          $sort: {
+            "track.position": 1,
+            "steps.position": 1,
+          },
+        },
       ]);
+
       trackTemp.tracks = tracks;
 
       const userCourses = await User_Course.findOne({
@@ -193,7 +209,8 @@ const courseService: ICourseService = {
           trackTemp.trackStepCount += 1;
         });
       });
-
+      trackTemp.passPercent =
+        100 * (trackTemp.userProgress.length / trackTemp.trackStepCount);
       return Promise.resolve(trackTemp);
     } catch (error) {
       return Promise.reject(error);
@@ -216,6 +233,12 @@ const courseService: ICourseService = {
             localField: "_id",
             foreignField: "trackId",
             as: "steps",
+          },
+        },
+        {
+          $sort: {
+            "track.position": 1,
+            "steps.position": 1,
           },
         },
       ]);
@@ -245,7 +268,7 @@ const courseService: ICourseService = {
       } else {
         tracks.forEach((x) => {
           x.steps.forEach((y) => {
-            if (userCourse.indexVideo == index + 1) {
+            if (userCourse.indexVideo - 1 == index) {
               previous_id = y._id;
             }
             if (userCourse.indexVideo == index) {
@@ -253,7 +276,7 @@ const courseService: ICourseService = {
               step = y;
               track = x;
             }
-            if (userCourse.indexVideo == index - 1) {
+            if (userCourse.indexVideo + 1 == index) {
               next_id = y._id;
             }
             index++;
@@ -294,6 +317,12 @@ const courseService: ICourseService = {
             as: "steps",
           },
         },
+        {
+          $sort: {
+            "track.position": 1,
+            "steps.position": 1,
+          },
+        },
       ]);
 
       let continue_id = "";
@@ -321,9 +350,10 @@ const courseService: ICourseService = {
         step = tracks[0].steps[0];
       } else {
         tracks.forEach((x) => {
-          x.steps.forEach((y) => {
+          x.steps.forEach(async (y) => {
             if (y._id.toString() == id) {
               userCourse.indexVideo = indexTemp;
+              await userCourse.save();
             }
             indexTemp++;
           });
@@ -331,7 +361,7 @@ const courseService: ICourseService = {
 
         tracks.forEach((x) => {
           x.steps.forEach((y) => {
-            if (userCourse.indexVideo == index + 1) {
+            if (userCourse.indexVideo - 1 == index) {
               previous_id = y._id;
             }
             if (userCourse.indexVideo == index) {
@@ -339,14 +369,14 @@ const courseService: ICourseService = {
               step = y;
               track = x;
             }
-            if (userCourse.indexVideo == index - 1) {
+            if (userCourse.indexVideo + 1 == index) {
               next_id = y._id;
             }
             index++;
           });
         });
       }
-      await userCourse.save();
+
       return Promise.resolve({
         isRegister: true,
         course,
@@ -397,14 +427,13 @@ const courseService: ICourseService = {
         },
       });
       if (isExistUserCourse) return Promise.resolve(isExistUserCourse);
-
       const userCourse = await User_Course.updateOne(
         { userId: new mongoose.Types.ObjectId(user._id), courseId: course._id },
         {
           $push: {
             lessonCompleted: {
               _id: new mongoose.Types.ObjectId(),
-              stepId: new mongoose.Types.ObjectId(id),
+              stepId: mongoose.Types.ObjectId(id),
             },
           },
         }
