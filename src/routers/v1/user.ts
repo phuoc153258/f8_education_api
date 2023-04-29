@@ -23,9 +23,11 @@ router
     authorMiddleWare.checkUserRole(ROLE.ADMIN),
     userController.deactive
   );
+
+router.route("/:slug").get(authMiddleWare.isLogin, userController.get);
+
 router
   .route("/:userId")
-  .get(authMiddleWare.requireLogin, userController.get)
   .put(
     fileUpload({ createParentPath: true }),
     authMiddleWare.requireLogin,

@@ -20,16 +20,32 @@ import GoogleRequestDTO from "../../dtos/request/oatuh2/GoogleRequestDTO";
 import { NAME_DEFAULT } from "../../constants/user";
 import FacebookRequestDTO from "../../dtos/request/oatuh2/FacbookRequestDTO";
 import GitHubRequestDTO from "../../dtos/request/oatuh2/GitHubRequestDTO";
+import { User_Course } from "../../models/user_course";
+import { Course } from "../../models/course";
 
 const userService: IUserService = {
-  get: async (id) => {
+  get: async (slug) => {
     try {
-      const query = { _id: new mongoose.Types.ObjectId(id), is_active: true };
-      const user = await userQuery.getById(query);
+      const user = await User.findOne({ slug: slug }).exec();
       if (!user)
         return Promise.reject(new Error(UserErrorMessage.USER_NOT_FOUND));
-      const response = new UserResponseDTO().responseDTO(user);
-      return Promise.resolve(response);
+
+      const courses = await Course.aggregate([
+        {
+          $lookup: {
+            from: "user_courses",
+            localField: "_id",
+            foreignField: "courseId",
+            as: "user_courses",
+          },
+        },
+        {
+          $match: {
+            "user_courses.userId": user._id,
+          },
+        },
+      ]);
+      return Promise.resolve({ user, courses });
     } catch (err) {
       return Promise.reject(err);
     }
