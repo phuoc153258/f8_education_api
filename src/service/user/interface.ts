@@ -4,7 +4,7 @@ import { IUpdateUserRequestDTO } from "../../dtos/request/user/UpdateUserRequest
 import RegisterRequestDTO from "../../dtos/request/auth/RegisterRequestDTO";
 
 export interface IUserService {
-  get: (userId: mongoose.Types._ObjectId) => Promise<any>;
+  get: (slug: any) => any;
   list: (options: QueryOptions) => Promise<any>;
   update: (
     request: IUpdateUserRequestDTO,

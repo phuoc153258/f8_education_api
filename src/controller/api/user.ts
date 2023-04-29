@@ -28,8 +28,8 @@ const userController = {
   },
   get: async (req, res, next) => {
     try {
-      const { userId } = req.params;
-      const user = await userService.get(userId);
+      const { slug } = req.params;
+      const user = await userService.get(slug);
       return res.success(BaseSuccesMessage.SUCCESS, user);
     } catch (error) {
       next(error);
