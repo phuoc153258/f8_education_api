@@ -14,4 +14,5 @@ export interface IUserService {
   get_me: (req: any) => Promise<any>;
   importListUser: (listUser: Array<RegisterRequestDTO>) => Promise<any>;
   create: (request: RegisterRequestDTO, userCount?: number) => Promise<any>;
+  updateCurrentUser: (user: any, body: any, files: any) => any;
 }

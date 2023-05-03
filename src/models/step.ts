@@ -95,9 +95,9 @@ StepSchema.plugin(slug);
 StepSchema.plugin(paginate);
 StepSchema.plugin(aggregatePaginate);
 
-StepSchema.index({
-  title: "text",
-});
+// StepSchema.index({
+//   title: "text",
+// });
 
 const model = mongoose.model<IStep, IStepModel>("Step", StepSchema);
 export { model as Step };

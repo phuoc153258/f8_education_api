@@ -56,9 +56,9 @@ Course_RequirementSchema.plugin(slug);
 Course_RequirementSchema.plugin(paginate);
 Course_RequirementSchema.plugin(aggregatePaginate);
 
-Course_RequirementSchema.index({
-  content: "text",
-});
+// Course_RequirementSchema.index({
+//   content: "text",
+// });
 
 const model = mongoose.model<ICourse_Requirement, ICourse_RequirementModel>(
   "Course_Requirement",

@@ -3,7 +3,7 @@ import env from "../../../config/env";
 import QueryOptions from "../../dtos/QueryOptions";
 import UpdateUserRequestDTO from "../../dtos/request/user/UpdateUserRequestDTO";
 import CreateUserResponseDTO from "../../dtos/response/user/CreateUserResponseDTO";
-import UserResponseDTO from "../../dtos/response/user/UserResponseDTO";
+// import UserResponseDTO from "../../dtos/response/user/UserResponseDTO";
 
 import { User } from "../../models";
 import { userQuery } from "../../queries";
@@ -97,8 +97,8 @@ const userService: IUserService = {
 
       const userUpdate = await user.saveAsync();
 
-      const response = new UserResponseDTO().responseDTO(userUpdate);
-      return Promise.resolve(response);
+      // const response = new UserResponseDTO().responseDTO(userUpdate);
+      return Promise.resolve(userUpdate);
     } catch (err) {
       return Promise.reject(err);
     }
@@ -125,7 +125,14 @@ const userService: IUserService = {
     try {
       const token = req.headers.authorization.split(" ")[1].trim();
       const info = tokenService.verifyToken(token, env.jwt.secret);
-      const user = await userService.get(info._id);
+      const query = {
+        _id: new mongoose.Types.ObjectId(info._id),
+        is_active: true,
+      };
+      const user = await userQuery.getById(query);
+      if (!user)
+        return Promise.reject(new Error(UserErrorMessage.USER_NOT_FOUND));
+      // const response = new UserResponseDTO().responseDTO(user);
       return Promise.resolve(user);
     } catch (err) {
       return Promise.reject(err);
@@ -165,9 +172,9 @@ const userService: IUserService = {
       if (userFound) {
         throw new Error(AuthErrorMessage.EMAIL_IS_EXIST);
       }
-      const userCountCurrent = userCount
-        ? (await User.countDocuments()) + 1 + userCount
-        : (await User.countDocuments()) + 1;
+      // const userCountCurrent = userCount
+      //   ? (await User.countDocuments()) + 1 + userCount
+      //   : (await User.countDocuments()) + 1;
       // Register success
       const newUserDTO = new CreateUserResponseDTO().toJSON(request);
       const newUser = {
@@ -175,8 +182,62 @@ const userService: IUserService = {
       };
       const user = new User(newUser);
       const userSave = await user.saveAsync();
-      const response = new UserResponseDTO().responseDTO(userSave);
-      return Promise.resolve(response);
+      // const response = new UserResponseDTO().responseDTO(userSave);
+      return Promise.resolve(userSave);
+    } catch (err) {
+      return Promise.reject(err);
+    }
+  },
+  updateCurrentUser: async (user: any, body: any, files: any) => {
+    try {
+      const currentUser = await User.findOne({
+        _id: new mongoose.Types.ObjectId(user._id),
+      });
+
+      if (!currentUser)
+        return Promise.reject(new Error(UserErrorMessage.USER_NOT_FOUND));
+
+      if (body.fullname) {
+        currentUser.fullname = body.fullname;
+      }
+
+      if (body.bio) {
+        currentUser.bio = body.bio;
+      }
+
+      if (body.phone) {
+        currentUser.phone = body.phone;
+      }
+
+      if (body.facebook_link) {
+        currentUser.facebook_link = body.facebook_link;
+      }
+
+      if (body.instagram_link) {
+        currentUser.instagram_link = body.instagram_link;
+      }
+
+      if (body.linkedin_link) {
+        currentUser.linkedin_link = body.linkedin_link;
+      }
+
+      if (body.twitter_link) {
+        currentUser.twitter_link = body.twitter_link;
+      }
+
+      if (body.youtube_link) {
+        currentUser.youtube_link = body.youtube_link;
+      }
+
+      if (files) {
+        const response = await fileService.upload(files);
+        if (response) {
+          currentUser.avatar = response.name;
+        }
+      }
+
+      const userUpdate = await currentUser.save();
+      return Promise.resolve(userUpdate);
     } catch (err) {
       return Promise.reject(err);
     }

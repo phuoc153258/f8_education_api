@@ -1,5 +1,5 @@
 import { Types } from "mongoose";
-import { IUser } from "../../../models/user";
+// import { IUser } from "../../../models/user";
 
 export interface IUserResponseDTO {
   _id?: Types.ObjectId;
@@ -164,7 +164,7 @@ export default class UserResponseDTO {
     return request;
   }
 
-  responseDTO(model: IUser) {
+  responseDTO(model: any) {
     if (!model) return null;
     return (
       this.setId(model._id)
