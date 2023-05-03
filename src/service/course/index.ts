@@ -407,6 +407,10 @@ const courseService: ICourseService = {
           indexVideo: 0,
           lessonCompleted: [],
         });
+
+        course.studentCount += 1;
+        await course.save();
+
         await user_course.save();
         return Promise.resolve(user_course);
       } else return Promise.resolve(userCourse);

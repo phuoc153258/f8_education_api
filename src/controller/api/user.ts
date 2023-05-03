@@ -89,6 +89,20 @@ const userController = {
       next(err);
     }
   },
+
+  updateCurrentUser: async (req, res, next) => {
+    try {
+      const { user } = req;
+      const userResponse = await userService.updateCurrentUser(
+        user,
+        req.body,
+        req.files
+      );
+      return res.success(BaseSuccesMessage.SUCCESS, userResponse);
+    } catch (err) {
+      next(err);
+    }
+  },
 };
 
 export default userController;

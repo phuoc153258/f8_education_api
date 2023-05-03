@@ -56,15 +56,23 @@ const UserSchema = new Schema(
       type: String,
       default: "",
     },
-    facebook_id: {
+    facebook_link: {
       type: String,
       default: "",
     },
-    google_id: {
+    instagram_link: {
       type: String,
       default: "",
     },
-    github_id: {
+    linkedin_link: {
+      type: String,
+      default: "",
+    },
+    twitter_link: {
+      type: String,
+      default: "",
+    },
+    youtube_link: {
       type: String,
       default: "",
     },
@@ -85,9 +93,12 @@ export interface IUser extends mongoose.Document {
   slug: string;
   fullname: string;
   bio: string;
-  facebook_id: string;
-  google_id: string;
-  github_id: string;
+  facebook_link: string;
+  instagram_link: string;
+  linkedin_link: string;
+  twitter_link: string;
+  youtube_link: string;
+
   createdAt: any;
   updatedAt: any;
   saveAsync(): any;

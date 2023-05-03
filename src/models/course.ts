@@ -105,9 +105,9 @@ CourseSchema.plugin(slug);
 CourseSchema.plugin(paginate);
 CourseSchema.plugin(aggregatePaginate);
 
-CourseSchema.index({
-  title: "text",
-});
+// CourseSchema.index({
+//   title: "text",
+// });
 
 const model = mongoose.model<ICourse, ICourseModel>("Course", CourseSchema);
 export { model as Course };

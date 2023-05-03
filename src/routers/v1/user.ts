@@ -6,7 +6,6 @@ import authMiddleWare from "../../middlewares/auth/authenMiddleWare";
 import authorMiddleWare from "../../middlewares/auth/authorMiddleWare";
 
 const router = express.Router({ mergeParams: true });
-router.route("/").get(authMiddleWare.requireLogin, userController.list);
 router.route("/get-me").get(authMiddleWare.requireLogin, userController.get_me);
 router
   .route("/import-list")
@@ -33,5 +32,14 @@ router
     authMiddleWare.requireLogin,
     userController.update
   );
+
+router
+  .route("/")
+  .put(
+    fileUpload({ createParentPath: true }),
+    authMiddleWare.requireLogin,
+    userController.updateCurrentUser
+  )
+  .get(authMiddleWare.requireLogin, userController.list);
 
 export default router;
