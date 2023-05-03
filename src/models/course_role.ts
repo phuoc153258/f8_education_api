@@ -97,9 +97,9 @@ Course_RoleSchema.plugin(slug);
 Course_RoleSchema.plugin(paginate);
 Course_RoleSchema.plugin(aggregatePaginate);
 
-Course_RoleSchema.index({
-  name: "text",
-});
+// Course_RoleSchema.index({
+//   name: "text",
+// });
 
 const model = mongoose.model<ICourse_Role, ICourse_RoleModel>(
   "Course_Role",

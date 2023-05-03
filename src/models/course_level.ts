@@ -65,9 +65,9 @@ Course_LevelSchema.plugin(slug);
 Course_LevelSchema.plugin(paginate);
 Course_LevelSchema.plugin(aggregatePaginate);
 
-Course_LevelSchema.index({
-  name: "text",
-});
+// Course_LevelSchema.index({
+//   name: "text",
+// });
 
 const model = mongoose.model<ICourse_Level, ICourse_LevelModel>(
   "Course_Level",

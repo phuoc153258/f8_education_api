@@ -56,9 +56,9 @@ Course_Will_LearnSchema.plugin(slug);
 Course_Will_LearnSchema.plugin(paginate);
 Course_Will_LearnSchema.plugin(aggregatePaginate);
 
-Course_Will_LearnSchema.index({
-  content: "text",
-});
+// Course_Will_LearnSchema.index({
+//   content: "text",
+// });
 
 const model = mongoose.model<ICourse_Will_Learn, ICourse_Will_LearnModel>(
   "Course_Will_Learn",

@@ -24,12 +24,10 @@ const User_CourseSchema = new Schema({
       _id: {
         type: mongoose.Types.ObjectId,
         require: true,
-        unique: true,
       },
       stepId: {
         type: mongoose.Types.ObjectId,
         require: true,
-        unique: true,
       },
     },
   ],
@@ -69,9 +67,9 @@ User_CourseSchema.plugin(slug);
 User_CourseSchema.plugin(paginate);
 User_CourseSchema.plugin(aggregatePaginate);
 
-User_CourseSchema.index({
-  userId: "text",
-});
+// User_CourseSchema.index({
+//   userId: "text",
+// });
 
 const model = mongoose.model<IUser_Course, IUser_CourseModel>(
   "User_Course",

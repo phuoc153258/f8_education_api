@@ -84,9 +84,9 @@ TrackSchema.plugin(slug);
 TrackSchema.plugin(paginate);
 TrackSchema.plugin(aggregatePaginate);
 
-TrackSchema.index({
-  title: "text",
-});
+// TrackSchema.index({
+//   title: "text",
+// });
 
 const model = mongoose.model<ITrack, ITrackModel>("Track", TrackSchema);
 export { model as Track };

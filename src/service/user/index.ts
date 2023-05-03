@@ -125,8 +125,15 @@ const userService: IUserService = {
     try {
       const token = req.headers.authorization.split(" ")[1].trim();
       const info = tokenService.verifyToken(token, env.jwt.secret);
-      const user = await userService.get(info._id);
-      return Promise.resolve(user);
+      const query = {
+        _id: new mongoose.Types.ObjectId(info._id),
+        is_active: true,
+      };
+      const user = await userQuery.getById(query);
+      if (!user)
+        return Promise.reject(new Error(UserErrorMessage.USER_NOT_FOUND));
+      const response = new UserResponseDTO().responseDTO(user);
+      return Promise.resolve(response);
     } catch (err) {
       return Promise.reject(err);
     }
@@ -165,9 +172,9 @@ const userService: IUserService = {
       if (userFound) {
         throw new Error(AuthErrorMessage.EMAIL_IS_EXIST);
       }
-      const userCountCurrent = userCount
-        ? (await User.countDocuments()) + 1 + userCount
-        : (await User.countDocuments()) + 1;
+      // const userCountCurrent = userCount
+      //   ? (await User.countDocuments()) + 1 + userCount
+      //   : (await User.countDocuments()) + 1;
       // Register success
       const newUserDTO = new CreateUserResponseDTO().toJSON(request);
       const newUser = {

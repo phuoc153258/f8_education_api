@@ -67,9 +67,9 @@ User_RoleSchema.plugin(slug);
 User_RoleSchema.plugin(paginate);
 User_RoleSchema.plugin(aggregatePaginate);
 
-User_RoleSchema.index({
-  name: "text",
-});
+// User_RoleSchema.index({
+//   name: "text",
+// });
 
 const model = mongoose.model<IUser_Role, IUser_RoleModel>(
   "User_Role",
