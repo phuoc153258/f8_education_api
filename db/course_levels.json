@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "6368c48e06944445dfaf62c4"
+  },
+  "createdAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "isDeleted": false,
+  "level": 1,
+  "name": "Trình độ cơ bản",
+  "updatedAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6368c49106944445dfaf62c5"
+  },
+  "createdAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "isDeleted": false,
+  "level": 2,
+  "name": "Trình độ trung bình",
+  "updatedAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6368c49306944445dfaf62c6"
+  },
+  "createdAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "isDeleted": false,
+  "level": 3,
+  "name": "Trình độ nâng cao",
+  "updatedAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  }
+}]

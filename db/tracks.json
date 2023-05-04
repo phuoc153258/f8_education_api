@@ -1,0 +1,93 @@
+[{
+  "_id": {
+    "$oid": "6448fce1765e4d6f9e7c63ea"
+  },
+  "title": "Khái niệm kỹ thuật cần biết",
+  "position": 0,
+  "courseId": {
+    "$oid": "625eaba090066486a526731d"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6448fe5aa7b3663467d212f1"
+  },
+  "title": "Môi trường, con người IT",
+  "position": 1,
+  "courseId": {
+    "$oid": "625eaba090066486a526731d"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6448fe958339f19ade3a32ce"
+  },
+  "title": "Giới thiệu",
+  "position": 0,
+  "courseId": {
+    "$oid": "643a8d38ee9e538b2b1160ca"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6448fe9925e478c0ee986b5e"
+  },
+  "title": "Biến và kiểu dữ liệu",
+  "position": 1,
+  "courseId": {
+    "$oid": "643a8d38ee9e538b2b1160ca"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+}]

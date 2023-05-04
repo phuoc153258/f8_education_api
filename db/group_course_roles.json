@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "644d430b05d674b2933f6398"
+  },
+  "courseRoleId": {
+    "$oid": "6368cd5e06944445dfaf62cf"
+  },
+  "courses": [
+    {
+      "_id": {
+        "$oid": "644d43a905d674b2933f6399"
+      },
+      "courseId": {
+        "$oid": "625eaba090066486a526731d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "description": "Để học web Front-end chúng ta luôn bắt đầu với ngôn ngữ HTML và CSS, đây là 2 ngôn ngữ có mặt trong mọi website trên internet. Dù bạn có theo Back-end thì công việc của bạn nhiều khi vẫn cần phải ghép dữ liệu với HTML, CSS.",
+  "priority": "0",
+  "title": "HTML và CSS",
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+}]

@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "64377dc5adbbeada51860a91"
+  },
+  "content": "Hiểu về khái niệm SPA/MPA",
+  "courseId": {
+    "$oid": "625eaba090066486a526731d"
+  },
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64377dcc1800b5acc9c2476a"
+  },
+  "content": "Hiểu về khái niệm hooks",
+  "courseId": {
+    "$oid": "625eaba090066486a526731d"
+  },
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64377dd5a64b5d355f7a259a"
+  },
+  "content": "Hiểu cách ReactJS hoạt động",
+  "courseId": {
+    "$oid": "625eaba090066486a526731d"
+  },
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64377ddd7f7f784ea637ffb8"
+  },
+  "content": "Hiểu về function/class component",
+  "course_id": {
+    "$oid": "625eaba090066486a526731d"
+  },
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+}]

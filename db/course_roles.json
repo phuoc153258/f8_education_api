@@ -1,0 +1,59 @@
+[{
+  "_id": {
+    "$oid": "6368cd5e06944445dfaf62cf"
+  },
+  "content": "<p>Hầu hết các websites hoặc ứng dụng di động đều có 2 phần là Front-end và Back-end. Front-end là phần giao diện người dùng nhìn thấy và có thể tương tác, đó chính là các ứng dụng mobile hay những website bạn đã từng sử dụng. Vì vậy, nhiệm vụ của lập trình viên Front-end là xây dựng các giao diện đẹp, dễ sử dụng và tối ưu trải nghiệm người dùng.</p>\n<p>Tại Việt Nam, <strong><a href=\"/external-url?continue=https%3A%2F%2Fbit.ly%2F3p40c2D\" target=\"_blank\" rel=\"noreferrer\">lương trung bình</a></strong> cho lập trình viên front-end vào khoảng <strong>16.000.000đ</strong> / tháng.</p>\n<p>Dưới đây là các khóa học F8 đã tạo ra dành cho bất cứ ai theo đuổi sự nghiệp trở thành một lập trình viên Front-end.</p>\n<blockquote>\n<p>Các khóa học có thể chưa đầy đủ, F8 vẫn đang nỗ lực hoàn thiện trong thời gian sớm nhất.</p>\n</blockquote>",
+  "createdAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "description": "Lập trình viên Front-end là người xây dựng ra giao diện websites. Trong phần này F8 sẽ chia sẻ cho bạn lộ trình để trở thành lập trình viên Front-end nhé.\"",
+  "image": "learning_path_1.png",
+  "isDeleted": false,
+  "name": "Lộ trình học Front-end",
+  "slug": "front-end-development",
+  "updatedAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "courses": [
+    {
+      "_id": {
+        "$oid": "644d443005d674b2933f639f"
+      },
+      "courseId": {
+        "$oid": "625eaba090066486a526731d"
+      }
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6368cd6106944445dfaf62d0"
+  },
+  "content": "<p>Hầu hết các websites hoặc ứng dụng di động đều có 2 phần là Front-end và Back-end. Front-end là phần giao diện người dùng nhìn thấy và có thể tương tác, đó chính là các ứng dụng mobile hay những website bạn đã từng sử dụng. Vì vậy, nhiệm vụ của lập trình viên Front-end là xây dựng các giao diện đẹp, dễ sử dụng và tối ưu trải nghiệm người dùng.</p>\n<p>Tại Việt Nam, <strong><a href=\"/external-url?continue=https%3A%2F%2Fbit.ly%2F3p40c2D\" target=\"_blank\" rel=\"noreferrer\">lương trung bình</a></strong> cho lập trình viên front-end vào khoảng <strong>16.000.000đ</strong> / tháng.</p>\n<p>Dưới đây là các khóa học F8 đã tạo ra dành cho bất cứ ai theo đuổi sự nghiệp trở thành một lập trình viên Front-end.</p>\n<blockquote>\n<p>Các khóa học có thể chưa đầy đủ, F8 vẫn đang nỗ lực hoàn thiện trong thời gian sớm nhất.</p>\n</blockquote>",
+  "createdAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "description": "Trái với Front-end thì lập trình viên Back-end là người làm việc với dữ liệu, công việc thường nặng tính logic hơn. Chúng ta sẽ cùng tìm hiểu thêm về lộ trình học Back-end nhé.",
+  "image": "learning_path_2.png",
+  "isDeleted": false,
+  "name": "Lộ trình học Back-end",
+  "slug": "back-end-development",
+  "updatedAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "courses": [
+    {
+      "_id": {
+        "$oid": "644d447305d674b2933f63a3"
+      },
+      "courseId": {
+        "$oid": "643a8d38ee9e538b2b1160ca"
+      }
+    }
+  ]
+}]

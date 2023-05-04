@@ -68,7 +68,7 @@ export interface ICourse_Role extends mongoose.Document {
   isDeleted: boolean;
   deletedAt: Date;
   courses: Array<any>;
-
+  // group_course_roles: Array<any>;
   saveAsync(): any;
   removeAsync(): any;
 }

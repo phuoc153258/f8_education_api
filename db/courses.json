@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "625eaba090066486a526731d"
+  },
+  "title": "Kiến Thức Nhập Môn IT",
+  "description": "Để có cái nhìn tổng quan về ngành IT - Lập trình web các bạn nên xem các videos tại khóa này trước nhé.",
+  "slug": "lessons-for-newbie",
+  "image": "course_image_1.png",
+  "icon": "course_icon_1.png",
+  "studentCount": 1501,
+  "createdAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-03T12:06:08.202Z"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "levelId": {
+    "$oid": "6368c48e06944445dfaf62c4"
+  }
+},{
+  "_id": {
+    "$oid": "643a8d38ee9e538b2b1160ca"
+  },
+  "title": "Lập trình C++ cơ bản, nâng cao",
+  "description": "Khóa học lập trình C++ từ cơ bản tới nâng cao dành cho người mới bắt đầu. Mục tiêu của khóa học này nhằm giúp các bạn nắm được các khái niệm căn cơ của lập trình, giúp các bạn có nền tảng vững chắc để chinh phục con đường trở thành một lập trình viên.",
+  "slug": "lap-trinh-c-co-ban-toi-nang-cao",
+  "image": "course_image_2.png",
+  "icon": "course_icon_2.png",
+  "studentCount": 1500,
+  "createdAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "levelId": {
+    "$oid": "6368c48e06944445dfaf62c4"
+  }
+}]
