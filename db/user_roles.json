@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "63664c0b0ec8388637abd10a"
+  },
+  "name": "Admin",
+  "createdAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "isDeleted": false,
+  "updatedAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "level": 4
+},{
+  "_id": {
+    "$oid": "63664c2a0ec8388637abd10b"
+  },
+  "name": "User",
+  "createdAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "deletedAt": {
+    "$date": "1999-12-31T17:00:00.000Z"
+  },
+  "isDeleted": false,
+  "updatedAt": {
+    "$date": "2021-12-31T17:00:00.000Z"
+  },
+  "level": 1
+}]

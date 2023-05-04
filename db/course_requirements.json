@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "64377c8b821473bcbbfda964"
+  },
+  "content": "Hiểu biết về mô hình Client-Server",
+  "courseId": {
+    "$oid": "625eaba090066486a526731d"
+  },
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64377d263377bf7825c1ddd9"
+  },
+  "content": "Phân biệt rõ ràng được Front-end & Back-end",
+  "courseId": {
+    "$oid": "625eaba090066486a526731d"
+  },
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64377d34f25a0060803beeb7"
+  },
+  "content": "Nắm chắc HTML, CSS, đã có sản phẩm tự tay làm",
+  "courseId": {
+    "$oid": "625eaba090066486a526731d"
+  },
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64377d3b48f2c552b4a3ca7e"
+  },
+  "content": "Nắm chắc Javascript cơ bản và nâng cao",
+  "courseId": {
+    "$oid": "625eaba090066486a526731d"
+  },
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+}]

@@ -30,6 +30,69 @@ const learningPathService: ILearningPathService = {
       return Promise.reject(err);
     }
   },
+  show: async (user: any, slug: any) => {
+    try {
+      // const courseRole = await Course_Role.aggregate([
+      //   {
+      //     $match: {
+      //       slug: slug,
+      //     },
+      //   },
+      //   {
+      //     $lookup: {
+      //       from: "group_course_roles",
+      //       localField: "_id",
+      //       foreignField: "courseRoleId",
+      //       as: "group_course_roles",
+      //     },
+      //   },
+      //   {
+      //     $lookup: {
+      //       from: "courses",
+      //       localField: "group_course_roles.courses.courseId",
+      //       foreignField: "_id",
+      //       as: "courses",
+      //     },
+      //   },
+      // ]);
+      let courseRole: any = await Course_Role.aggregate([
+        {
+          $limit: 1,
+        },
+        {
+          $match: {
+            slug: slug,
+          },
+        },
+        {
+          $lookup: {
+            from: "group_course_roles",
+            localField: "_id",
+            foreignField: "courseRoleId",
+            as: "group_course_roles",
+          },
+        },
+      ]);
+      const learningPathResponsePromise = courseRole[0].group_course_roles.map(
+        async (item: any) => {
+          let newItem = { ...item, courses: [] };
+          const newCourses = item.courses.map(async (course: any) => {
+            return await Course.findOne({
+              _id: mongoose.Types.ObjectId(course.courseId),
+            });
+          });
+          newItem.courses = await Promise.all(newCourses);
+          return newItem;
+        }
+      );
+      courseRole[0].group_course_roles = await Promise.all(
+        learningPathResponsePromise
+      );
+      return Promise.resolve(courseRole[0]);
+    } catch (err) {
+      return Promise.reject(err);
+    }
+  },
 };
 
 export default learningPathService;

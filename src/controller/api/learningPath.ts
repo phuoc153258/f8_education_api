@@ -10,6 +10,16 @@ const learningPathController = {
       next(error);
     }
   },
+  show: async (req, res, next) => {
+    try {
+      const { user } = req;
+      const { slug } = req.params;
+      const learningPathResponse = await learningPathService.show(user, slug);
+      return res.success(BaseSuccesMessage.SUCCESS, learningPathResponse);
+    } catch (error) {
+      next(error);
+    }
+  },
 };
 
 export default learningPathController;

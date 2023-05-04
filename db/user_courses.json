@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "64524e3079305e37d43bafb5"
+  },
+  "userId": {
+    "$oid": "6321a87930971e9422a59e53"
+  },
+  "courseId": {
+    "$oid": "625eaba090066486a526731d"
+  },
+  "indexVideo": 0,
+  "lessonCompleted": [],
+  "__v": 0
+}]
