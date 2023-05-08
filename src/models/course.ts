@@ -55,6 +55,14 @@ const CourseSchema = new Schema(
       type: mongoose.Types.ObjectId,
       default: "6368c48e06944445dfaf62c4",
     },
+    isPro: {
+      type: Boolean,
+      default: false,
+    },
+    price: {
+      type: Number,
+      default: 0,
+    },
   },
   {
     timestamps: true,
@@ -76,7 +84,8 @@ export interface ICourse extends mongoose.Document {
   createdAt: Date;
   updatedAt: Date;
   levelId: Types.ObjectId;
-
+  isPro: boolean;
+  price: number;
   saveAsync(): any;
   removeAsync(): any;
 }

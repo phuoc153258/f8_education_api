@@ -6,6 +6,7 @@ import mailRouter from "./mail";
 import otpRouter from "./otp";
 import courseRouter from "./course";
 import learningPathRouter from "./learningPath";
+import paymentRouter from "./payment";
 // import oauth2Router from "./oauth2";
 
 const router = express.Router();
@@ -20,6 +21,7 @@ router.use("/mail", mailRouter);
 router.use("/otp", otpRouter);
 router.use("/course", courseRouter);
 router.use("/learning-path", learningPathRouter);
+router.use("/payment", paymentRouter);
 
 // router.use("/oauth2", oauth2Router);
 
