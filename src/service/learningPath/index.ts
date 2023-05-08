@@ -57,9 +57,6 @@ const learningPathService: ILearningPathService = {
       // ]);
       let courseRole: any = await Course_Role.aggregate([
         {
-          $limit: 1,
-        },
-        {
           $match: {
             slug: slug,
           },

@@ -12,9 +12,9 @@ import { Step } from "../../models/step";
 import { User } from "../../models";
 
 const courseService: ICourseService = {
-  combined: async (user: any) => {
+  combined: async (user: any, isPro = false) => {
     try {
-      const courses = await Course.find({}).exec();
+      const courses = await Course.find({ isPro: isPro }).exec();
       if (!courses) return Promise.reject(new Error("Course is not exits !!!"));
 
       const newCoursesPromises = courses.map(async (item) => {
@@ -35,6 +35,8 @@ const courseService: ICourseService = {
           updatedAt: item.updatedAt,
           tracks: [],
           isRegister: false,
+          isPro: item.isPro,
+          price: item.price,
         };
         const tracks = await Track.aggregate([
           {
@@ -70,7 +72,9 @@ const courseService: ICourseService = {
   },
   analytics: async () => {
     try {
-      const courses = await Course.find({}).select("studentCount").exec();
+      const courses = await Course.find({ isPro: false })
+        .select("studentCount")
+        .exec();
       let studentCount = 0;
       courses.forEach((item) => {
         studentCount += item.studentCount;
@@ -82,7 +86,10 @@ const courseService: ICourseService = {
   },
   courseDetail: async (user, slug) => {
     try {
-      const course = await Course.findOne({ slug: slug });
+      const course = await Course.findOne({
+        slug: slug,
+        isPublished: true,
+      });
       if (!course) return Promise.reject(new Error("Course is not exits !!!"));
 
       let courseTemp = {
@@ -134,6 +141,10 @@ const courseService: ICourseService = {
         userId: new mongoose.Types.ObjectId(user._id),
         courseId: course._id,
       }).exec();
+
+      if (course.isPro === true && courseTemp === null)
+        return Promise.reject(new Error("You must buy this course first !"));
+
       if (userCoursesTemp !== null) courseTemp.isRegister = true;
 
       courseTemp.level = await Course_Level.findOne({
@@ -191,18 +202,10 @@ const courseService: ICourseService = {
         userId: new mongoose.Types.ObjectId(user._id),
         courseId: course._id,
       }).exec();
-      if (!userCourses || userCourses === null) {
-        const user_course = new User_Course({
-          userId: mongoose.Types.ObjectId(user._id),
-          courseId: course._id,
-          indexVideo: 0,
-          lessonCompleted: [],
-        });
-        await user_course.save();
-        trackTemp.userProgress = [];
-      } else {
-        trackTemp.userProgress = userCourses.lessonCompleted;
-      }
+
+      if (!userCourses || userCourses === null)
+        return Promise.reject(new Error("Bạn chưa đăng ký khóa học này !"));
+      else trackTemp.userProgress = userCourses.lessonCompleted;
 
       tracks.forEach((track) => {
         track.steps.forEach((step) => {
@@ -254,18 +257,9 @@ const courseService: ICourseService = {
         userId: new mongoose.Types.ObjectId(user._id),
         courseId: course._id,
       }).exec();
-      if (!userCourse || userCourse === null) {
-        const user_course = new User_Course({
-          userId: mongoose.Types.ObjectId(user._id),
-          courseId: course._id,
-          indexVideo: 0,
-          lessonCompleted: [],
-        });
-        await user_course.save();
-        continue_id = tracks[0].steps[0]._id;
-        next_id = tracks[0].steps[1]._id;
-        step = tracks[0].steps[0];
-      } else {
+      if (!userCourse || userCourse === null)
+        return Promise.reject(new Error("Bạn chưa đăng ký khóa học này !"));
+      else {
         tracks.forEach((x) => {
           x.steps.forEach((y) => {
             if (userCourse.indexVideo - 1 == index) {
@@ -337,18 +331,9 @@ const courseService: ICourseService = {
         userId: new mongoose.Types.ObjectId(user._id),
         courseId: course._id,
       }).exec();
-      if (!userCourse || userCourse === null) {
-        const user_course = new User_Course({
-          userId: mongoose.Types.ObjectId(user._id),
-          courseId: course._id,
-          indexVideo: 0,
-          lessonCompleted: [],
-        });
-        await user_course.save();
-        continue_id = tracks[0].steps[0]._id;
-        next_id = tracks[0].steps[1]._id;
-        step = tracks[0].steps[0];
-      } else {
+      if (!userCourse || userCourse === null)
+        return Promise.reject(new Error("Bạn chưa đăng ký khóa học này !"));
+      else {
         tracks.forEach((x) => {
           x.steps.forEach(async (y) => {
             if (y._id.toString() == id) {
@@ -391,9 +376,9 @@ const courseService: ICourseService = {
       return Promise.reject(error);
     }
   },
-  registerCourse: async (user, slug) => {
+  registerCourse: async (user, slug, isPro = false) => {
     try {
-      const course = await Course.findOne({ slug: slug }).exec();
+      const course = await Course.findOne({ slug: slug, isPro: isPro }).exec();
       if (!course) return Promise.reject(new Error("Course is not exits !!!"));
 
       const userCourse = await User_Course.findOne({
@@ -420,8 +405,15 @@ const courseService: ICourseService = {
   },
   completedLesson: async (user, slug, id) => {
     try {
-      const course = await Course.findOne({ slug: slug }).exec();
+      const course = await Course.findOne({ slug: slug, isPro: false }).exec();
       if (!course) return Promise.reject(new Error("Course is not exits !!!"));
+
+      const userCourseTemp = await User_Course.findOne({
+        userId: new mongoose.Types.ObjectId(user._id),
+        courseId: course._id,
+      }).exec();
+      if (!userCourseTemp || userCourseTemp === null)
+        return Promise.reject(new Error("Bạn chưa đăng ký khóa học này !"));
 
       const isExistUserCourse = await User_Course.findOne({
         userId: new mongoose.Types.ObjectId(user._id),

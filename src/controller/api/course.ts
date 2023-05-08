@@ -5,8 +5,12 @@ const courseController = {
   combined: async (req, res, next) => {
     try {
       const { user } = req;
-      const courseResponse = await courseService.combined(user);
-      return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
+      const courseResponse = await courseService.combined(user, false);
+      const courseResponsePro = await courseService.combined(user, true);
+      return res.success(BaseSuccesMessage.SUCCESS, {
+        freeCourses: courseResponse,
+        proCourses: courseResponsePro,
+      });
     } catch (error) {
       next(error);
     }
@@ -64,7 +68,11 @@ const courseController = {
     try {
       const { user } = req;
       const { slug } = req.params;
-      const courseResponse = await courseService.registerCourse(user, slug);
+      const courseResponse = await courseService.registerCourse(
+        user,
+        slug,
+        false
+      );
       return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
     } catch (error) {
       next(error);
