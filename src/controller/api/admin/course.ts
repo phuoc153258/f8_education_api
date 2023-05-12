@@ -18,6 +18,15 @@ const courseController = {
       next(error);
     }
   },
+  delete: async (req, res, next) => {
+    try {
+      const { id } = req.params;
+      const courseResponse = await courseService.delete(id);
+      return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
+    } catch (error) {
+      next(error);
+    }
+  },
 };
 
 export default courseController;

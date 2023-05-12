@@ -49,6 +49,16 @@ const courseService: ICourseService = {
       return Promise.reject(err);
     }
   },
+  delete: async (id: any) => {
+    try {
+      const response = await Course.findOneAndDelete({
+        _id: mongoose.Types.ObjectId(id),
+      });
+      return response;
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  },
 };
 
 export default courseService;

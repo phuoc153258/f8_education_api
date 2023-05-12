@@ -1,4 +1,5 @@
 export interface ICourseService {
   list: () => any;
-  create: (bod: any, files: any) => any;
+  create: (body: any, files: any) => any;
+  delete: (id: any) => any;
 }

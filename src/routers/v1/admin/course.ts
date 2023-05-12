@@ -7,6 +7,14 @@ import fileUpload from "express-fileupload";
 const router = express.Router({ mergeParams: true });
 
 router
+  .route("/:id")
+  .delete(
+    authMiddleWare.requireLogin,
+    adminMiddleware.isAdmin,
+    courseController.delete
+  );
+
+router
   .route("/")
   .post(
     fileUpload({ createParentPath: true }),
