@@ -27,7 +27,7 @@ export default class UserResponseDTO {
   public _password?: String;
   public _phone?: String;
   public _type_account?: String;
-  public _role?: Types.ObjectId;
+  public _roleId?: Types.ObjectId;
   public _slug?: String;
   public _fullname?: String;
   public _bio?: String;
@@ -92,11 +92,11 @@ export default class UserResponseDTO {
     this._type_account = type_account;
     return this;
   }
-  get role() {
-    return this._role;
+  get roleId() {
+    return this._roleId;
   }
-  setRole(role: Types.ObjectId) {
-    this._role = role;
+  setRoleId(roleId: Types.ObjectId) {
+    this._roleId = roleId;
     return this;
   }
   get slug() {
@@ -142,8 +142,8 @@ export default class UserResponseDTO {
     return this;
   }
 
-  get(): IUserResponseDTO {
-    const request: IUserResponseDTO = {
+  get(): any {
+    const request: any = {
       _id: this._id,
       avatar: this._avatar,
       email: this._email,
@@ -152,7 +152,7 @@ export default class UserResponseDTO {
       password: this._password,
       phone: this._phone,
       type_account: this._type_account,
-      role: this._role,
+      roleId: this._roleId,
       slug: this._slug,
       fullname: this._fullname,
       bio: this._bio,
@@ -175,7 +175,7 @@ export default class UserResponseDTO {
         // .setPassword(model.password)
         .setPhone(model.phone)
         .setType_account(model.type_account)
-        .setRole(model.role)
+        .setRoleId(model.roleId)
         .setSlug(model.slug)
         .setFullname(model.fullname)
         .setBio(model.bio)

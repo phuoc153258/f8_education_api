@@ -11,11 +11,11 @@ interface IFileService {
 
 const fileService: IFileService = {
   upload: async (files) => {
-    let fileName = "";
+    let filenames = {};
     Object.keys(files).forEach((key) => {
       let extFile = path.extname(files[key].name);
       let savePath = configFilePath(extFile);
-      fileName = uuidv4() + extFile;
+      const fileName = uuidv4() + extFile;
       const filepath = path.join(__dirname, "../..", savePath, fileName);
 
       files[key].mv(filepath, (err) => {
@@ -24,11 +24,10 @@ const fileService: IFileService = {
             new Error(BaseErrorMessage.SOME_THING_WENT_WRONG)
           );
       });
+      filenames[key] = fileName;
     });
 
-    return Promise.resolve({
-      name: fileName,
-    });
+    return Promise.resolve(filenames);
   },
   get: async (fileName, res, next) => {
     const savePath = configFilePath(path.extname(fileName));

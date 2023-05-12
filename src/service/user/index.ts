@@ -231,9 +231,7 @@ const userService: IUserService = {
 
       if (files) {
         const response = await fileService.upload(files);
-        if (response) {
-          currentUser.avatar = response.name;
-        }
+        if (response.avatar) currentUser.avatar = response.avatar;
       }
 
       const userUpdate = await currentUser.save();
