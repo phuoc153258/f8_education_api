@@ -22,6 +22,7 @@ const authService: IAuthService = {
       const user = await User.findOne({
         email: loginRequestDTO.email,
       });
+
       if (!user)
         return Promise.reject(new Error(AuthErrorMessage.EMAIL_IS_NOT_EXIST));
       // Check user is active ( block or not block )

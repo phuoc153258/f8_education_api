@@ -405,7 +405,7 @@ const courseService: ICourseService = {
   },
   completedLesson: async (user, slug, id) => {
     try {
-      const course = await Course.findOne({ slug: slug, isPro: false }).exec();
+      const course = await Course.findOne({ slug: slug }).exec();
       if (!course) return Promise.reject(new Error("Course is not exits !!!"));
 
       const userCourseTemp = await User_Course.findOne({

@@ -38,9 +38,9 @@ const UserSchema = new Schema(
       type: String,
       default: "default",
     },
-    role: {
+    roleId: {
       type: mongoose.Types.ObjectId,
-      default: "63664c2a0ec8388637abd10b",
+      default: "645cb1503d269c7001631c3d",
     },
     slug: {
       type: String,
