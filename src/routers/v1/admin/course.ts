@@ -12,6 +12,11 @@ router
     authMiddleWare.requireLogin,
     adminMiddleware.isAdmin,
     courseController.delete
+  )
+  .get(
+    authMiddleWare.requireLogin,
+    adminMiddleware.isAdmin,
+    courseController.detail
   );
 
 router

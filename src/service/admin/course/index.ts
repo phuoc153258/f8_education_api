@@ -4,6 +4,9 @@ import { Course } from "../../../models/course";
 import { title } from "process";
 import { Course_Level } from "../../../models/course_level";
 import fileService from "../../file/file";
+import { Track } from "../../../models/track";
+import { Course_Will_Learn } from "../../../models/course_will_learn";
+import { Course_Requirement } from "../../../models/course_requirement";
 
 const courseService: ICourseService = {
   list: async () => {
@@ -42,6 +45,8 @@ const courseService: ICourseService = {
 
       if (body.price) course.price = body.price;
 
+      course.isPublished = false;
+
       const courseSave = await course.save();
 
       return Promise.resolve(courseSave);
@@ -55,6 +60,73 @@ const courseService: ICourseService = {
         _id: mongoose.Types.ObjectId(id),
       });
       return response;
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  },
+  detail: async (id: any) => {
+    try {
+      const course = await Course.findOne({
+        _id: mongoose.Types.ObjectId(id),
+      });
+      if (!course) return Promise.reject(new Error("Course is not exits !!!"));
+
+      let courseTemp = {
+        image: course.image,
+        icon: course.icon,
+        studentCount: course.studentCount,
+        isDeleted: course.isDeleted,
+        deletedAt: course.deletedAt,
+        isPublished: course.isPublished,
+        publishedAt: course.publishedAt,
+        levelId: course.levelId,
+        _id: course._id,
+        title: course.title,
+        description: course.description,
+        slug: course.slug,
+        createdAt: course.createdAt,
+        updatedAt: course.updatedAt,
+        tracks: [],
+        isRegister: false,
+        level: null,
+        willLearns: [],
+        requirements: [],
+      };
+      const tracks = await Track.aggregate([
+        {
+          $match: {
+            courseId: course._id,
+          },
+        },
+        {
+          $lookup: {
+            from: "steps",
+            localField: "_id",
+            foreignField: "trackId",
+            as: "steps",
+          },
+        },
+        {
+          $sort: {
+            "track.position": 1,
+            "steps.position": 1,
+          },
+        },
+      ]);
+
+      courseTemp.tracks = tracks;
+
+      courseTemp.level = await Course_Level.findOne({
+        _id: course.levelId,
+      }).exec();
+
+      courseTemp.willLearns = await Course_Will_Learn.find({
+        courseId: course._id,
+      });
+      courseTemp.requirements = await Course_Requirement.find({
+        courseId: course._id,
+      });
+      return courseTemp;
     } catch (error) {
       return Promise.reject(error);
     }
