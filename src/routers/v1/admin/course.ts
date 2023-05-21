@@ -13,6 +13,12 @@ router
     adminMiddleware.isAdmin,
     courseController.delete
   )
+  .put(
+    fileUpload({ createParentPath: true }),
+    authMiddleWare.requireLogin,
+    adminMiddleware.isAdmin,
+    courseController.update
+  )
   .get(
     authMiddleWare.requireLogin,
     adminMiddleware.isAdmin,

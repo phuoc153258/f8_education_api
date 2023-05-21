@@ -10,6 +10,15 @@ const levelController = {
       next(error);
     }
   },
+  update: async (req, res, next) => {
+    try {
+      const { id } = req.params;
+      const levelResponse = await levelService.update(id, req.body);
+      return res.success(BaseSuccesMessage.SUCCESS, levelResponse);
+    } catch (error) {
+      next(error);
+    }
+  },
 };
 
 export default levelController;

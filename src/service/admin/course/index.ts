@@ -91,6 +91,8 @@ const courseService: ICourseService = {
         level: null,
         willLearns: [],
         requirements: [],
+        isPro: course.isPro,
+        price: course.price,
       };
       const tracks = await Track.aggregate([
         {
@@ -127,6 +129,51 @@ const courseService: ICourseService = {
         courseId: course._id,
       });
       return courseTemp;
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  },
+  async update(id, course, files) {
+    try {
+      const courseModel = await Course.findOne({
+        _id: mongoose.Types.ObjectId(id),
+      });
+      if (!courseModel)
+        return Promise.reject(new Error("Course is not exits !!!"));
+
+      if (course.title) courseModel.title = course.title;
+
+      if (course.description) courseModel.description = course.description;
+
+      if (course.level) {
+        const level = await Course_Level.findOne({
+          _id: mongoose.Types.ObjectId(course.level),
+        });
+        if (!level) return Promise.reject(new Error("Level is not exits !!!"));
+        else courseModel.levelId = level._id;
+      }
+
+      if (course.isPro) courseModel.isPro = course.isPro;
+
+      if (course.price) courseModel.price = course.price;
+
+      if (course.isPublished) {
+        courseModel.isPublished = course.isPublished;
+        courseModel.publishedAt = new Date();
+      }
+
+      if (files) {
+        const response = await fileService.upload(files);
+        if (response.image) courseModel.image = response.image;
+        if (response.icon) courseModel.icon = response.icon;
+      }
+
+      await courseModel.save();
+
+      const courseResponse = await courseService.detail(
+        courseModel._id.toString()
+      );
+      return courseResponse;
     } catch (error) {
       return Promise.reject(error);
     }
