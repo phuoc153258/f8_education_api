@@ -1,5 +1,5 @@
 import * as express from "express";
-import levelController from "../../../controller/api/admin/level";
+import willLearnController from "../../../controller/api/admin/willLearn";
 import authMiddleWare from "../../../middlewares/auth/authenMiddleWare";
 import adminMiddleware from "../../../middlewares/auth/adminMiddleware";
 import fileUpload from "express-fileupload";
@@ -8,18 +8,22 @@ const router = express.Router({ mergeParams: true });
 
 router
   .route("/:id")
-  .get(
+  .put(
     authMiddleWare.requireLogin,
     adminMiddleware.isAdmin,
-    levelController.update
+    willLearnController.update
+  )
+  .delete(
+    authMiddleWare.requireLogin,
+    adminMiddleware.isAdmin,
+    willLearnController.delete
   );
 
 router
   .route("/")
-  .get(
+  .post(
     authMiddleWare.requireLogin,
     adminMiddleware.isAdmin,
-    levelController.list
+    willLearnController.create
   );
-
 export default router;

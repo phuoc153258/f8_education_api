@@ -9,6 +9,7 @@ import learningPathRouter from "./learningPath";
 import paymentRouter from "./payment";
 import courseAdminRouter from "./admin/course";
 import levelAdminRouter from "./admin/level";
+import willLearnRouter from "./admin/willLearn";
 // import oauth2Router from "./oauth2";
 
 const router = express.Router();
@@ -26,6 +27,7 @@ router.use("/learning-path", learningPathRouter);
 router.use("/payment", paymentRouter);
 router.use("/admin/course", courseAdminRouter);
 router.use("/admin/level", levelAdminRouter);
+router.use("/admin/willLearn", willLearnRouter);
 
 // router.use("/oauth2", oauth2Router);
 
