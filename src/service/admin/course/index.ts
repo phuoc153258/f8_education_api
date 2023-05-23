@@ -94,7 +94,7 @@ const courseService: ICourseService = {
         isPro: course.isPro,
         price: course.price,
       };
-      const tracks = await Track.aggregate([
+      let tracks = await Track.aggregate([
         {
           $match: {
             courseId: course._id,
@@ -116,6 +116,17 @@ const courseService: ICourseService = {
         },
       ]);
 
+      tracks = tracks.map((item) => {
+        let newItem = { ...item };
+        newItem.steps = item.steps.sort(function (a, b) {
+          return a.position - b.position;
+        });
+        return newItem;
+      });
+
+      tracks.sort(function (a, b) {
+        return a.position - b.position;
+      });
       courseTemp.tracks = tracks;
 
       courseTemp.level = await Course_Level.findOne({
@@ -174,6 +185,12 @@ const courseService: ICourseService = {
         courseModel._id.toString()
       );
       return courseResponse;
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  },
+  async position(id: any) {
+    try {
     } catch (error) {
       return Promise.reject(error);
     }

@@ -50,6 +50,15 @@ const courseController = {
       next(error);
     }
   },
+  position: async (req, res, next) => {
+    try {
+      const { id } = req.params;
+      const courseResponse = await courseService.position(id);
+      return res.success(BaseSuccesMessage.SUCCESS, courseResponse);
+    } catch (error) {
+      next(error);
+    }
+  },
 };
 
 export default courseController;

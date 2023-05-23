@@ -113,7 +113,7 @@ const courseService: ICourseService = {
         willLearns: [],
         requirements: [],
       };
-      const tracks = await Track.aggregate([
+      let tracks = await Track.aggregate([
         {
           $match: {
             courseId: course._id,
@@ -134,6 +134,18 @@ const courseService: ICourseService = {
           },
         },
       ]);
+
+      tracks = tracks.map((item) => {
+        let newItem = { ...item };
+        newItem.steps = item.steps.sort(function (a, b) {
+          return a.position - b.position;
+        });
+        return newItem;
+      });
+
+      tracks.sort(function (a, b) {
+        return a.position - b.position;
+      });
 
       courseTemp.tracks = tracks;
 
@@ -174,7 +186,7 @@ const courseService: ICourseService = {
         trackStepCount: 0,
         passPercent: 0,
       };
-      const tracks = await Track.aggregate([
+      let tracks = await Track.aggregate([
         {
           $match: {
             courseId: course._id,
@@ -196,6 +208,17 @@ const courseService: ICourseService = {
         },
       ]);
 
+      tracks = tracks.map((item) => {
+        let newItem = { ...item };
+        newItem.steps = item.steps.sort(function (a, b) {
+          return a.position - b.position;
+        });
+        return newItem;
+      });
+
+      tracks.sort(function (a, b) {
+        return a.position - b.position;
+      });
       trackTemp.tracks = tracks;
 
       const userCourses = await User_Course.findOne({
@@ -224,7 +247,7 @@ const courseService: ICourseService = {
       const course = await Course.findOne({ slug: slug });
       if (!course) return Promise.reject(new Error("Course is not exits !!!"));
 
-      const tracks = await Track.aggregate([
+      let tracks = await Track.aggregate([
         {
           $match: {
             courseId: course._id,
@@ -246,6 +269,17 @@ const courseService: ICourseService = {
         },
       ]);
 
+      tracks = tracks.map((item) => {
+        let newItem = { ...item };
+        newItem.steps = item.steps.sort(function (a, b) {
+          return a.position - b.position;
+        });
+        return newItem;
+      });
+
+      tracks.sort(function (a, b) {
+        return a.position - b.position;
+      });
       let continue_id = "";
       let next_id = "";
       let previous_id = "";
@@ -297,7 +331,7 @@ const courseService: ICourseService = {
       const course = await Course.findOne({ slug: slug });
       if (!course) return Promise.reject(new Error("Course is not exits !!!"));
 
-      const tracks = await Track.aggregate([
+      let tracks = await Track.aggregate([
         {
           $match: {
             courseId: course._id,
@@ -319,6 +353,17 @@ const courseService: ICourseService = {
         },
       ]);
 
+      tracks = tracks.map((item) => {
+        let newItem = { ...item };
+        newItem.steps = item.steps.sort(function (a, b) {
+          return a.position - b.position;
+        });
+        return newItem;
+      });
+
+      tracks.sort(function (a, b) {
+        return a.position - b.position;
+      });
       let continue_id = "";
       let next_id = "";
       let previous_id = "";

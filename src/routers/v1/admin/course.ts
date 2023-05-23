@@ -26,6 +26,14 @@ router
   );
 
 router
+  .route("/:id/position")
+  .get(
+    authMiddleWare.requireLogin,
+    adminMiddleware.isAdmin,
+    courseController.position
+  );
+
+router
   .route("/")
   .post(
     fileUpload({ createParentPath: true }),
