@@ -6,4 +6,5 @@ export interface ICourseService {
   delete: (id: any) => any;
   detail: (id: any) => any;
   update: (id: any, course: any, files: any) => any;
+  position: (id: any) => any;
 }
