@@ -49,7 +49,8 @@ const trackService: any = {
 
       trackModel.isPublished = track.isPublished;
 
-      if (track.courseId) trackModel.courseId = track.courseId;
+      if (track.courseId)
+        trackModel.courseId = mongoose.Types.ObjectId(track.courseId);
       await trackModel.save();
       return await courseService.detail(courseModel._id);
     } catch (error) {
@@ -124,7 +125,8 @@ const trackService: any = {
 
       trackModel.isPublished = track.isPublished;
 
-      if (track.courseId) trackModel.courseId = track.courseId;
+      if (track.courseId)
+        trackModel.courseId = mongoose.Types.ObjectId(track.courseId);
       await trackModel.save();
       return await courseService.detail(courseModel._id);
     } catch (error) {

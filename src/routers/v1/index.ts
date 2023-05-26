@@ -12,6 +12,7 @@ import levelAdminRouter from "./admin/level";
 import willLearnRouter from "./admin/willLearn";
 import requirementRouter from "./admin/requirement";
 import trackRouter from "./admin/track";
+import stepRouter from "./admin/step";
 // import oauth2Router from "./oauth2";
 
 const router = express.Router();
@@ -32,6 +33,7 @@ router.use("/admin/level", levelAdminRouter);
 router.use("/admin/willLearn", willLearnRouter);
 router.use("/admin/requirement", requirementRouter);
 router.use("/admin/track", trackRouter);
+router.use("/admin/step", stepRouter);
 
 // router.use("/oauth2", oauth2Router);
 
