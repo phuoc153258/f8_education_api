@@ -35,7 +35,7 @@ const StepSchema = new Schema(
     },
     description: {
       type: String,
-      require: true,
+      default: `<p>Tham gia các cộng đồng để cùng học hỏi, chia sẻ và "thám thính" xem F8 sắp có gì mới nhé!</p> <ul> <li>Fanpage: <a href="https://www.facebook.com/f8vnofficial" target="_blank" rel="noreferrer">https://www.facebook.com/f8vnofficial</a></li> <li>Group: <a href="https://www.facebook.com/groups/649972919142215" target="_blank" rel="noreferrer">https://www.facebook.com/groups/649972919142215</a></li> <li>Youtube: <a href="/external-url?continue=https%3A%2F%2Fwww.youtube.com%2FF8VNOfficial" target="_blank" rel="noreferrer">https://www.youtube.com/F8VNOfficial</a></li> <li>Sơn Đặng: <a href="/external-url?continue=https%3A%2F%2Fwww.facebook.com%2Fsondnf8" target="_blank" rel="noreferrer">https://www.facebook.com/sondnf8</a></li> </ul>`,
     },
     isPublished: {
       type: Boolean,

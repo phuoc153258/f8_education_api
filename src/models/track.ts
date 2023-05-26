@@ -1,6 +1,5 @@
 import mongoose, { Types } from "mongoose";
 import slug from "mongoose-slug-generator";
-import { type } from "os";
 
 const paginate = require("./plugins/paginate");
 const aggregatePaginate = require("./plugins/aggregatePaginate");
