@@ -13,10 +13,10 @@
   "updatedAt": {
     "$date": "2021-12-31T17:00:00.000Z"
   },
-  "level": 4
+  "level": 2
 },{
   "_id": {
-    "$oid": "63664c2a0ec8388637abd10b"
+    "$oid": "645cb1503d269c7001631c3d"
   },
   "name": "User",
   "createdAt": {

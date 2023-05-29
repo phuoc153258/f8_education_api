@@ -1,57 +1,181 @@
 [{
   "_id": {
-    "$oid": "64377c8b821473bcbbfda964"
+    "$oid": "6470e5db403d282e247dc202"
   },
-  "content": "Hiểu biết về mô hình Client-Server",
   "courseId": {
-    "$oid": "625eaba090066486a526731d"
+    "$oid": "6470e557403d282e247dc160"
   },
+  "content": "Máy vi tính kết nối internet (Windows, Ubuntu hoặc MacOS)",
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T17:01:15.648Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  }
+    "$date": "2023-05-26T17:01:15.648Z"
+  },
+  "__v": 0
 },{
   "_id": {
-    "$oid": "64377d263377bf7825c1ddd9"
+    "$oid": "6470e5e1403d282e247dc20f"
   },
-  "content": "Phân biệt rõ ràng được Front-end & Back-end",
   "courseId": {
-    "$oid": "625eaba090066486a526731d"
+    "$oid": "6470e557403d282e247dc160"
   },
+  "content": "Ý thức tự học cao, trách nhiệm cao, kiên trì bền bỉ không ngại cái khó",
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T17:01:21.485Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  }
+    "$date": "2023-05-26T17:01:21.485Z"
+  },
+  "__v": 0
 },{
   "_id": {
-    "$oid": "64377d34f25a0060803beeb7"
+    "$oid": "6470e5e8403d282e247dc21c"
   },
-  "content": "Nắm chắc HTML, CSS, đã có sản phẩm tự tay làm",
   "courseId": {
-    "$oid": "625eaba090066486a526731d"
+    "$oid": "6470e557403d282e247dc160"
   },
+  "content": "Không được nóng vội, bình tĩnh học, làm bài tập sau mỗi bài học",
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T17:01:28.553Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  }
+    "$date": "2023-05-26T17:01:28.553Z"
+  },
+  "__v": 0
 },{
   "_id": {
-    "$oid": "64377d3b48f2c552b4a3ca7e"
+    "$oid": "6470e5ee403d282e247dc229"
   },
-  "content": "Nắm chắc Javascript cơ bản và nâng cao",
   "courseId": {
-    "$oid": "625eaba090066486a526731d"
+    "$oid": "6470e557403d282e247dc160"
   },
+  "content": "Khi học nếu có khúc mắc hãy tham gia hỏi/đáp tại group FB: Học lập trình web (fullstack.edu.vn)",
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T17:01:34.301Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  }
+    "$date": "2023-05-26T17:01:34.301Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e5f3403d282e247dc236"
+  },
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "content": "Bạn không cần biết gì hơn nữa, trong khóa học tôi sẽ chỉ cho bạn những gì bạn cần phải biết",
+  "createdAt": {
+    "$date": "2023-05-26T17:01:39.538Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:01:39.538Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647107d8d65e6b2a5c2f5eb9"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Máy vi tính kết nối internet (Windows, Ubuntu hoặc MacOS).",
+  "createdAt": {
+    "$date": "2023-05-26T19:26:16.677Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:26:16.677Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647107ead65e6b2a5c2f5eca"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Ý thức tự học cao, trách nhiệm cao, kiên trì bền bỉ không ngại cái khó.",
+  "createdAt": {
+    "$date": "2023-05-26T19:26:34.773Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:26:34.773Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647107f0d65e6b2a5c2f5ed7"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Không được nóng vội, bình tĩnh học, làm bài tập sau mỗi bài học.",
+  "createdAt": {
+    "$date": "2023-05-26T19:26:40.486Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:26:40.486Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647107f7d65e6b2a5c2f5ee4"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Khi học nếu có khúc mắc hãy tham gia hỏi/đáp tại group FB: Học lập trình web (fullstack.edu.vn).",
+  "createdAt": {
+    "$date": "2023-05-26T19:26:47.133Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:26:47.133Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647107fed65e6b2a5c2f5ef1"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Bạn không cần biết gì hơn nữa, trong khóa học tôi sẽ chỉ cho bạn những gì bạn cần phải biết.",
+  "createdAt": {
+    "$date": "2023-05-26T19:26:54.559Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:26:54.559Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647110c1d65e6b2a5c2f628c"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "content": "Máy vi tính kết nối internet (Windows, Ubuntu hoặc MacOS)..",
+  "createdAt": {
+    "$date": "2023-05-26T20:04:17.257Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:04:17.257Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647110d0d65e6b2a5c2f6299"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "content": "Ý thức tự học cao, trách nhiệm cao, kiên trì bền bỉ không ngại cái khó..",
+  "createdAt": {
+    "$date": "2023-05-26T20:04:32.828Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:04:32.828Z"
+  },
+  "__v": 0
 }]

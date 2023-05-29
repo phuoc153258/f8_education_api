@@ -11,7 +11,6 @@ const Course_Will_LearnSchema = new Schema(
     content: {
       type: String,
       require: true,
-      unique: true,
     },
     courseId: {
       type: mongoose.Types.ObjectId,

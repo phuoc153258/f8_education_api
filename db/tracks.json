@@ -1,93 +1,721 @@
 [{
   "_id": {
-    "$oid": "6448fce1765e4d6f9e7c63ea"
+    "$oid": "64709db93cf13544a4223599"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T11:05:49.844Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T11:05:49.844Z"
   },
   "title": "Khái niệm kỹ thuật cần biết",
   "position": 0,
   "courseId": {
-    "$oid": "625eaba090066486a526731d"
+    "$oid": "64709d603cf13544a422354f"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T11:53:29.762Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T11:53:29.762Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64709dd93cf13544a42235ac"
   },
   "isDeleted": false,
   "deletedAt": {
-    "$date": "1999-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T11:05:49.844Z"
   },
   "isPublished": true,
   "publishedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  },
-  "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  }
-},{
-  "_id": {
-    "$oid": "6448fe5aa7b3663467d212f1"
+    "$date": "2023-05-26T11:05:49.844Z"
   },
   "title": "Môi trường, con người IT",
   "position": 1,
   "courseId": {
-    "$oid": "625eaba090066486a526731d"
+    "$oid": "64709d603cf13544a422354f"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T11:54:01.437Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T11:54:01.437Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64709df03cf13544a42235bf"
   },
   "isDeleted": false,
   "deletedAt": {
-    "$date": "1999-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T11:05:49.844Z"
   },
   "isPublished": true,
   "publishedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T11:05:49.844Z"
+  },
+  "title": "Phương pháp, định hướng",
+  "position": 2,
+  "courseId": {
+    "$oid": "64709d603cf13544a422354f"
   },
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T11:54:24.310Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  }
+    "$date": "2023-05-26T11:54:24.310Z"
+  },
+  "__v": 0
 },{
   "_id": {
-    "$oid": "6448fe958339f19ade3a32ce"
+    "$oid": "64709e013cf13544a42235d2"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T11:05:49.844Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T11:05:49.844Z"
+  },
+  "title": "Hoàn thành khóa học",
+  "position": 3,
+  "courseId": {
+    "$oid": "64709d603cf13544a422354f"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T11:54:41.491Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T11:54:41.491Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470dc06403d282e247dbd87"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
   },
   "title": "Giới thiệu",
   "position": 0,
   "courseId": {
-    "$oid": "643a8d38ee9e538b2b1160ca"
+    "$oid": "6470dbe6403d282e247dbd64"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:19:18.223Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:19:18.223Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470dc16403d282e247dbd9a"
   },
   "isDeleted": false,
   "deletedAt": {
-    "$date": "1999-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T13:43:19.995Z"
   },
   "isPublished": true,
   "publishedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  },
-  "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  }
-},{
-  "_id": {
-    "$oid": "6448fe9925e478c0ee986b5e"
+    "$date": "2023-05-26T13:43:19.995Z"
   },
   "title": "Biến và kiểu dữ liệu",
   "position": 1,
   "courseId": {
-    "$oid": "643a8d38ee9e538b2b1160ca"
+    "$oid": "6470dbe6403d282e247dbd64"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:19:34.966Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:19:34.966Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470dc2b403d282e247dbdb4"
   },
   "isDeleted": false,
   "deletedAt": {
-    "$date": "1999-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T13:43:19.995Z"
   },
   "isPublished": true,
   "publishedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Cấu trúc điều khiển và vòng lặp",
+  "position": 2,
+  "courseId": {
+    "$oid": "6470dbe6403d282e247dbd64"
   },
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T16:19:55.672Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  }
+    "$date": "2023-05-26T16:19:55.672Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470dc3b403d282e247dbdc7"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Mảng",
+  "position": 3,
+  "courseId": {
+    "$oid": "6470dbe6403d282e247dbd64"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:20:11.577Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:20:11.577Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470dc4c403d282e247dbdda"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "String",
+  "position": 4,
+  "courseId": {
+    "$oid": "6470dbe6403d282e247dbd64"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:20:28.173Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:20:28.173Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470dc73403d282e247dbded"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Hàm",
+  "position": 5,
+  "courseId": {
+    "$oid": "6470dbe6403d282e247dbd64"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:21:07.678Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:21:07.678Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e6ca403d282e247dc271"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Bắt đầu",
+  "position": 0,
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:05:14.561Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:05:14.561Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e6d6403d282e247dc284"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Làm quen với HTML",
+  "position": 1,
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:05:26.166Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:05:26.166Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e6df403d282e247dc297"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Làm quen với CSS",
+  "position": 2,
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:05:35.988Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:05:35.988Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e703403d282e247dc2aa"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Đệm, viền và khoảng lề",
+  "position": 3,
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:06:11.872Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:06:11.872Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e712403d282e247dc2bd"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Thuộc tính tạo nền",
+  "position": 4,
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:06:26.027Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:06:26.027Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710479403d282e247dc678"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Bắt đầu",
+  "position": 0,
+  "courseId": {
+    "$oid": "64710446403d282e247dc621"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:11:53.628Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:11:53.628Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710495403d282e247dc68b"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Viewport, @media, breakpoint",
+  "position": 1,
+  "courseId": {
+    "$oid": "64710446403d282e247dc621"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:12:21.505Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:12:21.505Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647104a0403d282e247dc69e"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Thực hành nhỏ",
+  "position": 2,
+  "courseId": {
+    "$oid": "64710446403d282e247dc621"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:12:32.051Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:12:32.051Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647104ac403d282e247dc6b1"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Grid System",
+  "position": 3,
+  "courseId": {
+    "$oid": "64710446403d282e247dc621"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:12:44.695Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:12:44.695Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647104bb403d282e247dc6c4"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:19.995Z"
+  },
+  "title": "Áp dụng vào thực tế",
+  "position": 4,
+  "courseId": {
+    "$oid": "64710446403d282e247dc621"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:12:59.763Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:12:59.763Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471082dd65e6b2a5c2f5f01"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "title": "Giới thiệu",
+  "position": 0,
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:27:41.854Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:27:41.854Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710845d65e6b2a5c2f5f14"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "title": "Biến, comments, built-in",
+  "position": 1,
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:28:05.898Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:28:05.898Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710852d65e6b2a5c2f5f27"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "title": "Toán tử kiểu dữ liệu",
+  "position": 2,
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:28:18.935Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:28:18.935Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471085cd65e6b2a5c2f5f3a"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "title": "Làm việc với hàm",
+  "position": 4,
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:28:28.512Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:28:40.790Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710868d65e6b2a5c2f5f4d"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "title": "Làm việc với chuỗi",
+  "position": 3,
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:28:40.797Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:28:40.797Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647110e2d65e6b2a5c2f62a9"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "title": "Bắt đầu",
+  "position": 0,
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:04:50.632Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:04:50.632Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647110ecd65e6b2a5c2f62bc"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "title": "Làm quen HTML CSS",
+  "position": 2,
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:05:00.155Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:05:06.738Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647110f2d65e6b2a5c2f62cf"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "title": "Làm quen CSS",
+  "position": 1,
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:05:06.738Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:05:06.738Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647110fbd65e6b2a5c2f62e3"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "title": "Đệm và khoảng lề",
+  "position": 3,
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:05:15.916Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:05:15.916Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711107d65e6b2a5c2f62f6"
+  },
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:09.920Z"
+  },
+  "title": "Thuộc tính tạo nền",
+  "position": 4,
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:05:27.345Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:05:27.345Z"
+  },
+  "__v": 0
 }]
