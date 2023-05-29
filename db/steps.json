@@ -1,136 +1,2353 @@
 [{
   "_id": {
-    "$oid": "6448ffaf3cd5afef9f1be1a6"
+    "$oid": "64709edba1a94d141417a306"
   },
-  "title": "Domain là gì? Tên miền là gì?",
-  "duration": 641,
-  "trackId": {
-    "$oid": "6448fce1765e4d6f9e7c63ea"
-  },
-  "position": 0,
-  "description": "            <p>\n                Bạn muốn học lập trình hiệu quả hơn không? Hãy học tại trang web \n                <a href=\"http://fullstack.edu.vn/\" target=\"_blank\" rel=\"noreferrer\">\n                    http://fullstack.edu.vn\n                </a>\n                thay vì Youtube. Lý do tại sao mời bạn bấm vào đây: ...\n            </p>\n            <hr />\n            <h2 id=\"tham-gia-nhom-reactjs-viet-nam\" data-appended=\"true\">\n                <a\n                    data-link=\"\"\n                    href=\"https://fullstack.edu.vn/learning/reactjs?id=26aea3bd-58be-4ea1-8f89-e3829b6ab4a9#tham-gia-nhom-reactjs-viet-nam\"\n                    target=\"_self\"\n                >\n                    <svg\n                        aria-hidden=\"true\"\n                        focusable=\"false\"\n                        data-prefix=\"fas\"\n                        data-icon=\"link\"\n                        className=\"svg-inline--fa fa-link \"\n                        role=\"img\"\n                        xmlns=\"http://www.w3.org/2000/svg\"\n                        viewBox=\"0 0 640 512\"\n                    >\n                        <path\n                            fill=\"currentColor\"\n                            d=\"M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z\"\n                        ></path>\n                    </svg>\n                </a>\n                Tham gia nhóm ReactJS Việt Nam\n            </h2>\n            <p>\n                Nhóm ReactJS - Việt Nam trước đây (không phải nhóm của F8) đã bị chủ sở hữu cũ bán, nhóm không còn chất\n                lượng vì có nhiều tin bán hàng, quảng cáo.\n            </p>\n            <p>\n                Nay F8 tạo nhóm \"ReactJS Việt Nam\" mới, với mong muốn mang lại môi trường tốt hơn cho việc chia sẻ, học\n                tập kiến thức liên quan tới ReactJS tại Việt Nam 🎉\n            </p>\n            <p>\n                👉 \n                <strong>\n                    Xin mời tham gia tại đây: \n                    <a\n                        href=\"/external-url?continue=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1134618593772787\"\n                        target=\"_blank\"\n                        rel=\"noreferrer\"\n                    >\n                        https://www.facebook.com/groups/1134618593772787\n                    </a>\n                </strong>\n            </p>\n            <blockquote>\n                <p>\n                    Cao ốc nào cũng được xây từ viên gạch đầu tiên, hãy đăng câu hỏi hoặc chia sẻ kiến thức của bạn để\n                    nhóm mới này sớm trở thành tòa cao ốc bạn nhé &lt;3\n                </p>\n            </blockquote>",
-  "isDeleted": false,
-  "deletedAt": {
-    "$date": "1999-12-31T17:00:00.000Z"
-  },
+  "duration": 500,
+  "description": "<p><br></p>",
   "isPublished": true,
   "publishedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  },
-  "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  },
-  "imageUrl": "M62l1xA5Eu8",
-  "videoUrl": "M62l1xA5Eu8"
-},{
-  "_id": {
-    "$oid": "6448ffb589b8a695a4a72b3d"
+    "$date": "2023-05-26T11:57:49.545Z"
   },
   "title": "Mô hình Client - Server là gì?",
-  "duration": 641,
-  "trackId": {
-    "$oid": "6448fce1765e4d6f9e7c63ea"
-  },
-  "position": 1,
-  "description": "            <p>\n                Bạn muốn học lập trình hiệu quả hơn không? Hãy học tại trang web \n                <a href=\"http://fullstack.edu.vn/\" target=\"_blank\" rel=\"noreferrer\">\n                    http://fullstack.edu.vn\n                </a>\n                thay vì Youtube. Lý do tại sao mời bạn bấm vào đây: ...\n            </p>\n            <hr />\n            <h2 id=\"tham-gia-nhom-reactjs-viet-nam\" data-appended=\"true\">\n                <a\n                    data-link=\"\"\n                    href=\"https://fullstack.edu.vn/learning/reactjs?id=26aea3bd-58be-4ea1-8f89-e3829b6ab4a9#tham-gia-nhom-reactjs-viet-nam\"\n                    target=\"_self\"\n                >\n                    <svg\n                        aria-hidden=\"true\"\n                        focusable=\"false\"\n                        data-prefix=\"fas\"\n                        data-icon=\"link\"\n                        className=\"svg-inline--fa fa-link \"\n                        role=\"img\"\n                        xmlns=\"http://www.w3.org/2000/svg\"\n                        viewBox=\"0 0 640 512\"\n                    >\n                        <path\n                            fill=\"currentColor\"\n                            d=\"M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z\"\n                        ></path>\n                    </svg>\n                </a>\n                Tham gia nhóm ReactJS Việt Nam\n            </h2>\n            <p>\n                Nhóm ReactJS - Việt Nam trước đây (không phải nhóm của F8) đã bị chủ sở hữu cũ bán, nhóm không còn chất\n                lượng vì có nhiều tin bán hàng, quảng cáo.\n            </p>\n            <p>\n                Nay F8 tạo nhóm \"ReactJS Việt Nam\" mới, với mong muốn mang lại môi trường tốt hơn cho việc chia sẻ, học\n                tập kiến thức liên quan tới ReactJS tại Việt Nam 🎉\n            </p>\n            <p>\n                👉 \n                <strong>\n                    Xin mời tham gia tại đây: \n                    <a\n                        href=\"/external-url?continue=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1134618593772787\"\n                        target=\"_blank\"\n                        rel=\"noreferrer\"\n                    >\n                        https://www.facebook.com/groups/1134618593772787\n                    </a>\n                </strong>\n            </p>\n            <blockquote>\n                <p>\n                    Cao ốc nào cũng được xây từ viên gạch đầu tiên, hãy đăng câu hỏi hoặc chia sẻ kiến thức của bạn để\n                    nhóm mới này sớm trở thành tòa cao ốc bạn nhé &lt;3\n                </p>\n            </blockquote>",
-  "isDeleted": false,
-  "deletedAt": {
-    "$date": "1999-12-31T17:00:00.000Z"
-  },
-  "isPublished": true,
-  "publishedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  },
-  "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  },
-  "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  },
   "imageUrl": "zoELAirXMJY",
-  "videoUrl": "zoELAirXMJY"
-},{
-  "_id": {
-    "$oid": "6448ffbfdafa13ad24bc7b98"
-  },
-  "title": "Sinh viên IT đi thực tập tại doanh nghiệp cần biết những gì?",
-  "duration": 641,
+  "videoUrl": "zoELAirXMJY",
+  "position": 0,
   "trackId": {
-    "$oid": "6448fe5aa7b3663467d212f1"
-  },
-  "position": 2,
-  "description": "            <p>\n                Bạn muốn học lập trình hiệu quả hơn không? Hãy học tại trang web \n                <a href=\"http://fullstack.edu.vn/\" target=\"_blank\" rel=\"noreferrer\">\n                    http://fullstack.edu.vn\n                </a>\n                thay vì Youtube. Lý do tại sao mời bạn bấm vào đây: ...\n            </p>\n            <hr />\n            <h2 id=\"tham-gia-nhom-reactjs-viet-nam\" data-appended=\"true\">\n                <a\n                    data-link=\"\"\n                    href=\"https://fullstack.edu.vn/learning/reactjs?id=26aea3bd-58be-4ea1-8f89-e3829b6ab4a9#tham-gia-nhom-reactjs-viet-nam\"\n                    target=\"_self\"\n                >\n                    <svg\n                        aria-hidden=\"true\"\n                        focusable=\"false\"\n                        data-prefix=\"fas\"\n                        data-icon=\"link\"\n                        className=\"svg-inline--fa fa-link \"\n                        role=\"img\"\n                        xmlns=\"http://www.w3.org/2000/svg\"\n                        viewBox=\"0 0 640 512\"\n                    >\n                        <path\n                            fill=\"currentColor\"\n                            d=\"M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z\"\n                        ></path>\n                    </svg>\n                </a>\n                Tham gia nhóm ReactJS Việt Nam\n            </h2>\n            <p>\n                Nhóm ReactJS - Việt Nam trước đây (không phải nhóm của F8) đã bị chủ sở hữu cũ bán, nhóm không còn chất\n                lượng vì có nhiều tin bán hàng, quảng cáo.\n            </p>\n            <p>\n                Nay F8 tạo nhóm \"ReactJS Việt Nam\" mới, với mong muốn mang lại môi trường tốt hơn cho việc chia sẻ, học\n                tập kiến thức liên quan tới ReactJS tại Việt Nam 🎉\n            </p>\n            <p>\n                👉 \n                <strong>\n                    Xin mời tham gia tại đây: \n                    <a\n                        href=\"/external-url?continue=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1134618593772787\"\n                        target=\"_blank\"\n                        rel=\"noreferrer\"\n                    >\n                        https://www.facebook.com/groups/1134618593772787\n                    </a>\n                </strong>\n            </p>\n            <blockquote>\n                <p>\n                    Cao ốc nào cũng được xây từ viên gạch đầu tiên, hãy đăng câu hỏi hoặc chia sẻ kiến thức của bạn để\n                    nhóm mới này sớm trở thành tòa cao ốc bạn nhé &lt;3\n                </p>\n            </blockquote>",
-  "isDeleted": false,
-  "deletedAt": {
-    "$date": "1999-12-31T17:00:00.000Z"
-  },
-  "isPublished": true,
-  "publishedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$oid": "64709db93cf13544a4223599"
   },
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T11:58:19.110Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T11:58:19.110Z"
   },
-  "imageUrl": "YH-E4Y3EaT4",
-  "videoUrl": "YH-E4Y3EaT4"
+  "__v": 0
 },{
   "_id": {
-    "$oid": "6448ffd3d925e0428498516c"
+    "$oid": "6470b7b5403d282e247dbc15"
   },
-  "title": "Trải nghiệm thực tế sau 2 tháng làm việc tại doanh nghiệp của học viên F8?",
-  "duration": 641,
-  "trackId": {
-    "$oid": "6448fe5aa7b3663467d212f1"
-  },
-  "position": 3,
-  "description": "            <p>\n                Bạn muốn học lập trình hiệu quả hơn không? Hãy học tại trang web \n                <a href=\"http://fullstack.edu.vn/\" target=\"_blank\" rel=\"noreferrer\">\n                    http://fullstack.edu.vn\n                </a>\n                thay vì Youtube. Lý do tại sao mời bạn bấm vào đây: ...\n            </p>\n            <hr />\n            <h2 id=\"tham-gia-nhom-reactjs-viet-nam\" data-appended=\"true\">\n                <a\n                    data-link=\"\"\n                    href=\"https://fullstack.edu.vn/learning/reactjs?id=26aea3bd-58be-4ea1-8f89-e3829b6ab4a9#tham-gia-nhom-reactjs-viet-nam\"\n                    target=\"_self\"\n                >\n                    <svg\n                        aria-hidden=\"true\"\n                        focusable=\"false\"\n                        data-prefix=\"fas\"\n                        data-icon=\"link\"\n                        className=\"svg-inline--fa fa-link \"\n                        role=\"img\"\n                        xmlns=\"http://www.w3.org/2000/svg\"\n                        viewBox=\"0 0 640 512\"\n                    >\n                        <path\n                            fill=\"currentColor\"\n                            d=\"M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z\"\n                        ></path>\n                    </svg>\n                </a>\n                Tham gia nhóm ReactJS Việt Nam\n            </h2>\n            <p>\n                Nhóm ReactJS - Việt Nam trước đây (không phải nhóm của F8) đã bị chủ sở hữu cũ bán, nhóm không còn chất\n                lượng vì có nhiều tin bán hàng, quảng cáo.\n            </p>\n            <p>\n                Nay F8 tạo nhóm \"ReactJS Việt Nam\" mới, với mong muốn mang lại môi trường tốt hơn cho việc chia sẻ, học\n                tập kiến thức liên quan tới ReactJS tại Việt Nam 🎉\n            </p>\n            <p>\n                👉 \n                <strong>\n                    Xin mời tham gia tại đây: \n                    <a\n                        href=\"/external-url?continue=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1134618593772787\"\n                        target=\"_blank\"\n                        rel=\"noreferrer\"\n                    >\n                        https://www.facebook.com/groups/1134618593772787\n                    </a>\n                </strong>\n            </p>\n            <blockquote>\n                <p>\n                    Cao ốc nào cũng được xây từ viên gạch đầu tiên, hãy đăng câu hỏi hoặc chia sẻ kiến thức của bạn để\n                    nhóm mới này sớm trở thành tòa cao ốc bạn nhé &lt;3\n                </p>\n            </blockquote>",
-  "isDeleted": false,
-  "deletedAt": {
-    "$date": "1999-12-31T17:00:00.000Z"
-  },
+  "duration": 633,
+  "description": "<p>Domain là gì? Tên miền là gì?&nbsp;</p>",
   "isPublished": true,
   "publishedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Domain là gì? Tên miền là gì?",
+  "imageUrl": "M62l1xA5Eu8",
+  "videoUrl": "M62l1xA5Eu8",
+  "position": 1,
+  "trackId": {
+    "$oid": "64709db93cf13544a4223599"
   },
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T13:44:21.636Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T13:44:21.636Z"
   },
-  "imageUrl": "2sg1yNl1WvE",
-  "videoUrl": "2sg1yNl1WvE"
+  "__v": 0
 },{
   "_id": {
-    "$oid": "6448ffbb933eacc52e6f0e23"
+    "$oid": "6470dac5403d282e247dbcb1"
+  },
+  "duration": 1449,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
   },
   "title": "Học IT cần tố chất gì? Góc nhìn khác từ chuyên gia định hướng giáo dục",
-  "duration": 641,
+  "imageUrl": "CyZ_O7v62h4",
+  "videoUrl": "CyZ_O7v62h4",
+  "position": 0,
   "trackId": {
-    "$oid": "6448fe5aa7b3663467d212f1"
-  },
-  "position": 4,
-  "description": "            <p>\n                Bạn muốn học lập trình hiệu quả hơn không? Hãy học tại trang web \n                <a href=\"http://fullstack.edu.vn/\" target=\"_blank\" rel=\"noreferrer\">\n                    http://fullstack.edu.vn\n                </a>\n                thay vì Youtube. Lý do tại sao mời bạn bấm vào đây: ...\n            </p>\n            <hr />\n            <h2 id=\"tham-gia-nhom-reactjs-viet-nam\" data-appended=\"true\">\n                <a\n                    data-link=\"\"\n                    href=\"https://fullstack.edu.vn/learning/reactjs?id=26aea3bd-58be-4ea1-8f89-e3829b6ab4a9#tham-gia-nhom-reactjs-viet-nam\"\n                    target=\"_self\"\n                >\n                    <svg\n                        aria-hidden=\"true\"\n                        focusable=\"false\"\n                        data-prefix=\"fas\"\n                        data-icon=\"link\"\n                        className=\"svg-inline--fa fa-link \"\n                        role=\"img\"\n                        xmlns=\"http://www.w3.org/2000/svg\"\n                        viewBox=\"0 0 640 512\"\n                    >\n                        <path\n                            fill=\"currentColor\"\n                            d=\"M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z\"\n                        ></path>\n                    </svg>\n                </a>\n                Tham gia nhóm ReactJS Việt Nam\n            </h2>\n            <p>\n                Nhóm ReactJS - Việt Nam trước đây (không phải nhóm của F8) đã bị chủ sở hữu cũ bán, nhóm không còn chất\n                lượng vì có nhiều tin bán hàng, quảng cáo.\n            </p>\n            <p>\n                Nay F8 tạo nhóm \"ReactJS Việt Nam\" mới, với mong muốn mang lại môi trường tốt hơn cho việc chia sẻ, học\n                tập kiến thức liên quan tới ReactJS tại Việt Nam 🎉\n            </p>\n            <p>\n                👉 \n                <strong>\n                    Xin mời tham gia tại đây: \n                    <a\n                        href=\"/external-url?continue=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1134618593772787\"\n                        target=\"_blank\"\n                        rel=\"noreferrer\"\n                    >\n                        https://www.facebook.com/groups/1134618593772787\n                    </a>\n                </strong>\n            </p>\n            <blockquote>\n                <p>\n                    Cao ốc nào cũng được xây từ viên gạch đầu tiên, hãy đăng câu hỏi hoặc chia sẻ kiến thức của bạn để\n                    nhóm mới này sớm trở thành tòa cao ốc bạn nhé &lt;3\n                </p>\n            </blockquote>",
-  "isDeleted": false,
-  "deletedAt": {
-    "$date": "1999-12-31T17:00:00.000Z"
-  },
-  "isPublished": true,
-  "publishedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$oid": "64709dd93cf13544a42235ac"
   },
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T16:13:57.851Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T16:13:57.851Z"
   },
-  "imageUrl": "CyZ_O7v62h4",
-  "videoUrl": "CyZ_O7v62h4"
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470dae7403d282e247dbcc8"
+  },
+  "duration": 2090,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Sinh viên IT đi thực tập tại doanh nghiệp cần biết những gì?",
+  "imageUrl": "YH-E4Y3EaT4",
+  "videoUrl": "YH-E4Y3EaT4",
+  "position": 1,
+  "trackId": {
+    "$oid": "64709dd93cf13544a42235ac"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:14:31.772Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:14:31.772Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470db0e403d282e247dbcdf"
+  },
+  "duration": 2832,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Trải nghiệm thực tế sau 2 tháng làm việc tại doanh nghiệp của học viên F8?",
+  "imageUrl": "2sg1yNl1WvE",
+  "videoUrl": "2sg1yNl1WvE",
+  "position": 2,
+  "trackId": {
+    "$oid": "64709dd93cf13544a42235ac"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:15:10.925Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:15:10.925Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470db4f403d282e247dbd12"
+  },
+  "duration": 1445,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Phương pháp học lập trình của Admin F8?",
+  "imageUrl": "DpvYHLUiZpc",
+  "videoUrl": "DpvYHLUiZpc",
+  "position": 0,
+  "trackId": {
+    "$oid": "64709df03cf13544a42235bf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:16:15.303Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:16:15.303Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470db64403d282e247dbd29"
+  },
+  "duration": 1539,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Làm sao để có thu nhập cao và đi xa hơn trong ngành IT?",
+  "imageUrl": "oF7isq9IjZM",
+  "videoUrl": "oF7isq9IjZM",
+  "position": 1,
+  "trackId": {
+    "$oid": "64709df03cf13544a42235bf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:16:36.371Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:16:36.371Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470db86403d282e247dbd40"
+  },
+  "duration": 387,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "lời khuyên giúp học lập trình tại F8 hiệu quả hơn!",
+  "imageUrl": "IF1dd3KV84w",
+  "videoUrl": "IF1dd3KV84w",
+  "position": 2,
+  "trackId": {
+    "$oid": "64709df03cf13544a42235bf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:17:10.622Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:17:10.622Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470dba4403d282e247dbd57"
+  },
+  "duration": 493,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Tại sao nên học trên website này hơn là học trên Youtube?",
+  "imageUrl": "f5hbmw7Ba7c",
+  "videoUrl": "f5hbmw7Ba7c",
+  "position": 3,
+  "trackId": {
+    "$oid": "64709df03cf13544a42235bf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:17:40.820Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:17:40.820Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e006403d282e247dbe22"
+  },
+  "duration": 62,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Giới thiệu khóa học",
+  "imageUrl": "Da1tpV9TMU0",
+  "videoUrl": "Da1tpV9TMU0",
+  "position": 0,
+  "trackId": {
+    "$oid": "6470dc06403d282e247dbd87"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:36:22.540Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:36:22.540Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e029403d282e247dbe40"
+  },
+  "duration": 150,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Cài đặt Dev - C++",
+  "imageUrl": "9_uoKY0AwqE",
+  "videoUrl": "9_uoKY0AwqE",
+  "position": 1,
+  "trackId": {
+    "$oid": "6470dc06403d282e247dbd87"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:36:57.531Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:36:57.531Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e040403d282e247dbe57"
+  },
+  "duration": 212,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Hướng dẫn sử dụng Dev - C++",
+  "imageUrl": "vFhKEYRBmVY",
+  "videoUrl": "vFhKEYRBmVY",
+  "position": 2,
+  "trackId": {
+    "$oid": "6470dc06403d282e247dbd87"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:37:20.829Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:37:20.829Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e084403d282e247dbea5"
+  },
+  "duration": 453,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Biến và nhập xuất dữ liệu",
+  "imageUrl": "Z5O6pxQm6II",
+  "videoUrl": "Z5O6pxQm6II",
+  "position": 0,
+  "trackId": {
+    "$oid": "6470dc16403d282e247dbd9a"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:38:28.534Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:38:28.534Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e0a4403d282e247dbebc"
+  },
+  "duration": 343,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Kiểu dữ liệu thường gặp",
+  "imageUrl": "qpIautEyv2s",
+  "videoUrl": "qpIautEyv2s",
+  "position": 1,
+  "trackId": {
+    "$oid": "6470dc16403d282e247dbd9a"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:39:00.888Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:39:00.888Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e0bd403d282e247dbed3"
+  },
+  "duration": 401,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Biến cục bộ và biến toàn cục",
+  "imageUrl": "79mzaFPLEz8",
+  "videoUrl": "79mzaFPLEz8",
+  "position": 2,
+  "trackId": {
+    "$oid": "6470dc16403d282e247dbd9a"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:39:25.017Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:39:25.017Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e0d5403d282e247dbeea"
+  },
+  "duration": 217,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Hằng số",
+  "imageUrl": "zccrOA-00lM",
+  "videoUrl": "zccrOA-00lM",
+  "position": 3,
+  "trackId": {
+    "$oid": "6470dc16403d282e247dbd9a"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:39:49.605Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:39:49.605Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e0f7403d282e247dbf01"
+  },
+  "duration": 653,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Toán tử gán và toán tử số học",
+  "imageUrl": "THAJMtm53ZQ",
+  "videoUrl": "THAJMtm53ZQ",
+  "position": 4,
+  "trackId": {
+    "$oid": "6470dc16403d282e247dbd9a"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:40:23.182Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:41:56.939Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e133403d282e247dbf1f"
+  },
+  "duration": 746,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Toán tử quan hệ và toán tử logic",
+  "imageUrl": "RX8tkygyHPU",
+  "videoUrl": "RX8tkygyHPU",
+  "position": 5,
+  "trackId": {
+    "$oid": "6470dc16403d282e247dbd9a"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:41:23.438Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:41:56.939Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e170403d282e247dbf5b"
+  },
+  "duration": 531,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Ép kiểu dữ liệu và bảng mã ASCII",
+  "imageUrl": "MTbZLshZg0U",
+  "videoUrl": "MTbZLshZg0U",
+  "position": 6,
+  "trackId": {
+    "$oid": "6470dc16403d282e247dbd9a"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:42:24.466Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:42:24.466Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e1ad403d282e247dbf93"
+  },
+  "duration": 562,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Cấu trúc if else",
+  "imageUrl": "1ppDCzoB03k",
+  "videoUrl": "1ppDCzoB03k",
+  "position": 0,
+  "trackId": {
+    "$oid": "6470dc2b403d282e247dbdb4"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:43:25.855Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:43:25.855Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e1d5403d282e247dbfb1"
+  },
+  "duration": 671,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Cấu trúc switch case",
+  "imageUrl": "W3k6lrN0qG4",
+  "videoUrl": "W3k6lrN0qG4",
+  "position": 1,
+  "trackId": {
+    "$oid": "6470dc2b403d282e247dbdb4"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:44:05.288Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:44:05.288Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e1fc403d282e247dbfc8"
+  },
+  "duration": 319,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Toán tử 3 ngôi",
+  "imageUrl": "L9pPv8pp71s",
+  "videoUrl": "L9pPv8pp71s",
+  "position": 2,
+  "trackId": {
+    "$oid": "6470dc2b403d282e247dbdb4"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:44:44.533Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:44:44.533Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e21f403d282e247dbfdf"
+  },
+  "duration": 766,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Vòng lặp",
+  "imageUrl": "7uHfTAj3Vao",
+  "videoUrl": "7uHfTAj3Vao",
+  "position": 3,
+  "trackId": {
+    "$oid": "6470dc2b403d282e247dbdb4"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:45:19.547Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:45:19.547Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e256403d282e247dc015"
+  },
+  "duration": 559,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Mảng 1 chiều",
+  "imageUrl": "89W1oyXfqgo",
+  "videoUrl": "89W1oyXfqgo",
+  "position": 0,
+  "trackId": {
+    "$oid": "6470dc3b403d282e247dbdc7"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:46:14.516Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:46:14.516Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e276403d282e247dc02c"
+  },
+  "duration": 1131,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Thực hành sử dụng mảng",
+  "imageUrl": "X5LOZEf0j6g",
+  "videoUrl": "X5LOZEf0j6g",
+  "position": 1,
+  "trackId": {
+    "$oid": "6470dc3b403d282e247dbdc7"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:46:46.740Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:46:46.740Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e291403d282e247dc043"
+  },
+  "duration": 446,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Mảng 2 chiều",
+  "imageUrl": "xGpB07JzrQ8",
+  "videoUrl": "xGpB07JzrQ8",
+  "position": 2,
+  "trackId": {
+    "$oid": "6470dc3b403d282e247dbdc7"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:47:13.340Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:47:13.340Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e2ab403d282e247dc05a"
+  },
+  "duration": 1159,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Thực hành sử dụng mảng #2",
+  "imageUrl": "I8MKleKa_Yw",
+  "videoUrl": "I8MKleKa_Yw",
+  "position": 3,
+  "trackId": {
+    "$oid": "6470dc3b403d282e247dbdc7"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:47:39.047Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:47:39.047Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e2bf403d282e247dc071"
+  },
+  "duration": 540,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Thuật toán sắp xếp bubble sort",
+  "imageUrl": "bt4m6VlYQO4",
+  "videoUrl": "bt4m6VlYQO4",
+  "position": 4,
+  "trackId": {
+    "$oid": "6470dc3b403d282e247dbdc7"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:47:59.753Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:47:59.753Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e2ec403d282e247dc09c"
+  },
+  "duration": 458,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "String",
+  "imageUrl": "Q06peb_sH6k",
+  "videoUrl": "Q06peb_sH6k",
+  "position": 0,
+  "trackId": {
+    "$oid": "6470dc4c403d282e247dbdda"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:48:44.632Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:49:26.204Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e30c403d282e247dc0b3"
+  },
+  "duration": 882,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Các phương thức làm việc với string",
+  "imageUrl": "duJoNkUE-MA",
+  "videoUrl": "duJoNkUE-MA",
+  "position": 1,
+  "trackId": {
+    "$oid": "6470dc4c403d282e247dbdda"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:49:16.051Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:49:16.051Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e32c403d282e247dc0e5"
+  },
+  "duration": 1635,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Bài tập chương 05",
+  "imageUrl": "gmFYxvMzwFo",
+  "videoUrl": "gmFYxvMzwFo",
+  "position": 2,
+  "trackId": {
+    "$oid": "6470dc4c403d282e247dbdda"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:49:48.396Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:49:48.396Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e35e403d282e247dc128"
+  },
+  "duration": 1072,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Hàm",
+  "imageUrl": "ay8PEiiP5tU",
+  "videoUrl": "ay8PEiiP5tU",
+  "position": 0,
+  "trackId": {
+    "$oid": "6470dc73403d282e247dbded"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:50:38.415Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:50:38.415Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e375403d282e247dc13f"
+  },
+  "duration": 500,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Tham số và đối số",
+  "imageUrl": "ATAoEb-ZXKI",
+  "videoUrl": "ATAoEb-ZXKI",
+  "position": 1,
+  "trackId": {
+    "$oid": "6470dc73403d282e247dbded"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T16:51:01.112Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:51:01.112Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e72c403d282e247dc2d7"
+  },
+  "duration": 194,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Bạn sẽ làm được gì sau khóa học?",
+  "imageUrl": "R6plN3FvzFY",
+  "videoUrl": "R6plN3FvzFY",
+  "position": 0,
+  "trackId": {
+    "$oid": "6470e6ca403d282e247dc271"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:06:52.217Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:06:52.217Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e75d403d282e247dc2ee"
+  },
+  "duration": 148,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Tìm hiểu về HTML, CSS",
+  "imageUrl": "zwsPND378OQ",
+  "videoUrl": "zwsPND378OQ",
+  "position": 1,
+  "trackId": {
+    "$oid": "6470e6ca403d282e247dc271"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:07:41.296Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:07:41.296Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e774403d282e247dc305"
+  },
+  "duration": 234,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Làm quen với Dev tools",
+  "imageUrl": "7BJiPyN4zZ0",
+  "videoUrl": "7BJiPyN4zZ0",
+  "position": 2,
+  "trackId": {
+    "$oid": "6470e6ca403d282e247dc271"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:08:04.789Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:08:04.789Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e78c403d282e247dc31c"
+  },
+  "duration": 242,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Cài đặt VS Code, Page Ruler extension",
+  "imageUrl": "Cu-NtBVeX4g",
+  "videoUrl": "Cu-NtBVeX4g",
+  "position": 3,
+  "trackId": {
+    "$oid": "6470e6ca403d282e247dc271"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:08:28.626Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:08:28.626Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e7ad403d282e247dc333"
+  },
+  "duration": 243,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Khắc phục lỗi cài đặt Page Ruler Redux",
+  "imageUrl": "Cu-NtBVeX4g",
+  "videoUrl": "Cu-NtBVeX4g",
+  "position": 4,
+  "trackId": {
+    "$oid": "6470e6ca403d282e247dc271"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:09:01.227Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:09:01.227Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e7cf403d282e247dc35e"
+  },
+  "duration": 379,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Cấu trúc của 1 file HTML",
+  "imageUrl": "LYnrFSGLCl8",
+  "videoUrl": "LYnrFSGLCl8",
+  "position": 0,
+  "trackId": {
+    "$oid": "6470e6d6403d282e247dc284"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:09:35.900Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:09:35.900Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e7e5403d282e247dc375"
+  },
+  "duration": 379,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Ví dụ cấu trúc file HTML",
+  "imageUrl": "LYnrFSGLCl8",
+  "videoUrl": "LYnrFSGLCl8",
+  "position": 1,
+  "trackId": {
+    "$oid": "6470e6d6403d282e247dc284"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:09:57.606Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:09:57.606Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e7fb403d282e247dc38c"
+  },
+  "duration": 131,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Comments trong HTML",
+  "imageUrl": "JG0pdfdKjgQ",
+  "videoUrl": "JG0pdfdKjgQ",
+  "position": 2,
+  "trackId": {
+    "$oid": "6470e6d6403d282e247dc284"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:10:19.334Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:10:19.334Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e812403d282e247dc3a3"
+  },
+  "duration": 667,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Các thẻ HTML thông dụng",
+  "imageUrl": "AzmdwZ6e_aM",
+  "videoUrl": "AzmdwZ6e_aM",
+  "position": 3,
+  "trackId": {
+    "$oid": "6470e6d6403d282e247dc284"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:10:42.015Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:10:42.015Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e826403d282e247dc3ba"
+  },
+  "duration": 114,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Attribute trong HTML là gì?",
+  "imageUrl": "UYpIh5pIkSA",
+  "videoUrl": "UYpIh5pIkSA",
+  "position": 4,
+  "trackId": {
+    "$oid": "6470e6d6403d282e247dc284"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:11:02.612Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:11:02.612Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e83e403d282e247dc3d1"
+  },
+  "duration": 709,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Cách quản lý thư mục dự án",
+  "imageUrl": "TkPppGzB9ZA",
+  "videoUrl": "TkPppGzB9ZA",
+  "position": 5,
+  "trackId": {
+    "$oid": "6470e6d6403d282e247dc284"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:11:26.660Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:11:26.660Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e85c403d282e247dc3fc"
+  },
+  "duration": 432,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Sử dụng CSS trong HTML",
+  "imageUrl": "NsSsJTg29oE",
+  "videoUrl": "NsSsJTg29oE",
+  "position": 0,
+  "trackId": {
+    "$oid": "6470e6df403d282e247dc297"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:11:56.479Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:11:56.479Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e874403d282e247dc413"
+  },
+  "duration": 257,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "ID và Class",
+  "imageUrl": "4J6d8cr0X48",
+  "videoUrl": "4J6d8cr0X48",
+  "position": 1,
+  "trackId": {
+    "$oid": "6470e6df403d282e247dc297"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:12:20.270Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:12:20.270Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e895403d282e247dc431"
+  },
+  "duration": 1388,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "CSS selectors cơ bản #1",
+  "imageUrl": "hzn_VKpGdTg",
+  "videoUrl": "hzn_VKpGdTg",
+  "position": 2,
+  "trackId": {
+    "$oid": "6470e6df403d282e247dc297"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:12:53.990Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:12:53.990Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e8b0403d282e247dc448"
+  },
+  "duration": 630,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Độ ưu tiên trong CSS",
+  "imageUrl": "AgZ0PX28bnA",
+  "videoUrl": "AgZ0PX28bnA",
+  "position": 3,
+  "trackId": {
+    "$oid": "6470e6df403d282e247dc297"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:13:20.672Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:13:20.672Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e8db403d282e247dc46c"
+  },
+  "duration": 379,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Thuộc tính padding (đệm)",
+  "imageUrl": "aj-lD4XXr8A",
+  "videoUrl": "aj-lD4XXr8A",
+  "position": 0,
+  "trackId": {
+    "$oid": "6470e703403d282e247dc2aa"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:14:03.458Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:14:03.458Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e8f5403d282e247dc483"
+  },
+  "duration": 365,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Thuộc tính border (đường viền)",
+  "imageUrl": "VbzOimNAOxE",
+  "videoUrl": "VbzOimNAOxE",
+  "position": 1,
+  "trackId": {
+    "$oid": "6470e703403d282e247dc2aa"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:14:29.408Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:14:29.408Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e911403d282e247dc49a"
+  },
+  "duration": 330,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Thuộc tính margin (khoảng cách lề)",
+  "imageUrl": "8X48l0CK5_4",
+  "videoUrl": "8X48l0CK5_4",
+  "position": 2,
+  "trackId": {
+    "$oid": "6470e703403d282e247dc2aa"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:14:57.520Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:14:57.520Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e924403d282e247dc4b1"
+  },
+  "duration": 311,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Thuộc tính box-sizing",
+  "imageUrl": "bv16wjxgV4U",
+  "videoUrl": "bv16wjxgV4U",
+  "position": 3,
+  "trackId": {
+    "$oid": "6470e703403d282e247dc2aa"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:15:16.727Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:15:16.727Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e945403d282e247dc4e1"
+  },
+  "duration": 766,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Thuộc tính background-image",
+  "imageUrl": "OPz7Uz20XNQ",
+  "videoUrl": "OPz7Uz20XNQ",
+  "position": 0,
+  "trackId": {
+    "$oid": "6470e712403d282e247dc2bd"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:15:49.666Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:15:49.666Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e961403d282e247dc518"
+  },
+  "duration": 196,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Thuộc tính background-size với cover, contain",
+  "imageUrl": "8zsmGFNpqb4",
+  "videoUrl": "8zsmGFNpqb4",
+  "position": 1,
+  "trackId": {
+    "$oid": "6470e712403d282e247dc2bd"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T17:16:17.817Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:16:17.817Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647104cd403d282e247dc6de"
+  },
+  "duration": 349,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Responsive là gì?",
+  "imageUrl": "71uJhUFR8jM",
+  "videoUrl": "71uJhUFR8jM",
+  "position": 0,
+  "trackId": {
+    "$oid": "64710479403d282e247dc678"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:13:17.849Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:13:17.849Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647104eb403d282e247dc6f5"
+  },
+  "duration": 117,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Chúng ta sẽ làm gì?",
+  "imageUrl": "5QT0aeovTTY",
+  "videoUrl": "5QT0aeovTTY",
+  "position": 1,
+  "trackId": {
+    "$oid": "64710479403d282e247dc678"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:13:47.877Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:13:47.877Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710511403d282e247dc70c"
+  },
+  "duration": 234,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Chuẩn bị công cụ làm việc",
+  "imageUrl": "CIIYogDrGto",
+  "videoUrl": "CIIYogDrGto",
+  "position": 2,
+  "trackId": {
+    "$oid": "64710479403d282e247dc678"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:14:25.962Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:14:25.962Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710530403d282e247dc730"
+  },
+  "duration": 334,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Khái niệm Viewport",
+  "imageUrl": "XJiq_d0vGCQ",
+  "videoUrl": "XJiq_d0vGCQ",
+  "position": 0,
+  "trackId": {
+    "$oid": "64710495403d282e247dc68b"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:14:56.743Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:14:56.743Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710547403d282e247dc747"
+  },
+  "duration": 1080,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Media query (@media)",
+  "imageUrl": "YgkzJkmDP3U",
+  "videoUrl": "YgkzJkmDP3U",
+  "position": 1,
+  "trackId": {
+    "$oid": "64710495403d282e247dc68b"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:15:19.254Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:15:19.254Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471055a403d282e247dc75e"
+  },
+  "duration": 563,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Khái niệm Breakpoints?",
+  "imageUrl": "0i37IU0wjlI",
+  "videoUrl": "0i37IU0wjlI",
+  "position": 2,
+  "trackId": {
+    "$oid": "64710495403d282e247dc68b"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:15:38.224Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:15:38.224Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471056c403d282e247dc775"
+  },
+  "duration": 273,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Media queries: Px, rem hay em?",
+  "imageUrl": "aywAr27pkWE",
+  "videoUrl": "aywAr27pkWE",
+  "position": 3,
+  "trackId": {
+    "$oid": "64710495403d282e247dc68b"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:15:56.089Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:15:56.089Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710593403d282e247dc799"
+  },
+  "duration": 1412,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Học responsive qua thực hành",
+  "imageUrl": "-NK4jLekauw",
+  "videoUrl": "-NK4jLekauw",
+  "position": 0,
+  "trackId": {
+    "$oid": "647104a0403d282e247dc69e"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:16:35.191Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:16:35.191Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647105ab403d282e247dc7b0"
+  },
+  "duration": 1631,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Responsive navigation bar",
+  "imageUrl": "HYy4c6lcOlM",
+  "videoUrl": "HYy4c6lcOlM",
+  "position": 1,
+  "trackId": {
+    "$oid": "647104a0403d282e247dc69e"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:16:59.616Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:16:59.616Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647105ce403d282e247dc7db"
+  },
+  "duration": 1134,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Hệ thống lưới (Grid system)",
+  "imageUrl": "lvD5K50TZPk",
+  "videoUrl": "lvD5K50TZPk",
+  "position": 0,
+  "trackId": {
+    "$oid": "647104ac403d282e247dc6b1"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:17:34.522Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:17:34.522Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647105df403d282e247dc7f2"
+  },
+  "duration": 645,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Grid system - Phần 2",
+  "imageUrl": "iKlMB01w47g",
+  "videoUrl": "iKlMB01w47g",
+  "position": 1,
+  "trackId": {
+    "$oid": "647104ac403d282e247dc6b1"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:17:51.083Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:17:51.083Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647105f2403d282e247dc809"
+  },
+  "duration": 160,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Tạo thư viện?",
+  "imageUrl": "ScZaj1eG7DQ",
+  "videoUrl": "ScZaj1eG7DQ",
+  "position": 2,
+  "trackId": {
+    "$oid": "647104ac403d282e247dc6b1"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:18:10.015Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:18:10.015Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710607403d282e247dc82c"
+  },
+  "duration": 829,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Tạo đối tượng Grid",
+  "imageUrl": "SZXvXXb_7aA",
+  "videoUrl": "SZXvXXb_7aA",
+  "position": 3,
+  "trackId": {
+    "$oid": "647104ac403d282e247dc6b1"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:18:31.254Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:18:31.254Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471061f403d282e247dc856"
+  },
+  "duration": 785,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Tạo đối tượng Row",
+  "imageUrl": "9RHKgjuoIPQ",
+  "videoUrl": "9RHKgjuoIPQ",
+  "position": 4,
+  "trackId": {
+    "$oid": "647104ac403d282e247dc6b1"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:18:55.975Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:18:55.975Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471064c403d282e247dc889"
+  },
+  "duration": 210,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Giới thiệu chương",
+  "imageUrl": "xPwt0rBL-3k",
+  "videoUrl": "xPwt0rBL-3k",
+  "position": 0,
+  "trackId": {
+    "$oid": "647104bb403d282e247dc6c4"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:19:40.329Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:19:40.329Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710660403d282e247dc8a0"
+  },
+  "duration": 517,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": "Sử dụng với các website khác",
+  "imageUrl": "lJworR_9WRk",
+  "videoUrl": "lJworR_9WRk",
+  "position": 1,
+  "trackId": {
+    "$oid": "647104bb403d282e247dc6c4"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:20:00.411Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:20:00.411Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710677403d282e247dc8b7"
+  },
+  "duration": 458,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:43:21.432Z"
+  },
+  "title": " Ví dụ dựng layout - Level 1",
+  "imageUrl": "03HYwqbHrF0",
+  "videoUrl": "03HYwqbHrF0",
+  "position": 2,
+  "trackId": {
+    "$oid": "647104bb403d282e247dc6c4"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:20:23.704Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:20:23.704Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710875d65e6b2a5c2f5f68"
+  },
+  "duration": 259,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Lời khuyên trước khóa học",
+  "imageUrl": "-jV06pqjUUc",
+  "videoUrl": "-jV06pqjUUc",
+  "position": 0,
+  "trackId": {
+    "$oid": "6471082dd65e6b2a5c2f5f01"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:28:53.185Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:28:53.185Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471088bd65e6b2a5c2f5f86"
+  },
+  "duration": 127,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Cài đặt môi trường",
+  "imageUrl": "efI98nT8Ffo",
+  "videoUrl": "efI98nT8Ffo",
+  "position": 1,
+  "trackId": {
+    "$oid": "6471082dd65e6b2a5c2f5f01"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:29:15.616Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:29:15.616Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647108aad65e6b2a5c2f5faa"
+  },
+  "duration": 272,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Sử dụng JavaScript với HTML",
+  "imageUrl": "W0vEUmyvthQ",
+  "videoUrl": "W0vEUmyvthQ",
+  "position": 0,
+  "trackId": {
+    "$oid": "64710845d65e6b2a5c2f5f14"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:29:46.614Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:29:46.614Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647108bdd65e6b2a5c2f5fc1"
+  },
+  "duration": 245,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Khái niệm biến và cách sử dụng",
+  "imageUrl": "CLbx37dqYEI",
+  "videoUrl": "CLbx37dqYEI",
+  "position": 1,
+  "trackId": {
+    "$oid": "64710845d65e6b2a5c2f5f14"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:30:05.181Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:30:05.181Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647108e1d65e6b2a5c2f5fd8"
+  },
+  "duration": 335,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Cú pháp comments là gì?",
+  "imageUrl": "xRpXBEq6TOY",
+  "videoUrl": "xRpXBEq6TOY",
+  "position": 3,
+  "trackId": {
+    "$oid": "64710845d65e6b2a5c2f5f14"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:30:41.582Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:32:13.479Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647108efd65e6b2a5c2f5fef"
+  },
+  "duration": 336,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Thuật ngữ Built-in là gì?",
+  "imageUrl": "xRpXBEq6TOY",
+  "videoUrl": "xRpXBEq6TOY",
+  "position": 4,
+  "trackId": {
+    "$oid": "64710845d65e6b2a5c2f5f14"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:30:55.208Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:32:13.479Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710911d65e6b2a5c2f601a"
+  },
+  "duration": 323,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Làm quen với toán tử",
+  "imageUrl": "SZb-N7TfPlw",
+  "videoUrl": "SZb-N7TfPlw",
+  "position": 0,
+  "trackId": {
+    "$oid": "64710852d65e6b2a5c2f5f27"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:31:29.843Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:31:29.843Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710920d65e6b2a5c2f6031"
+  },
+  "duration": 324,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Toán tử số học",
+  "imageUrl": "SZb-N7TfPlw",
+  "videoUrl": "SZb-N7TfPlw",
+  "position": 1,
+  "trackId": {
+    "$oid": "64710852d65e6b2a5c2f5f27"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:31:44.068Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:31:44.068Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710931d65e6b2a5c2f6048"
+  },
+  "duration": 323,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Toán tử gán",
+  "imageUrl": "SZb-N7TfPlw",
+  "videoUrl": "SZb-N7TfPlw",
+  "position": 2,
+  "trackId": {
+    "$oid": "64710852d65e6b2a5c2f5f27"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:32:01.710Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:32:01.710Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471093dd65e6b2a5c2f605f"
+  },
+  "duration": 323,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Nguyên lý hoạt động của ++ / --",
+  "imageUrl": "SZb-N7TfPlw",
+  "videoUrl": "SZb-N7TfPlw",
+  "position": 2,
+  "trackId": {
+    "$oid": "64710845d65e6b2a5c2f5f14"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:32:13.479Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:32:13.479Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471097dd65e6b2a5c2f60a8"
+  },
+  "duration": 429,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": " Khái niệm hàm (function)",
+  "imageUrl": "4g9ENVc2KLA",
+  "videoUrl": "4g9ENVc2KLA",
+  "position": 0,
+  "trackId": {
+    "$oid": "64710868d65e6b2a5c2f5f4d"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:33:17.789Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:33:17.789Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471098bd65e6b2a5c2f60bf"
+  },
+  "duration": 430,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Tham số trong hàm",
+  "imageUrl": "4g9ENVc2KLA",
+  "videoUrl": "4g9ENVc2KLA",
+  "position": 2,
+  "trackId": {
+    "$oid": "64710868d65e6b2a5c2f5f4d"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:33:31.124Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:33:43.352Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710997d65e6b2a5c2f60d6"
+  },
+  "duration": 430,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Từ khóa return trong hàm",
+  "imageUrl": "4g9ENVc2KLA",
+  "videoUrl": "4g9ENVc2KLA",
+  "position": 1,
+  "trackId": {
+    "$oid": "64710868d65e6b2a5c2f5f4d"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:33:43.352Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:33:43.352Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647109ded65e6b2a5c2f60f5"
+  },
+  "duration": 430,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Hiểu hơn về hàm",
+  "imageUrl": "4g9ENVc2KLA",
+  "videoUrl": "4g9ENVc2KLA",
+  "position": 3,
+  "trackId": {
+    "$oid": "64710868d65e6b2a5c2f5f4d"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:34:54.733Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:34:54.733Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647109ead65e6b2a5c2f610c"
+  },
+  "duration": 429,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Thực hành tạo các loại hàm",
+  "imageUrl": "4g9ENVc2KLA",
+  "videoUrl": "4g9ENVc2KLA",
+  "position": 4,
+  "trackId": {
+    "$oid": "64710868d65e6b2a5c2f5f4d"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:35:06.268Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:35:06.268Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710a12d65e6b2a5c2f6137"
+  },
+  "duration": 1259,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Kiểu dữ liệu chuỗi (string)",
+  "imageUrl": "P-fMQ3elxSE",
+  "videoUrl": "P-fMQ3elxSE",
+  "position": 0,
+  "trackId": {
+    "$oid": "6471085cd65e6b2a5c2f5f3a"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T19:35:46.727Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:35:46.727Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471111ad65e6b2a5c2f6310"
+  },
+  "duration": 1259,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Bạn sẽ làm được gì sau khóa học?",
+  "imageUrl": "P-fMQ3elxSE",
+  "videoUrl": "P-fMQ3elxSE",
+  "position": 0,
+  "trackId": {
+    "$oid": "647110e2d65e6b2a5c2f62a9"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:05:46.105Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:05:46.105Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711126d65e6b2a5c2f6327"
+  },
+  "duration": 1260,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Tìm hiểu về HTML, CSS",
+  "imageUrl": "P-fMQ3elxSE",
+  "videoUrl": "P-fMQ3elxSE",
+  "position": 1,
+  "trackId": {
+    "$oid": "647110e2d65e6b2a5c2f62a9"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:05:58.601Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:05:58.601Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711132d65e6b2a5c2f633e"
+  },
+  "duration": 1260,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Làm quen với Dev tools",
+  "imageUrl": "P-fMQ3elxSE",
+  "videoUrl": "P-fMQ3elxSE",
+  "position": 2,
+  "trackId": {
+    "$oid": "647110e2d65e6b2a5c2f62a9"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:06:10.784Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:06:10.784Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471113ed65e6b2a5c2f6355"
+  },
+  "duration": 1260,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Cài đặt VS Code, Page Ruler extension",
+  "imageUrl": "P-fMQ3elxSE",
+  "videoUrl": "P-fMQ3elxSE",
+  "position": 3,
+  "trackId": {
+    "$oid": "647110e2d65e6b2a5c2f62a9"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:06:22.900Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:06:22.900Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711149d65e6b2a5c2f636c"
+  },
+  "duration": 1260,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": " Khắc phục lỗi cài đặt Page Ruler Redux",
+  "imageUrl": "P-fMQ3elxSE",
+  "videoUrl": "P-fMQ3elxSE",
+  "position": 4,
+  "trackId": {
+    "$oid": "647110e2d65e6b2a5c2f62a9"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:06:33.481Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:06:33.481Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711162d65e6b2a5c2f6390"
+  },
+  "duration": 1259,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Cấu trúc của 1 file HTML",
+  "imageUrl": "P-fMQ3elxSE",
+  "videoUrl": "P-fMQ3elxSE",
+  "position": 0,
+  "trackId": {
+    "$oid": "647110f2d65e6b2a5c2f62cf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:06:58.994Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:06:58.994Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471116ed65e6b2a5c2f63a7"
+  },
+  "duration": 1260,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Làm quen với màn thử thách",
+  "imageUrl": "P-fMQ3elxSE",
+  "videoUrl": "P-fMQ3elxSE",
+  "position": 1,
+  "trackId": {
+    "$oid": "647110f2d65e6b2a5c2f62cf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:07:10.701Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:07:10.701Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711178d65e6b2a5c2f63be"
+  },
+  "duration": 1260,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Ví dụ cấu trúc file HTML",
+  "imageUrl": "P-fMQ3elxSE",
+  "videoUrl": "P-fMQ3elxSE",
+  "position": 2,
+  "trackId": {
+    "$oid": "647110f2d65e6b2a5c2f62cf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:07:20.171Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:07:20.171Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711194d65e6b2a5c2f63e1"
+  },
+  "duration": 1260,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Comments trong HTML",
+  "imageUrl": "P-fMQ3elxSE",
+  "videoUrl": "P-fMQ3elxSE",
+  "position": 3,
+  "trackId": {
+    "$oid": "647110f2d65e6b2a5c2f62cf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:07:48.116Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:07:48.116Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471119fd65e6b2a5c2f63f8"
+  },
+  "duration": 1260,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Ví dụ comments trong HTML",
+  "imageUrl": "P-fMQ3elxSE",
+  "videoUrl": "P-fMQ3elxSE",
+  "position": 4,
+  "trackId": {
+    "$oid": "647110f2d65e6b2a5c2f62cf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:07:59.675Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:07:59.675Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647111add65e6b2a5c2f640f"
+  },
+  "duration": 1260,
+  "description": "<p><br></p>",
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:25:10.893Z"
+  },
+  "title": "Các thẻ HTML thông dụng",
+  "imageUrl": "P-fMQ3elxSE",
+  "videoUrl": "P-fMQ3elxSE",
+  "position": 5,
+  "trackId": {
+    "$oid": "647110f2d65e6b2a5c2f62cf"
+  },
+  "createdAt": {
+    "$date": "2023-05-26T20:08:13.976Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:08:13.976Z"
+  },
+  "__v": 0
 }]

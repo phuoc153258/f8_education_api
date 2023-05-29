@@ -1,58 +1,241 @@
-[
-  {
-    "_id": {
-      "$oid": "625eaba090066486a526731d"
-    },
-    "title": "Kiến Thức Nhập Môn IT",
-    "description": "Để có cái nhìn tổng quan về ngành IT - Lập trình web các bạn nên xem các videos tại khóa này trước nhé.",
-    "slug": "lessons-for-newbie",
-    "image": "course_image_1.png",
-    "icon": "course_icon_1.png",
-    "studentCount": 1501,
-    "createdAt": {
-      "$date": "2021-12-31T17:00:00.000Z"
-    },
-    "updatedAt": {
-      "$date": "2023-05-03T12:06:08.202Z"
-    },
-    "isDeleted": false,
-    "deletedAt": {
-      "$date": "1999-12-31T17:00:00.000Z"
-    },
-    "isPublished": true,
-    "publishedAt": {
-      "$date": "2021-12-31T17:00:00.000Z"
-    },
-    "levelId": {
-      "$oid": "6368c48e06944445dfaf62c4"
-    }
+[{
+  "_id": {
+    "$oid": "64709d603cf13544a422354f"
   },
-  {
-    "_id": {
-      "$oid": "643a8d38ee9e538b2b1160ca"
-    },
-    "title": "Lập trình C++ cơ bản, nâng cao",
-    "description": "Khóa học lập trình C++ từ cơ bản tới nâng cao dành cho người mới bắt đầu. Mục tiêu của khóa học này nhằm giúp các bạn nắm được các khái niệm căn cơ của lập trình, giúp các bạn có nền tảng vững chắc để chinh phục con đường trở thành một lập trình viên.",
-    "slug": "lap-trinh-c-co-ban-toi-nang-cao",
-    "image": "course_image_2.png",
-    "icon": "course_icon_2.png",
-    "studentCount": 1500,
-    "createdAt": {
-      "$date": "2021-12-31T17:00:00.000Z"
-    },
-    "updatedAt": {
-      "$date": "2021-12-31T17:00:00.000Z"
-    },
-    "isDeleted": false,
-    "deletedAt": {
-      "$date": "1999-12-31T17:00:00.000Z"
-    },
-    "isPublished": true,
-    "publishedAt": {
-      "$date": "2021-12-31T17:00:00.000Z"
-    },
-    "levelId": {
-      "$oid": "6368c48e06944445dfaf62c4"
-    }
-  }
-]
+  "image": "cda413a9-7503-4822-b583-aa7de996b6b7.png",
+  "icon": "4f39e76d-03d2-4359-a39b-c861d0c82f3e.png",
+  "studentCount": 2,
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T11:05:47.526Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T13:45:05.672Z"
+  },
+  "levelId": {
+    "$oid": "6368c48e06944445dfaf62c4"
+  },
+  "isPro": false,
+  "price": 0,
+  "title": "Kiến Thức Nhập Môn IT",
+  "description": "Để có cái nhìn tổng quan về ngành IT - Lập trình web các bạn nên xem các videos tại khóa này trước nhé.",
+  "createdAt": {
+    "$date": "2023-05-26T11:52:00.278Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:12:51.112Z"
+  },
+  "slug": "kien-thuc-nhap-mon-it",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470dbe6403d282e247dbd64"
+  },
+  "image": "ee5fa697-d6d3-45f9-a6c5-3e7fe8728f11.png",
+  "icon": "d0716c68-1a27-4ab3-b942-2aa4ec33a7a0.png",
+  "studentCount": 1,
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:17.590Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T16:18:55.083Z"
+  },
+  "levelId": {
+    "$oid": "6368c48e06944445dfaf62c4"
+  },
+  "isPro": false,
+  "price": 0,
+  "title": "Lập trình C++ cơ bản, nâng cao",
+  "description": "Khóa học lập trình C++ từ cơ bản tới nâng cao dành cho người mới bắt đầu. Mục tiêu của khóa học này nhằm giúp các bạn nắm được các khái niệm căn cơ của lập trình, giúp các bạn có nền tảng vững chắc để chinh phục con đường trở thành một lập trình viên.",
+  "createdAt": {
+    "$date": "2023-05-26T16:18:46.138Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:24:35.634Z"
+  },
+  "slug": "lap-trinh-c-co-ban-nang-cao",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "image": "7ad0669f-f6f4-4971-b2f6-3264613d6f6d.png",
+  "icon": "12b55e6d-fb5e-453c-bfc7-d006c535e5e4.png",
+  "studentCount": 1,
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:17.590Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T16:59:13.131Z"
+  },
+  "levelId": {
+    "$oid": "6368c48e06944445dfaf62c4"
+  },
+  "isPro": false,
+  "price": 0,
+  "title": "HTML CSS từ Zero đến Hero",
+  "description": "Trong khóa này chúng ta sẽ cùng nhau xây dựng giao diện 2 trang web là The Band & Shopee.",
+  "createdAt": {
+    "$date": "2023-05-26T16:59:03.426Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:18:45.553Z"
+  },
+  "slug": "html-css-tu-zero-den-hero",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710446403d282e247dc621"
+  },
+  "image": "d7206828-118f-49e8-919e-0e794be4ec39.png",
+  "icon": "1076b259-16fa-4272-9bc5-1728bdf99e83.png",
+  "studentCount": 0,
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:17.590Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:11:09.718Z"
+  },
+  "levelId": {
+    "$oid": "6368c48e06944445dfaf62c4"
+  },
+  "isPro": false,
+  "price": 0,
+  "title": "Responsive Với Grid System",
+  "description": "Trong khóa này chúng ta sẽ học về cách xây dựng giao diện web responsive với Grid System, tương tự Bootstrap 4.",
+  "createdAt": {
+    "$date": "2023-05-26T19:11:02.428Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:11:09.719Z"
+  },
+  "slug": "responsive-voi-grid-system",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "image": "cd7ddc7b-2f08-4bd3-86fa-88c2c75a922e.png",
+  "icon": "b3a42911-156e-4905-a29b-c4d701a44adb.png",
+  "studentCount": 0,
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T13:43:17.590Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T19:21:23.832Z"
+  },
+  "levelId": {
+    "$oid": "6368c48e06944445dfaf62c4"
+  },
+  "isPro": false,
+  "price": 0,
+  "title": "Lập Trình JavaScript Cơ Bản",
+  "description": "Học Javascript cơ bản phù hợp cho người chưa từng học lập trình. Với hơn 100 bài học và có bài tập thực hành sau mỗi bài học.",
+  "createdAt": {
+    "$date": "2023-05-26T19:21:10.898Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:21:23.833Z"
+  },
+  "slug": "lap-trinh-javascript-co-ban",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "image": "9da00933-f9b7-4178-8d82-16071fc85b42.png",
+  "icon": "71263a92-98c6-4c5e-9b06-91d3c4971f4c.png",
+  "studentCount": 1,
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:08.284Z"
+  },
+  "isPublished": true,
+  "publishedAt": {
+    "$date": "2023-05-26T20:01:42.426Z"
+  },
+  "levelId": {
+    "$oid": "6368c49106944445dfaf62c5"
+  },
+  "isPro": true,
+  "price": 1299000,
+  "title": "HTML CSS Pro",
+  "description": "Trong khóa này chúng ta sẽ cùng nhau xây dựng giao diện 2 trang web là The Band & Shopee.",
+  "createdAt": {
+    "$date": "2023-05-26T19:59:44.186Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:10:49.626Z"
+  },
+  "slug": "html-css-pro",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710fddd65e6b2a5c2f615b"
+  },
+  "image": "3a8c8513-7dbf-4e26-9cb3-804a15ab55a9.png",
+  "icon": "700b82ba-4bf2-471f-a2ba-bf1c32c8b02c.png",
+  "studentCount": 0,
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:08.284Z"
+  },
+  "isPublished": false,
+  "publishedAt": {
+    "$date": "2023-05-26T20:02:00.057Z"
+  },
+  "levelId": {
+    "$oid": "6368c49106944445dfaf62c5"
+  },
+  "isPro": true,
+  "price": 1299000,
+  "title": "JavaScript Pro",
+  "description": "JavaScript Pro",
+  "createdAt": {
+    "$date": "2023-05-26T20:00:29.759Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:02:00.059Z"
+  },
+  "slug": "javascript-pro",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711003d65e6b2a5c2f6165"
+  },
+  "image": "b3772dd6-27de-4856-a1f0-1a3f9b01a795.png",
+  "icon": "4db6fdc6-1ad6-48d5-b634-813af4cfbdbd.png",
+  "studentCount": 0,
+  "isDeleted": false,
+  "deletedAt": {
+    "$date": "2023-05-26T19:25:08.284Z"
+  },
+  "isPublished": false,
+  "publishedAt": {
+    "$date": "2023-05-26T20:02:21.244Z"
+  },
+  "levelId": {
+    "$oid": "6368c49306944445dfaf62c6"
+  },
+  "isPro": true,
+  "price": 1299000,
+  "title": "ReactJS Pro",
+  "description": "ReactJS Pro",
+  "createdAt": {
+    "$date": "2023-05-26T20:01:07.409Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:02:21.246Z"
+  },
+  "slug": "reactjs-pro",
+  "__v": 0
+}]

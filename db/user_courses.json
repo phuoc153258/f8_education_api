@@ -1,12 +1,101 @@
 [{
   "_id": {
-    "$oid": "64524e3079305e37d43bafb5"
+    "$oid": "6470da83403d282e247dbc7a"
   },
   "userId": {
     "$oid": "6321a87930971e9422a59e53"
   },
   "courseId": {
-    "$oid": "625eaba090066486a526731d"
+    "$oid": "64709d603cf13544a422354f"
+  },
+  "indexVideo": 0,
+  "lessonCompleted": [
+    {
+      "_id": {
+        "$oid": "6470da8b403d282e247dbc8d"
+      },
+      "stepId": {
+        "$oid": "64709edba1a94d141417a306"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e9f5403d282e247dc552"
+  },
+  "userId": {
+    "$oid": "6321a87930971e9422a59e53"
+  },
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "indexVideo": 5,
+  "lessonCompleted": [
+    {
+      "_id": {
+        "$oid": "6470e9ff403d282e247dc55e"
+      },
+      "stepId": {
+        "$oid": "6470e72c403d282e247dc2d7"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6470ea06403d282e247dc56b"
+      },
+      "stepId": {
+        "$oid": "6470e75d403d282e247dc2ee"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6470ea0c403d282e247dc578"
+      },
+      "stepId": {
+        "$oid": "6470e774403d282e247dc305"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6470ea0f403d282e247dc585"
+      },
+      "stepId": {
+        "$oid": "6470e78c403d282e247dc31c"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6470ea12403d282e247dc592"
+      },
+      "stepId": {
+        "$oid": "6470e7ad403d282e247dc333"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470eb53403d282e247dc5bb"
+  },
+  "userId": {
+    "$oid": "6321a87930971e9422a59e53"
+  },
+  "courseId": {
+    "$oid": "6470dbe6403d282e247dbd64"
+  },
+  "indexVideo": 3,
+  "lessonCompleted": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711249d65e6b2a5c2f6474"
+  },
+  "userId": {
+    "$oid": "6321a87930971e9422a59e53"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
   },
   "indexVideo": 0,
   "lessonCompleted": [],

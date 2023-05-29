@@ -5,9 +5,6 @@
   "avatar": "user_avatar_default.jpg",
   "email": "nguyendonphuochusc@gmail.com",
   "email_verified": true,
-  "facebook_id": "",
-  "github_id": "",
-  "google_id": "",
   "is_active": true,
   "password": "sha1$7ef6c379$1$cf6fe747e880f8f2d01ca51fdf896de8344d7065",
   "phone": "0911345663",
@@ -15,10 +12,10 @@
   "roleId": {
     "$oid": "63664c0b0ec8388637abd10a"
   },
-  "slug": "nguyendonphuoc",
-  "fullname": "Nguyễn Đôn Phước",
+  "slug": "nguyen-don-phuocc",
+  "fullname": "Nguyễn Đôn Phướcc",
   "bio": "",
-  "facebook_link": "",
+  "facebook_link": "facebook.com/noobtapchoiii",
   "instagram_link": "",
   "linkedin_link": "",
   "twitter_link": "",
@@ -27,35 +24,35 @@
     "$date": "2022-12-31T17:00:00.000Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-22T16:02:56.285Z"
   }
 },{
   "_id": {
-    "$oid": "64525929737c5507bc0713c7"
+    "$oid": "646ec6ba71f1bd3198fab152"
   },
-  "avatar": "4f7951b1-e48a-4db2-82b3-bb3745e2e3d7.jpg",
+  "avatar": "user_avatar_default.jpg",
   "email_verified": false,
   "is_active": true,
-  "phone": "dsadsadsadsa",
+  "phone": "",
   "type_account": "default",
-  "role": {
-    "$oid": "63664c2a0ec8388637abd10b"
+  "roleId": {
+    "$oid": "63664c0b0ec8388637abd10a"
   },
-  "bio": "dsadsa",
-  "facebook_link": "dsadsada",
-  "instagram_link": "dsadsadsadsadsa",
-  "linkedin_link": "dsadsadas",
-  "twitter_link": "dsadsadsad",
-  "youtube_link": "dsadsadssad",
-  "fullname": "dsadsa",
-  "password": "sha1$b14268e6$1$a60db29b1a423fb6e9aade851b7f425de235bdaa",
-  "email": "ndphuoc2001@gmail.com",
+  "bio": "",
+  "facebook_link": "",
+  "instagram_link": "",
+  "linkedin_link": "",
+  "twitter_link": "",
+  "youtube_link": "",
+  "fullname": "Nguyen don phuoc",
+  "password": "sha1$979c7250$1$968f2acbb878328b77f42aa92ed71f3dd943e090",
+  "email": "admin@gmail.com",
   "createdAt": {
-    "$date": "2023-05-03T12:52:57.686Z"
+    "$date": "2023-05-25T02:23:54.991Z"
   },
   "updatedAt": {
-    "$date": "2023-05-03T12:55:39.981Z"
+    "$date": "2023-05-25T02:23:54.991Z"
   },
-  "slug": "dsadsa",
+  "slug": "nguyen-don-phuoc",
   "__v": 0
 }]

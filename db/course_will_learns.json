@@ -1,57 +1,556 @@
 [{
   "_id": {
-    "$oid": "64377dc5adbbeada51860a91"
+    "$oid": "64709d753cf13544a4223562"
   },
-  "content": "Hiểu về khái niệm SPA/MPA",
   "courseId": {
-    "$oid": "625eaba090066486a526731d"
+    "$oid": "64709d603cf13544a422354f"
   },
+  "content": "Các kiến thức cơ bản, nền móng của ngành IT",
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T11:52:21.143Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  }
+    "$date": "2023-05-26T11:52:21.143Z"
+  },
+  "__v": 0
 },{
   "_id": {
-    "$oid": "64377dcc1800b5acc9c2476a"
+    "$oid": "64709d873cf13544a422356f"
   },
-  "content": "Hiểu về khái niệm hooks",
   "courseId": {
-    "$oid": "625eaba090066486a526731d"
+    "$oid": "64709d603cf13544a422354f"
   },
+  "content": "Các khái niệm, thuật ngữ cốt lõi khi triển khai ứng dụng",
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T11:52:39.604Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  }
+    "$date": "2023-05-26T11:52:39.604Z"
+  },
+  "__v": 0
 },{
   "_id": {
-    "$oid": "64377dd5a64b5d355f7a259a"
+    "$oid": "64709d8f3cf13544a422357c"
   },
-  "content": "Hiểu cách ReactJS hoạt động",
   "courseId": {
-    "$oid": "625eaba090066486a526731d"
+    "$oid": "64709d603cf13544a422354f"
   },
+  "content": "Các mô hình, kiến trúc cơ bản khi triển khai ứng dụng",
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T11:52:47.857Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  }
+    "$date": "2023-05-26T11:52:47.857Z"
+  },
+  "__v": 0
 },{
   "_id": {
-    "$oid": "64377ddd7f7f784ea637ffb8"
+    "$oid": "64709d973cf13544a4223589"
   },
-  "content": "Hiểu về function/class component",
-  "course_id": {
-    "$oid": "625eaba090066486a526731d"
+  "courseId": {
+    "$oid": "64709d603cf13544a422354f"
   },
+  "content": "Hiểu hơn về cách internet và máy vi tính hoạt động",
   "createdAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
+    "$date": "2023-05-26T11:52:55.601Z"
   },
   "updatedAt": {
-    "$date": "2022-12-31T17:00:00.000Z"
-  }
+    "$date": "2023-05-26T11:52:55.601Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e56a403d282e247dc180"
+  },
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "content": "Biết cách xây dựng giao diện web với HTML, CSS",
+  "createdAt": {
+    "$date": "2023-05-26T16:59:22.965Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:59:22.965Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e574403d282e247dc18d"
+  },
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "content": "Biết cách đặt tên class CSS theo chuẩn BEM",
+  "createdAt": {
+    "$date": "2023-05-26T16:59:32.639Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:59:32.639Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e57b403d282e247dc19a"
+  },
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "content": "Làm chủ Flexbox khi dựng bố cục website",
+  "createdAt": {
+    "$date": "2023-05-26T16:59:39.312Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:59:39.312Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e582403d282e247dc1a7"
+  },
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "content": "Biết cách tự tạo động lực cho bản thân",
+  "createdAt": {
+    "$date": "2023-05-26T16:59:46.409Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:59:46.409Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e58b403d282e247dc1b4"
+  },
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "content": "Học được cách làm UI chỉn chu, kỹ tính",
+  "createdAt": {
+    "$date": "2023-05-26T16:59:55.916Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T16:59:55.916Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e592403d282e247dc1c1"
+  },
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "content": "Biết cách phân tích giao diện website",
+  "createdAt": {
+    "$date": "2023-05-26T17:00:02.913Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:00:02.913Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e5bc403d282e247dc1ce"
+  },
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "content": "Biết cách làm giao diện web responsive",
+  "createdAt": {
+    "$date": "2023-05-26T17:00:44.693Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:00:44.693Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e5c2403d282e247dc1db"
+  },
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "content": "Sở hữu 2 giao diện web khi học xong khóa học",
+  "createdAt": {
+    "$date": "2023-05-26T17:00:50.836Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:00:50.836Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e5c7403d282e247dc1e8"
+  },
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "content": "Biết cách tự học những kiến thức mới",
+  "createdAt": {
+    "$date": "2023-05-26T17:00:55.677Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:00:55.677Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6470e5cc403d282e247dc1f5"
+  },
+  "courseId": {
+    "$oid": "6470e557403d282e247dc160"
+  },
+  "content": "Nhận chứng chỉ khóa học do F8 cấp",
+  "createdAt": {
+    "$date": "2023-05-26T17:01:00.554Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T17:01:00.554Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710458403d282e247dc641"
+  },
+  "courseId": {
+    "$oid": "64710446403d282e247dc621"
+  },
+  "content": "Biết cách xây dựng website Responsive",
+  "createdAt": {
+    "$date": "2023-05-26T19:11:20.125Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:11:20.125Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471045d403d282e247dc64e"
+  },
+  "courseId": {
+    "$oid": "64710446403d282e247dc621"
+  },
+  "content": "Tự tay xây dựng được thư viện CSS Grid",
+  "createdAt": {
+    "$date": "2023-05-26T19:11:25.075Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:11:25.075Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710461403d282e247dc65b"
+  },
+  "courseId": {
+    "$oid": "64710446403d282e247dc621"
+  },
+  "content": "Hiểu được tư tưởng thiết kế với Grid system",
+  "createdAt": {
+    "$date": "2023-05-26T19:11:29.904Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:11:29.904Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64710466403d282e247dc668"
+  },
+  "courseId": {
+    "$oid": "64710446403d282e247dc621"
+  },
+  "content": "Tự hiểu được Grid layout trong bootstrap",
+  "createdAt": {
+    "$date": "2023-05-26T19:11:34.883Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:11:34.883Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647106bc403d282e247dc8ef"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Hiểu chi tiết về các khái niệm cơ bản trong JS",
+  "createdAt": {
+    "$date": "2023-05-26T19:21:32.731Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:21:32.731Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647106c7403d282e247dc916"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Tự tin khi phỏng vấn với kiến thức vững chắc",
+  "createdAt": {
+    "$date": "2023-05-26T19:21:43.893Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:21:43.893Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647106cc403d282e247dc923"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Nắm chắc các tính năng trong phiên bản ES6",
+  "createdAt": {
+    "$date": "2023-05-26T19:21:48.735Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:21:48.735Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647106d0403d282e247dc930"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Ghi nhớ các khái niệm nhờ bài tập trắc nghiệm",
+  "createdAt": {
+    "$date": "2023-05-26T19:21:52.807Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:21:52.807Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647106d4403d282e247dc93d"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Các bài thực hành như Tabs, Music Player",
+  "createdAt": {
+    "$date": "2023-05-26T19:21:56.874Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:21:56.874Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647106d8403d282e247dc94a"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Xây dựng được website đầu tiên kết hợp với JS",
+  "createdAt": {
+    "$date": "2023-05-26T19:22:00.896Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:22:00.896Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647106dd403d282e247dc957"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Có nền tảng để học các thư viện và framework JS",
+  "createdAt": {
+    "$date": "2023-05-26T19:22:05.229Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:22:05.229Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647106e1403d282e247dc964"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Thành thạo DOM APIs để tương tác với trang web",
+  "createdAt": {
+    "$date": "2023-05-26T19:22:09.156Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:22:09.156Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647106e5403d282e247dc971"
+  },
+  "courseId": {
+    "$oid": "647106a6403d282e247dc8cf"
+  },
+  "content": "Nâng cao tư duy với các bài kiểm tra với testcases",
+  "createdAt": {
+    "$date": "2023-05-26T19:22:13.421Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T19:22:13.421Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711079d65e6b2a5c2f620a"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "content": "Biết cách xây dựng giao diện web với HTML, CSS.",
+  "createdAt": {
+    "$date": "2023-05-26T20:03:05.774Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:03:05.774Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711081d65e6b2a5c2f6217"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "content": "Biết cách đặt tên class CSS theo chuẩn BEM.",
+  "createdAt": {
+    "$date": "2023-05-26T20:03:13.506Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:03:13.506Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711089d65e6b2a5c2f6224"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "content": "Làm chủ Flexbox khi dựng bố cục website.",
+  "createdAt": {
+    "$date": "2023-05-26T20:03:21.108Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:03:21.108Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711091d65e6b2a5c2f6231"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "content": "Biết cách tự tạo động lực cho bản thân.",
+  "createdAt": {
+    "$date": "2023-05-26T20:03:29.356Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:03:29.356Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64711097d65e6b2a5c2f623e"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "content": "Học được cách làm UI chỉn chu, kỹ tính.",
+  "createdAt": {
+    "$date": "2023-05-26T20:03:35.567Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:03:35.567Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6471109ed65e6b2a5c2f624b"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "content": "Biết cách phân tích giao diện website.",
+  "createdAt": {
+    "$date": "2023-05-26T20:03:42.648Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:03:42.648Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647110a6d65e6b2a5c2f6258"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "content": "Biết cách làm giao diện web responsive.",
+  "createdAt": {
+    "$date": "2023-05-26T20:03:50.088Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:03:50.088Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647110abd65e6b2a5c2f6265"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "content": "Sở hữu 2 giao diện web khi học xong khóa học.",
+  "createdAt": {
+    "$date": "2023-05-26T20:03:55.872Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:03:55.872Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647110b1d65e6b2a5c2f6272"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "content": "Biết cách tự học những kiến thức mới.",
+  "createdAt": {
+    "$date": "2023-05-26T20:04:01.067Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:04:01.067Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647110b6d65e6b2a5c2f627f"
+  },
+  "courseId": {
+    "$oid": "64710fb0d65e6b2a5c2f6151"
+  },
+  "content": "Nhận chứng chỉ khóa học do F8 cấp.",
+  "createdAt": {
+    "$date": "2023-05-26T20:04:06.978Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-26T20:04:06.978Z"
+  },
+  "__v": 0
 }]

@@ -11,7 +11,33 @@
         "$oid": "644d43a905d674b2933f6399"
       },
       "courseId": {
-        "$oid": "625eaba090066486a526731d"
+        "$oid": "64709d603cf13544a422354f"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "description": "Để theo ngành IT - Phần mềm cần rèn luyện những kỹ năng nào? Bạn đã có sẵn tố chất phù hợp với ngành chưa? Cùng thăm quan các công ty IT và tìm hiểu về văn hóa, tác phong làm việc của ngành này nhé các bạn.",
+  "priority": 0,
+  "title": "Tìm hiểu về ngành IT",
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "647114c5e155a1d3d1956c95"
+  },
+  "courseRoleId": {
+    "$oid": "6368cd5e06944445dfaf62cf"
+  },
+  "courses": [
+    {
+      "_id": {
+        "$oid": "647114c934da33e6a422a5b1"
+      },
+      "courseId": {
+        "$oid": "6470e557403d282e247dc160"
       }
     }
   ],
@@ -19,8 +45,112 @@
     "$date": "2022-12-31T17:00:00.000Z"
   },
   "description": "Để học web Front-end chúng ta luôn bắt đầu với ngôn ngữ HTML và CSS, đây là 2 ngôn ngữ có mặt trong mọi website trên internet. Dù bạn có theo Back-end thì công việc của bạn nhiều khi vẫn cần phải ghép dữ liệu với HTML, CSS.",
-  "priority": "0",
+  "priority": 0,
   "title": "HTML và CSS",
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "647114bd66d0b5f446683b8a"
+  },
+  "courseRoleId": {
+    "$oid": "6368cd5e06944445dfaf62cf"
+  },
+  "courses": [
+    {
+      "_id": {
+        "$oid": "647114c0cad73a4eab27895d"
+      },
+      "courseId": {
+        "$oid": "647106a6403d282e247dc8cf"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "description": "Có rất nhiều ngôn ngữ để bạn có thể làm việc với Back-end, tuy nhiên bạn không cần phải học tất cả. Bạn chỉ cần tập trung vào 1 ngôn ngữ là có thể làm việc tốt. Tại đây chúng ta sẽ bắt đầu với ngôn ngữ lập trình Javascript.",
+  "priority": 0,
+  "title": "Ngôn ngữ lập trình",
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6471147983e33915143d734c"
+  },
+  "courseRoleId": {
+    "$oid": "6368cd6106944445dfaf62d0"
+  },
+  "courses": [
+    {
+      "_id": {
+        "$oid": "6471147d093a8c716c760c5f"
+      },
+      "courseId": {
+        "$oid": "64709d603cf13544a422354f"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "description": "Để theo ngành IT - Phần mềm cần rèn luyện những kỹ năng nào? Bạn đã có sẵn tố chất phù hợp với ngành chưa? Cùng thăm quan các công ty IT và tìm hiểu về văn hóa, tác phong làm việc của ngành này nhé các bạn.",
+  "priority": 0,
+  "title": "Tìm hiểu về ngành IT",
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "647114a9ab0e95cac25449eb"
+  },
+  "courseRoleId": {
+    "$oid": "6368cd6106944445dfaf62d0"
+  },
+  "courses": [
+    {
+      "_id": {
+        "$oid": "647114ac6efc8e2eaffdefa8"
+      },
+      "courseId": {
+        "$oid": "6470e557403d282e247dc160"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "description": "Để học web Front-end chúng ta luôn bắt đầu với ngôn ngữ HTML và CSS, đây là 2 ngôn ngữ có mặt trong mọi website trên internet. Dù bạn có theo Back-end thì công việc của bạn nhiều khi vẫn cần phải ghép dữ liệu với HTML, CSS.",
+  "priority": 0,
+  "title": "HTML và CSS",
+  "updatedAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "647114b06f4a473d81176869"
+  },
+  "courseRoleId": {
+    "$oid": "6368cd6106944445dfaf62d0"
+  },
+  "courses": [
+    {
+      "_id": {
+        "$oid": "647114b4db292998880d6bd6"
+      },
+      "courseId": {
+        "$oid": "647106a6403d282e247dc8cf"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-12-31T17:00:00.000Z"
+  },
+  "description": "Có rất nhiều ngôn ngữ để bạn có thể làm việc với Back-end, tuy nhiên bạn không cần phải học tất cả. Bạn chỉ cần tập trung vào 1 ngôn ngữ là có thể làm việc tốt. Tại đây chúng ta sẽ bắt đầu với ngôn ngữ lập trình Javascript.",
+  "priority": 0,
+  "title": "Ngôn ngữ lập trình",
   "updatedAt": {
     "$date": "2022-12-31T17:00:00.000Z"
   }

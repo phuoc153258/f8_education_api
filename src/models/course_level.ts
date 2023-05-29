@@ -11,7 +11,6 @@ const Course_LevelSchema = new Schema(
     level: {
       type: Number,
       require: true,
-      unique: true,
     },
     name: {
       type: String,

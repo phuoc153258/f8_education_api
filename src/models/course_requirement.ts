@@ -11,7 +11,6 @@ const Course_RequirementSchema = new Schema(
     content: {
       type: String,
       require: true,
-      unique: true,
     },
     courseId: {
       type: mongoose.Types.ObjectId,
