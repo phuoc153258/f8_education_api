@@ -16,7 +16,13 @@ const fileService: IFileService = {
       let extFile = path.extname(files[key].name);
       let savePath = configFilePath(extFile);
       const fileName = uuidv4() + extFile;
-      const filepath = path.join(__dirname, "../..", savePath, fileName);
+      const filepath = path.join(
+        __dirname,
+        "../../../..",
+        "/src/",
+        savePath,
+        fileName
+      );
 
       files[key].mv(filepath, (err) => {
         if (err)
@@ -31,9 +37,8 @@ const fileService: IFileService = {
   },
   get: async (fileName, res, next) => {
     const savePath = configFilePath(path.extname(fileName));
-
     res.sendFile(
-      path.join(__dirname, "../..", savePath + "/" + fileName),
+      path.join(__dirname, "../../../..", "/src/", savePath + "/" + fileName),
       (err) => {
         if (err) {
           next(err);
