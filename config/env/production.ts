@@ -4,6 +4,7 @@ const { NODE_APP_PORT, NODE_APP_HOST, NODE_APP_URI } = process.env;
 
 export default {
   env: "production",
+  // db: `mongodb://localhost:27017/f8_education_dev`,
   db: `mongodb+srv://phuoc153258:Outisde2@cluster0.hwttyjb.mongodb.net/f8_education_dev`,
   db_back_up: `mongodb://localhost:27017/f8_education_dev`,
   port: NODE_APP_PORT,

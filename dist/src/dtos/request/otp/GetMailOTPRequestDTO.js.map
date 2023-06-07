@@ -1,0 +1,1 @@
+{"version":3,"file":"GetMailOTPRequestDTO.js","sourceRoot":"","sources":["../../../../../src/dtos/request/otp/GetMailOTPRequestDTO.ts"],"names":[],"mappings":";;AAAA,MAAqB,oBAAoB;IAGrC,YAAY,EAAE,KAAK,EAAE;QACnB,IAAI,CAAC,MAAM,GAAG,KAAK,CAAC;IACtB,CAAC;IAED,IAAI,KAAK;QACP,OAAO,IAAI,CAAC,MAAM,CAAC;IACrB,CAAC;CACJ;AAVD,uCAUC"}
