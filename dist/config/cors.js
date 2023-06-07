@@ -4,7 +4,7 @@ exports.corsOptions = void 0;
 const allowedOrigins = [
     "http://localhost:3001",
     "http://localhost:3002",
-    "https://f8-education-pi.vercel.app",
+    "https://f8-education-rust.vercel.app/",
 ];
 exports.corsOptions = {
     origin: (origin, callback) => {
