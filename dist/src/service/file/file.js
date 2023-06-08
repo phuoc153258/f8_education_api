@@ -23,7 +23,7 @@ const fileService = {
             let extFile = path_1.default.extname(files[key].name);
             let savePath = (0, file_1.configFilePath)(extFile);
             const fileName = (0, uuid_1.v4)() + extFile;
-            const filepath = path_1.default.join(__dirname, "../../../..", "/src/", savePath, fileName);
+            const filepath = path_1.default.join(__dirname, "../../../", savePath + "/" + fileName);
             files[key].mv(filepath, (err) => {
                 if (err)
                     return Promise.reject(new Error(base_1.BaseErrorMessage.SOME_THING_WENT_WRONG));
@@ -34,7 +34,7 @@ const fileService = {
     }),
     get: (fileName, res, next) => __awaiter(void 0, void 0, void 0, function* () {
         const savePath = (0, file_1.configFilePath)(path_1.default.extname(fileName));
-        res.sendFile(path_1.default.join(__dirname, "../../../..", "/src/", savePath + "/" + fileName), (err) => {
+        res.sendFile(path_1.default.join(path_1.default.join(__dirname, "../../../", savePath + "/" + fileName)), (err) => {
             if (err) {
                 next(err);
             }
