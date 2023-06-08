@@ -3,6 +3,7 @@ import { FILE_PATH } from "../../constants/file";
 import { v4 as uuidv4 } from "uuid";
 import { configFilePath } from "../helper/file";
 import { BaseErrorMessage } from "../../messages/error/base";
+import env from "../../../config/env";
 
 interface IFileService {
   upload: (files: any) => Promise<any>;
@@ -18,7 +19,7 @@ const fileService: IFileService = {
       const fileName = uuidv4() + extFile;
       const filepath = path.join(
         __dirname,
-        "../../../",
+        env.rootUpload,
         savePath + "/" + fileName
       );
 
@@ -36,7 +37,9 @@ const fileService: IFileService = {
   get: async (fileName, res, next) => {
     const savePath = configFilePath(path.extname(fileName));
     res.sendFile(
-      path.join(path.join(__dirname, "../../../", savePath + "/" + fileName)),
+      path.join(
+        path.join(__dirname, env.rootUpload, savePath + "/" + fileName)
+      ),
       (err) => {
         if (err) {
           next(err);

@@ -54,4 +54,5 @@ export default {
     client_secret: "29fb250dfe8d9d7adb7995d1f0e161511eda5811",
     callback_uri: "/api/v1/oauth2/github/callback",
   },
+  rootUpload: "../../../",
 };

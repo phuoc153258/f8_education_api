@@ -54,5 +54,6 @@ exports.default = {
         secret: "e342cc8d-e3d0-4b8f-be36-e3e189ca3de6",
         expiresIn: "1m",
     },
+    rootUpload: "../../../../",
 };
 //# sourceMappingURL=production.js.map

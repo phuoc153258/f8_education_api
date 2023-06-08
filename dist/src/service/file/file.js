@@ -16,6 +16,7 @@ const path_1 = __importDefault(require("path"));
 const uuid_1 = require("uuid");
 const file_1 = require("../helper/file");
 const base_1 = require("../../messages/error/base");
+const env_1 = __importDefault(require("../../../config/env"));
 const fileService = {
     upload: (files) => __awaiter(void 0, void 0, void 0, function* () {
         let filenames = {};
@@ -23,7 +24,7 @@ const fileService = {
             let extFile = path_1.default.extname(files[key].name);
             let savePath = (0, file_1.configFilePath)(extFile);
             const fileName = (0, uuid_1.v4)() + extFile;
-            const filepath = path_1.default.join(__dirname, "../../../", savePath + "/" + fileName);
+            const filepath = path_1.default.join(__dirname, env_1.default.rootUpload, savePath + "/" + fileName);
             files[key].mv(filepath, (err) => {
                 if (err)
                     return Promise.reject(new Error(base_1.BaseErrorMessage.SOME_THING_WENT_WRONG));
@@ -34,7 +35,7 @@ const fileService = {
     }),
     get: (fileName, res, next) => __awaiter(void 0, void 0, void 0, function* () {
         const savePath = (0, file_1.configFilePath)(path_1.default.extname(fileName));
-        res.sendFile(path_1.default.join(path_1.default.join(__dirname, "../../../", savePath + "/" + fileName)), (err) => {
+        res.sendFile(path_1.default.join(path_1.default.join(__dirname, env_1.default.rootUpload, savePath + "/" + fileName)), (err) => {
             if (err) {
                 next(err);
             }

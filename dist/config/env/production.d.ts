@@ -45,5 +45,6 @@ declare const _default: {
         secret: string;
         expiresIn: string;
     };
+    rootUpload: string;
 };
 export default _default;

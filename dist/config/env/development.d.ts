@@ -45,5 +45,6 @@ declare const _default: {
         client_secret: string;
         callback_uri: string;
     };
+    rootUpload: string;
 };
 export default _default;
